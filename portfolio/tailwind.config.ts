@@ -1,3 +1,5 @@
+const plugin = require('tailwindcss/plugin');
+
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -7,11 +9,34 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    
     extend: {
+      fontSize: {
+
+      },
+      colors: {
+          primary: {
+            DEFAULT : "#FFA216",
+            600: "#C87800",
+          },
+          white: {
+            100: "#EFE9F4",
+            200: "#D3D3D3",
+            300: "#D9D9D9",
+            400: "#E5F4E3",
+            500: "#BEBEBE",
+          },
+          dark: {
+            950: "#141414",
+            900: "#181818",
+            600: "#333",
+            500: "#3E3E3E",
+            400: "#656565",
+          }
+      },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'gradient-linear-dark': 'var(--body-bg)',
+        'hero-bg': 'url("./src/app/img/hero-bg-jorge-rondon.jpg")'
       },
     },
   },
