@@ -6,22 +6,32 @@ interface NavbarProps {
 }
 
 const Navbar: React.FC<NavbarProps> = (props) => {
-  const { title} = props;
-
   
 
   return (
     <>
-      <nav className={`w-full shadow-sm md:px-7 z-40`}>
+      <nav className={`w-full md:px-7 z-40 bg-dark-900 shadow-nav-shadow`}>
         <div className="container mx-auto">
-          <div className="flex justify-between flex-col md:flex-row items-center ">
-            <div className="tooltip relative cursor-help">
-              <h1 className='font-semibold text-3xl md:text-3xl mt-3 md:mt-0 py-1'>
-                {title}
-              </h1>
-              <span className='absolute z-40 text-white bg-slate-950 px-1 text-xs rounded-sm left-0 top-10' style={{ display: 'none' }}> Current Category </span>
+          <div className="flex justify-between lg:px-16  py-3">
+
+
+            <div className="">
+              <h5 className={`condensed text-2xl`}>
+                JFR DEV
+              </h5>
             </div>
             
+            <div className="lg:w-2/3 w-4/5 max-w-2xl">
+              <ul className='flex justify-between pt-1'>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Backgrounds</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a className='bg-white-100 text-dark-600 px-4 py-1 rounded-sm' href="#">Contact</a></li>
+              </ul>
+            </div>
+
+
           </div>
         </div>
       </nav>

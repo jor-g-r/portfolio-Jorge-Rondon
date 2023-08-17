@@ -11,8 +11,8 @@ const config: Config = {
   theme: {
     
     extend: {
-      fontSize: {
-
+      boxShadow: {
+        'nav-shadow': '0px 3px 10px 2px rgba(0, 0, 0, 0.30);'
       },
       colors: {
           primary: {

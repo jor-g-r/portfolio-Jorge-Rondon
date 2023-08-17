@@ -1,9 +1,16 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Roboto } from 'next/font/google'
+import { Roboto, Roboto_Condensed } from 'next/font/google'
 
 const roboto = Roboto({
   subsets: ['latin'],
+  variable: '--font-roboto',
+  display: 'swap',
+  weight: '400'
+})
+const roboto_condensed = Roboto_Condensed({
+  subsets: ['latin'],
+  variable: '--font-roboto-condensed',
   display: 'swap',
   weight: '400'
 })
@@ -19,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${roboto.variable} ${roboto_condensed.variable}`}>
       <body className={`${roboto.className} gradient-linear-dark`}>{children}</body>
     </html>
   )

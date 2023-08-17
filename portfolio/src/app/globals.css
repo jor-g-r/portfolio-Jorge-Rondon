@@ -19,3 +19,5 @@ body {
   color: rgb(var(--foreground-rgb));
   background: var(--body-bg);
 }
+
+.condensed {font-family: var(--font-roboto-condensed);}
