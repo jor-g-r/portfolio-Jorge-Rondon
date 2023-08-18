@@ -1,47 +1,37 @@
 import { motion, useScroll } from "framer-motion"
 
 interface IconArrowDownProps {
-  
+  isHovered: boolean;
 }
 
-const IconArrowDown: React.FC<IconArrowDownProps> = () => {
-  const { scrollYProgress } = useScroll();
+const IconArrowDown: React.FC<IconArrowDownProps> = ({isHovered}) => {
   return (
     <>
   
-        <motion.svg 
-        
-        
-        xmlns="http://www.w3.org/2000/svg" width="49" height="61" viewBox="0 0 49 61" fill="none"
-        
-        
-        >
+        <motion.svg  xmlns="http://www.w3.org/2000/svg" width="49" height="61" viewBox="0 0 49 61" fill="none">
     
     
-    <g filter="url(#filter0_d_327_27)">
+    <g filter=" ">
 
        <motion.path d="M23.2256 2.99431L23.2256 54.5698" 
         strokeWidth="2" stroke-linejoin="round"
         
-        initial={{ y: -320, stroke: "#FFFFFF" }}
+        initial={{ y: 330, stroke: "#FFFFFF" }}
         animate={{
-          
-          y: 1,
-          stroke: "#FFA216",
-          
+          y: isHovered ? 1 : -15,
+          stroke: isHovered ? "#FFA216" : "#FFFFFF",
         }}
-        transition={{ scrollYProgress, damping: 10, duration: 1 }}
+        transition={{ damping: 10, duration: 1.1 }} 
         />
 
         <motion.path d="M43.4416 28.7968L23.2167 54.57L2.99192 28.7968" 
         strokeWidth="2"
-        initial={{ y: -320, stroke: "#FFFFFF" }}
+        initial={{ y: 330, stroke: "#FFFFFF" }}
         animate={{
-          y: 1,
-          stroke: "#FFA216",
-          
+          y: isHovered ? 1 : -15,
+          stroke: isHovered ? "#FFA216" : "#FFFFFF",
         }}
-        transition={{ scrollYProgress, damping: 10, duration: 1}}
+        transition={{ damping: 10, duration: 1.1 }} 
         
         />
     </g>

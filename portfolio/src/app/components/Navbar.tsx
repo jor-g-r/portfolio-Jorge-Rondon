@@ -5,6 +5,25 @@ interface NavbarProps {
   theme: 'light' | 'dark';
 }
 
+interface NavbarBtnProps {
+  href: string;
+  title: string;
+  className?: string;
+}
+
+
+const NavbarBtn: React.FC<NavbarBtnProps> = ({href, title}) => {
+  return (
+    <Link href={href} className='group relative'>
+        {title}
+      <span className='h-[1px] w-0  bg-white-100 absolute left-0 -bottom-0.5
+      group-hover:w-full transition-all ease-in-out duration-500'>
+        &nbsp;
+      </span>
+    </Link>
+  )
+}
+
 const Navbar: React.FC<NavbarProps> = (props) => {
   
 
@@ -22,12 +41,12 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             </div>
             
             <div className="lg:w-2/3 w-4/5 max-w-xl">
-              <ul className='flex justify-between pt-1'>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#backgrounds">Backgrounds</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a className='bg-white-100 text-dark-600 px-4 py-1 rounded-sm' href="#">Contact</a></li>
+              <ul className='flex justify-between gap-3 pt-1'>
+                <li><NavbarBtn title='About Me' href="#about"  /></li>
+                <li><NavbarBtn title='Projects' href="#projects"  /></li>
+                <li><NavbarBtn title='Backgrounds' href="#backgrounds " /></li>
+                <li><NavbarBtn title='Experience' href="#experience"  /></li>
+                <li><NavbarBtn className='bg-white-100 text-dark-600 px-4 py-1 rounded-sm' title='Contact' href="#" /></li>
               </ul>
             </div>
 

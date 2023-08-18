@@ -1,5 +1,5 @@
 "use client"; 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { animateScroll } from 'react-scroll';
 import { motion } from 'framer-motion';
 
@@ -10,7 +10,7 @@ import IconDownload from '../icons/IconDownload';
 
 
 export default function Hero () {
-    
+    const [isHovered, setIsHovered] = useState(false);  
   
     return(
         <>
@@ -40,20 +40,19 @@ export default function Hero () {
                        
                     </div>
 
-                    <div className="flex align w-2/3 absolute bottom-14 gap-8">
+                    <div className="flex align w-2/3 absolute bottom-14 gap-8"
+                         onMouseEnter={() => setIsHovered(true)}
+                         onMouseLeave={() => setIsHovered(false)}
+                    >
                         <div className="self-end pb-3">
-
-
-
-
-                    <IconArrowDown />
-                    </div>
-      <div className="text-xl tracking-tight leading-10">
-        <p>Experienced Web Developer with strong UI/UX skills.</p>
-        <p>Skilled in CMS and WordPress environments.</p>
-        <p>Passionate about new technologies and a fan of hands-on learning.</p>
-      </div>
-    </div>   
+                            <IconArrowDown isHovered={isHovered}/>
+                        </div>
+                        <div className="text-xl tracking-tight leading-10 cursor-default">
+                            <p>Experienced Web Developer with strong UI/UX skills.</p>
+                            <p>Skilled in CMS and WordPress environments.</p>
+                            <p>Passionate about new technologies and a fan of hands-on learning.</p>
+                        </div>
+                    </div>   
                         
 
 
