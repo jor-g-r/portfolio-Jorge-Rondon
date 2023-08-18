@@ -1,3 +1,4 @@
+"use client"; 
 import { motion } from 'framer-motion';
 import IconArrowDown from '../icons/IconArrowDownn';
 import IconDownload from '../icons/IconDownload';
@@ -5,8 +6,6 @@ import IconDownload from '../icons/IconDownload';
 
 
 export default function Hero () {
-  
-
   
     return(
         <>
@@ -18,12 +17,10 @@ export default function Hero () {
                 <div className="relative flex flex-col justify-center  h-full">
 
                     <div className="text-center condensed  pb-56">
-                        <motion.h1 className='text-8xl font-bold'
-                            initial={{ opacity: 0, y: -20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: 20 }}
-                            transition={{ duration: 0.5 }}
-                        >
+                        <motion.h1 className="text-8xl font-bold"
+                            initial={{ y: 0 }} 
+                            animate={{ y: [0, 5, 0], rotate: [0, -1, 0] }}
+                            transition={{ duration: 8, repeat: Infinity, repeatType: 'reverse' }} >
                             Frontend Developer
                         </motion.h1>
                         <h3 className='text-3xl text-primary pt-2 pb-4'>
@@ -35,11 +32,18 @@ export default function Hero () {
                                 <IconDownload />
                             </span>
                         </button>
+                       
                     </div>
 
-                    <div className="flex align w-2/3 absolute bottom-14 gap-8">
+                    <motion.div className="flex align w-2/3 absolute bottom-14 gap-8"
+                    whileHover={{
+                        scaleY: 1.1,
+                      }}
+                    >
                         <div className="self-end pb-3">
-                            <IconArrowDown />
+                            <IconArrowDown 
+                                
+                            />
                         </div>
                         <div className="text-xl tracking-tight leading-10">
                             <p>Experienced Web Developer with strong UI/UX skills.</p>
@@ -48,7 +52,7 @@ export default function Hero () {
                             
                         </div>
 
-                    </div>
+                    </motion.div>
 
                 </div>
                
