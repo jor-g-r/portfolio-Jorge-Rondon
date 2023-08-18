@@ -1,40 +1,49 @@
-
-import { SVGAttributes } from 'react'
-import { motion, TargetAndTransition } from 'framer-motion';
+import { motion, useScroll } from "framer-motion"
 
 interface IconArrowDownProps {
-  animate?: TargetAndTransition;
+  
 }
 
-const IconArrowDown: React.FC<IconArrowDownProps> = ({ animate }) => { 
-
+const IconArrowDown: React.FC<IconArrowDownProps> = () => {
+  const { scrollYProgress } = useScroll();
   return (
     <>
-   
- <motion.svg 
-     width="49"
-     height="61"
-     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49 61" fill="none">
+  
+        <motion.svg 
+        
+        
+        xmlns="http://www.w3.org/2000/svg" width="49" height="61" viewBox="0 0 49 61" fill="none"
+        
+        
+        >
     
     
     <g filter="url(#filter0_d_327_27)">
 
-       <motion.path 
-       d="M23.2256 2.99431L23.2256 54.5698"
-       stroke="#FFA216"
-       strokeWidth="2"
-       strokeLinejoin="round"
-       initial={{ scaleY: 1 }}
-       animate={animate} 
-       transition={{ duration: 0.3 }}  />
+       <motion.path d="M23.2256 2.99431L23.2256 54.5698" 
+        strokeWidth="2" stroke-linejoin="round"
+        
+        initial={{ y: -320, stroke: "#FFFFFF" }}
+        animate={{
+          
+          y: 1,
+          stroke: "#FFA216",
+          
+        }}
+        transition={{ scrollYProgress, damping: 10, duration: 1 }}
+        />
 
-        <motion.path 
-         d="M43.4416 28.7968L23.2167 54.57L2.99192 28.7968"
-         stroke="#FFA216"
-         strokeWidth="2"
-         initial={{ translateY: 0 }}
-         animate={animate} 
-         transition={{ duration: 0.3 }}  />
+        <motion.path d="M43.4416 28.7968L23.2167 54.57L2.99192 28.7968" 
+        strokeWidth="2"
+        initial={{ y: -320, stroke: "#FFFFFF" }}
+        animate={{
+          y: 1,
+          stroke: "#FFA216",
+          
+        }}
+        transition={{ scrollYProgress, damping: 10, duration: 1}}
+        
+        />
     </g>
   <defs>
     <filter id="filter0_d_327_27" x="0.2052" y="0.994308" width="48.0231" height="59.1955" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
@@ -48,12 +57,10 @@ const IconArrowDown: React.FC<IconArrowDownProps> = ({ animate }) => {
       <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_327_27" result="shape"/>
     </filter>
   </defs>
- </motion.svg>
-
-
-
+</motion.svg>
+      
     </>
-  )
-}
+  );
+};
 
 export default IconArrowDown;
