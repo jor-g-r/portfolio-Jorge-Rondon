@@ -12,7 +12,7 @@ const roboto_condensed = Roboto_Condensed({
   subsets: ['latin'],
   variable: '--font-roboto-condensed',
   display: 'swap',
-  weight: '400'
+  weight: ['400', '700']
 })
 
 export const metadata: Metadata = {

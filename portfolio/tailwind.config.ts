@@ -1,6 +1,10 @@
+import type { Config } from 'tailwindcss'
+
 const plugin = require('tailwindcss/plugin');
 
-import type { Config } from 'tailwindcss'
+
+
+
 
 const config: Config = {
   content: [
@@ -36,7 +40,7 @@ const config: Config = {
       },
       backgroundImage: {
         'gradient-linear-dark': 'var(--body-bg)',
-        'hero-bg': 'url("./src/app/img/hero-bg-jorge-rondon.jpg")'
+       
       },
     },
   },

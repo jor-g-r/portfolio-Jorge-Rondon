@@ -21,12 +21,12 @@ const Navbar: React.FC<NavbarProps> = (props) => {
               </h5>
             </div>
             
-            <div className="lg:w-2/3 w-4/5 max-w-2xl">
+            <div className="lg:w-2/3 w-4/5 max-w-xl">
               <ul className='flex justify-between pt-1'>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Backgrounds</a></li>
-                <li><a href="#">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#backgrounds">Backgrounds</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a className='bg-white-100 text-dark-600 px-4 py-1 rounded-sm' href="#">Contact</a></li>
               </ul>
             </div>
