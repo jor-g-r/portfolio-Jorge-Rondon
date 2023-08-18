@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import { motion } from 'framer-motion';
 import IconArrowDown from '../icons/IconArrowDownn';
 import IconDownload from '../icons/IconDownload';
 
@@ -18,9 +18,14 @@ export default function Hero () {
                 <div className="relative flex flex-col justify-center  h-full">
 
                     <div className="text-center condensed  pb-56">
-                        <h1 className='text-8xl font-bold'>
+                        <motion.h1 className='text-8xl font-bold'
+                            initial={{ opacity: 0, y: -20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            exit={{ opacity: 0, y: 20 }}
+                            transition={{ duration: 0.5 }}
+                        >
                             Frontend Developer
-                        </h1>
+                        </motion.h1>
                         <h3 className='text-3xl text-primary pt-2 pb-4'>
                             Jorge Rondón
                         </h3>
