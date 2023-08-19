@@ -21,7 +21,7 @@ const IconArrowDown: React.FC<IconArrowDownProps> = ({isHovered}) => {
           y: isHovered ? 1 : -15,
           stroke: isHovered ? "#FFA216" : "#FFFFFF",
         }}
-        transition={{ damping: 10, duration: 1.1 }} 
+        transition={{ damping: 10, duration: 1 }} 
         />
 
         <motion.path d="M43.4416 28.7968L23.2167 54.57L2.99192 28.7968" 
@@ -31,7 +31,7 @@ const IconArrowDown: React.FC<IconArrowDownProps> = ({isHovered}) => {
           y: isHovered ? 1 : -15,
           stroke: isHovered ? "#FFA216" : "#FFFFFF",
         }}
-        transition={{ damping: 10, duration: 1.1 }} 
+        transition={{ damping: 10, duration: 1 }} 
         
         />
     </g>

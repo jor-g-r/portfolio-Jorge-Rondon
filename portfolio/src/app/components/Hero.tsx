@@ -1,7 +1,7 @@
 "use client"; 
-import { useState } from 'react';
-import { animateScroll } from 'react-scroll';
-import { motion } from 'framer-motion';
+import { useState} from 'react';
+import { motion, useScroll } from 'framer-motion';
+
 
 
 import IconArrowDown from '../icons/IconArrowDownn';
@@ -10,11 +10,12 @@ import IconDownload from '../icons/IconDownload';
 
 
 export default function Hero () {
-    const [isHovered, setIsHovered] = useState(false);  
-  
+    const [isHovered, setIsHovered] = useState(false); 
+    
+    const { scrollYProgress } = useScroll();
     return(
         <>
-         <section className="h-[86vh] hero-bg border-b border-solid border-dark-500" id='hero' onMouseEnter={() => animateScroll.scrollToBottom()}>
+         <section className="h-[89vh] hero-bg border-b border-solid border-dark-500" id='hero'>
 
             <div className="container mx-auto lg:px-16 h-full">
                 
@@ -61,8 +62,19 @@ export default function Hero () {
             </div>
     
         </section>
-        <div className="w-full min-h-[44px] border-b border-solid border-dark-500">
+        <div  className="w-full min-h-[44px] border-b border-solid border-dark-500 overflow-hidden flex items-center">  
 
+          
+                
+            <motion.h4 
+            className='m-auto text-dark-400 font-light text-xl tracking-[14px] uppercase'
+            style={{
+                opacity: scrollYProgress,
+                transition: 'opacity 0.125s ease-in-out',
+              }}>
+                   Web Design & Web Development
+            </motion.h4>
+         
         </div>
         </>
     );

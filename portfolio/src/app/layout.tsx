@@ -6,7 +6,7 @@ const roboto = Roboto({
   subsets: ['latin'],
   variable: '--font-roboto',
   display: 'swap',
-  weight: '400'
+  weight: ['400', '100']
 })
 const roboto_condensed = Roboto_Condensed({
   subsets: ['latin'],
