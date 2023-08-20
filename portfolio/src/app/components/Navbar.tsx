@@ -43,11 +43,11 @@ const Navbar: React.FC<NavbarProps> = (props) => {
 
   return (
     <>
-      <nav className={`w-full md:px-7 z-40 bg-dark-900 shadow-nav-shadow sticky top-0`}>
+      <nav className={`w-full md:px-7 z-40 bg-dark-900 bg-opacity-95 backdrop-blur-sm shadow-nav-shadow sticky top-0`}>
         <div className="container mx-auto">
 
           
-          <motion.div className=" flex flex-col lg:flex-row justify-between lg:items-center px-10 lg:px-16  py-3  transition-transform duration-500 ease-in "
+          <motion.div className=" flex flex-col lg:flex-row justify-between lg:items-center px-7 lg:px-16  py-3  transition-transform duration-500 ease-in "
           
           
           >  {/* Este contenedor */}

@@ -185,3 +185,32 @@ body {
     right: 0;
   }
 }
+
+
+/* About */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.description::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.075);
+}
+
+/* Handle */
+.description::-webkit-scrollbar-thumb {
+  border-radius: 1.6px;
+  background: rgba(255, 162, 22, 0.45);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: .75px;
+  background: rgba(255, 255, 255, 0.533);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 162, 22, 0.60);
+}

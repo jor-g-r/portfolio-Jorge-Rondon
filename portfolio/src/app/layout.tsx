@@ -6,7 +6,7 @@ const roboto = Roboto({
   subsets: ['latin'],
   variable: '--font-roboto',
   display: 'swap',
-  weight: ['400', '100']
+  weight: ['100', '400', '500']
 })
 const roboto_condensed = Roboto_Condensed({
   subsets: ['latin'],
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${roboto.variable} ${roboto_condensed.variable}`}>
+    <html lang="en" className={`${roboto.variable} ${roboto_condensed.variable} bg-dark-600`}>
       <body className={`${roboto.className} gradient-linear-dark`}>{children}</body>
     </html>
   )
