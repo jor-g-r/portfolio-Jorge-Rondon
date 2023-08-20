@@ -14,9 +14,12 @@ export default function Home() {
         <Navbar title="Testing" theme="light" />
         {/* }
         
-        <Hero />
+       
         
         {*/}
+
+        <Hero />
+
         <About />
         
     </main>

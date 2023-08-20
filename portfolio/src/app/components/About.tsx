@@ -1,19 +1,23 @@
 
+import Image from 'next/image'
+import jorgeImage from '../img/JorgeRondonFrontend.png'
 
 export default function About () {
 
+    const aboutImage = jorgeImage
 
     return (
         <>
-        <section className="border-b border-solid border-dark-500 ">
-            <div className="container mx-auto px-8 lg:px-[68px]">
+        <section className="border-b border-solid border-dark-500 " id='about'>
+            <div className="container mx-auto px-8 lg:px-[68px] pt-20">
 
-                <div className="flex flex-col items-center lg:items-start md:flex-row py-12 lg:py-16">
+                <div className="flex flex-col items-center lg:items-start md:flex-row ">
 
-                        <div className="w-full lg:max-w-[44%]">
-                            <h2 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide">About</h2>
+                        <div className="w-full lg:max-w-[762px]">
+                            <h2 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide pt-4">About</h2>
 
-                            <div className="description max-h-72 my-4 flex flex-col gap-6 p-6 overflow-y-scroll bg-dark-900 bg-opacity-60 text-white-100 text-justify leading-[26.7px]">
+                            <div className="description max-h-72 mt-7 mb-14 flex flex-col gap-6 p-6 overflow-y-scroll 
+                                          bg-dark-900 shadow-inner bg-opacity-60 text-white-100 text-justify leading-[26.7px]">
                                 <p>
                                 With over 6 years of experience in the tech industry, 
                                 I am a self-taught Front-End Developer 2 two years  of experience with a strong background in UI design. 
@@ -35,7 +39,15 @@ export default function About () {
                                 </p>
                             </div>
                         </div>
-                        <div className=""></div>
+                        <div className="pl-12 lg:px-16 self-baseline">
+                            <Image 
+                            
+                            src={aboutImage}
+                            width={500}
+                            height={500}
+                            alt="Picture of the author"
+                            />
+                        </div>
                         
                 </div>
 
