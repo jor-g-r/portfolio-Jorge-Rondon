@@ -1,5 +1,5 @@
 "use client";
-import {useState} from 'react';
+import {useState, useRef } from 'react';
 import Link from 'next/link';
 import {motion} from 'framer-motion';
 
@@ -39,9 +39,11 @@ const Navbar: React.FC<NavbarProps> = (props) => {
     setIsNavVisible((prevState) => !prevState);
   };
 
+  
+
   return (
     <>
-      <nav className={`w-full md:px-7 z-40 bg-dark-900 shadow-nav-shadow`}>
+      <nav className={`w-full md:px-7 z-40 bg-dark-900 shadow-nav-shadow sticky top-0`}>
         <div className="container mx-auto">
 
           
@@ -56,7 +58,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                 <h5 className={`group lg:text-sm text-lg font-bold ease-in duration-500 text-dark-900 bg-white-100 
                               hover:bg-yellow-400 h-14 w-14  lg:h-10 lg:w-10 pr-[6px] p-1 flex items-end justify-end rounded tracking-tighter`}>
                   J 
-                  <span className='group-hover:hidden group-hover:opacity-0 ease-in transition-opacity duration-500'>F</span>
+                  <span className='group-hover:hidden group-hover:opacity-0 ease-in duration-500'>F</span>
                   <span className='hidden group-hover:block opacity-0 group-hover:opacity-100 ease-in duration-500'>S</span>
                 </h5>
               </div>
@@ -88,14 +90,10 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             
             <div className="lg:w-2/3 w-4/5 max-w-xl">
               <motion.ul className={`lg:flex  flex-col lg:flex-row 
-                              pb-3 lg:pb-0 justify-between lg:gap-3 gap-y-2 pt-6 lg:pt-1 uppercase duration-300 ease-in transition-transform
+                              pb-3 lg:pb-0 justify-between lg:gap-3 gap-y-2 pt-6 lg:pt-1 uppercase lg:capitalize duration-300 ease-in transition-transform
                               ${ isNavVisible ? 'pt-6 flex   ' : 'pt-0 hidden' }`}
                                 
-                                initial={{ opacity: 0, maxHeight: 1 }} // Estado inicial (oculto)
-                                animate={{
-                                  opacity: isNavVisible ? 1 : 0,
-                                  maxHeight: isNavVisible ? 600 : 0, // Altura máxima cuando es visible
-                                }}
+                                
                                 transition={{ duration: .3, ease: "easeIn" }} // Configuración de la transición
                                >
 
@@ -107,6 +105,10 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                   <Link className='bg-white-100 text-dark-600 px-4  py-1 rounded-sm hover:bg-primary duration-300 ease-in' href="#">Contact</Link>
                 </li>
               </motion.ul>
+
+                              
+
+              
             </div>
 
 
