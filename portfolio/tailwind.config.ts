@@ -38,10 +38,14 @@ const config: Config = {
             400: "#656565",
           }
       },
-      backgroundImage: {
+      backgroundImage: (theme) =>({
         'gradient-linear-dark': 'var(--body-bg)',
-        'circular-orange' : 'background: repeating-radial-gradient(#FFA216 2px, transparent 3px 20%);'
-      },
+        'circular-orange-lg' : 'repeating-radial-gradient(rgba(255, 162, 22, .42)2px, transparent 3px 10%);',
+        'circular-orange' : 'repeating-radial-gradient(rgba(255, 162, 22, .42)2px, transparent 3px 12%);',
+      }),
+      height: {
+        'screen-2/3': '45vh'
+      }
     },
   },
   plugins: [],
