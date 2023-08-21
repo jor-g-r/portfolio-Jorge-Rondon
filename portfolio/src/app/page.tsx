@@ -2,6 +2,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
+import Skills from './components/Skills'
 
 export default function Home() {
 
@@ -14,13 +15,13 @@ export default function Home() {
         <Navbar title="Testing" theme="light" />
         {/* }
         
-       
-        
-        {*/}
-
-        <Hero />
+       <Hero />
 
         <About />
+        
+      {*/}
+
+        <Skills />
         
     </main>
   )

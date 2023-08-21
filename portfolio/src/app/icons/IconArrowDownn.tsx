@@ -16,10 +16,10 @@ const IconArrowDown: React.FC<IconArrowDownProps> = ({isHovered}) => {
        <motion.path d="M23.2256 2.99431L23.2256 54.5698" 
         strokeWidth="2" stroke-linejoin="round"
         
-        initial={{ y: 330, stroke: "#FFFFFF" }}
+        initial={{ y: 330, stroke: "#FFFFFF", pathLength: 0 }}
         animate={{
           y: isHovered ? 1 : -15,
-          stroke: isHovered ? "#FFA216" : "#FFFFFF",
+          stroke: isHovered ? "#FFA216" : "#FFFFFF", pathLength: 1
         }}
         transition={{ damping: 10, duration: 1 }} 
         />

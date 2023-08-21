@@ -40,7 +40,7 @@ const config: Config = {
       },
       backgroundImage: {
         'gradient-linear-dark': 'var(--body-bg)',
-       
+        'circular-orange' : 'background: repeating-radial-gradient(#FFA216 2px, transparent 3px 20%);'
       },
     },
   },

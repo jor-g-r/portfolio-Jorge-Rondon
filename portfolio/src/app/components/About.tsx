@@ -16,7 +16,7 @@ export default function About () {
                         <div className="w-full lg:max-w-[762px]">
                             <h2 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide pt-4">About</h2>
 
-                            <div className="description max-h-72 mt-7 mb-14 flex flex-col gap-6 p-6 overflow-y-scroll 
+                            <div className="description max-h-72 mt-7 mb-7 flex flex-col gap-6 p-6 overflow-y-scroll 
                                           bg-dark-900 shadow-inner bg-opacity-60 text-white-100 text-justify leading-[26.7px]">
                                 <p>
                                 With over 6 years of experience in the tech industry, 

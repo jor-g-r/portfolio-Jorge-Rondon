@@ -24,7 +24,7 @@ export default function Hero () {
 
                     <div className="text-center condensed  pb-56">
                         <motion.h1 className="lg:text-8xl text-7xl font-bold"
-                            initial={{ y: 0,  }} 
+                            initial={{ y: 0 }} 
                             animate={{ y: [0, 5, 0], rotate: [0, -1, 0] }}
                             transition={{ duration: 8, repeat: Infinity, repeatType: 'reverse' }} >
                             Frontend Developer
