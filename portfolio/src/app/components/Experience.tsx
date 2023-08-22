@@ -25,24 +25,24 @@ const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, positio
     const sanitizedDescription = DOMPurify.sanitize(description)
     return (
         <>
-            <li className="w-full max-w-[642px] border-solid border border-white-100 py-6 px-7">
-                               <div className="flex gap-4 pb-3">
+            <li className="w-full max-w-[642px] border-solid border border-white-100 py-5 lg:py-6 px-4 lg:px-7">
+                               <div className="flex gap-4 pb-3 items-center">
                                   <a className="" href={siteUrl} target='_blank'>
-                                    <Image className='rounded-md'
-                                           height={54} 
+                                    <Image className='rounded-md w-full max-h-[67px] lg:max-h-[52px]'
+                                           height={72}
                                            src={logo}  
                                            alt="company logo"/>
                                   </a>
 
                                   <div className="text-2xl">
                                     <h3 className="font-bold">{company}</h3>
-                                    <div className="flex gap-2 text-sm text-white-500">
-                                        <h5>{position}</h5> <span>|</span> <p>{time}</p>
+                                    <div className="flex flex-col lg:flex-row gap-x-2 text-sm text-white-500 capitalize">
+                                        <h5 className='uppercase condensed text-white-300'>{position}</h5> <span className='hidden lg:block'>|</span> <p>{time}</p>
                                     </div>    
                                   </div>
                                </div>
 
-                               <div className='leading-7'>
+                               <div className='leading-7 text-justify'>
                                     <div dangerouslySetInnerHTML={{ __html: sanitizedDescription}}></div>
                                </div>
                         </li>
@@ -70,7 +70,7 @@ const Experience = () => {
               
 
                 <div className="relative mx-auto">
-                    <ul className="">
+                    <ul className=" flex flex-col gap-16">
 
                         <WorkDetails 
                         company='WYN Solutions'
@@ -84,6 +84,39 @@ const Experience = () => {
                                      My responsibilities included overseeing the performance of these landing 
                                      pages and ensuring smooth process executions.`}  
                         />
+
+                        <WorkDetails 
+                        company='FrontPorch Solutions'
+                        logo={logo.fps}
+                        siteUrl='https://www.frontporchsolutions.com/'
+                        position='QA Developer'
+                        time='august 2021 - october 2022'
+                        description={`With my background in UI/UX design, I bring a unique perspective to my role as 
+                                      a functionality tester. I ensure high standards of visual accuracy from Figma 
+                                      projects and also serve as a backup front-end developer utilizing, css, PHP or Next.js.`}  
+                        />
+
+                        <WorkDetails 
+                        company='ImageID'
+                        logo={logo.imageID}
+                        siteUrl='https://imageid.com.co/'
+                        position='Webmaster'
+                        time='april 2021 - august 2021'
+                        description={`As a webmaster at ImageID, one of the largest marketing agencies in Colombia, I was responsible 
+                                      for managing multiple websites using WordPress as the CMS, primarily through builders such as Elementor, 
+                                      WPBakery, and Beaver Builder. I also had experience in managing e-commerce databases.`}  
+                        />
+
+                        <WorkDetails 
+                        company='Chattanooga Web Design'
+                        logo={logo.cwd}
+                        siteUrl='https://imageid.com.co/'
+                        position='Webmaster'
+                        time='january 2021 - april 2021'
+                        description={`As the webmaster at a marketing agency in Chattanooga, TN, I specialize in web development using the Elementor builder, 
+                                      with a focus on achieving high visual standards.`}  
+                        />
+                        
                     </ul>
                 </div>
 
