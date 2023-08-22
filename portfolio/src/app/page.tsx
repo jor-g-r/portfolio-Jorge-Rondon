@@ -16,14 +16,16 @@ export default function Home() {
         <Navbar title="Testing" theme="light" />
         {/* }
         
-       
-        
-      {*/}
+
         <Hero />
 
         <About />
 
         <Skills />
+       
+        
+      {*/}
+        
 
        <Experience />
         
