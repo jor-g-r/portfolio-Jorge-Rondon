@@ -1,16 +1,17 @@
+"use client"; 
 import Image from 'next/image'
+import DOMPurify from "dompurify";
 
 import cwdlogo from '../img/cwd-logo.jpg'
 import imageidlogo from '../img/imageID-logo.jpg'
 import fpslogo from '../img/fps-logo.jpg'
 import wynlogo from '../img/wyn-logo.jpg'
-import { Url } from 'url'
 
 
 
 interface WorkDetailsProps {
     company: string;
-    logo: string;
+    logo: string | any;
     siteUrl: string;
     position: string;
     time: string;
@@ -18,9 +19,10 @@ interface WorkDetailsProps {
 }
 
 
+
 const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, position, time, description}) => {
     
-    
+    const sanitizedDescription = DOMPurify.sanitize(description)
     return (
         <>
             <li className="w-full max-w-[642px] border-solid border border-white-100 py-6 px-7">
@@ -41,7 +43,7 @@ const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, positio
                                </div>
 
                                <div className='leading-7'>
-                                    <p>{description}</p>
+                                    <div dangerouslySetInnerHTML={{ __html: sanitizedDescription}}></div>
                                </div>
                         </li>
         </>
@@ -69,7 +71,19 @@ const Experience = () => {
 
                 <div className="relative mx-auto">
                     <ul className="">
-                        
+
+                        <WorkDetails 
+                        company='WYN Solutions'
+                        logo={logo.wyn}
+                        siteUrl='https://www.wynwithus.com/'
+                        position='Webmaster'
+                        time='december 2022 - may 2023'
+                        description={`As a Webmaster at a specialized marketing agency for car dealerships, 
+                                     I played a crucial role in managing and creating landing pages across 
+                                     multiple websites for various stores throughout the USA. <br /><br />
+                                     My responsibilities included overseeing the performance of these landing 
+                                     pages and ensuring smooth process executions.`}  
+                        />
                     </ul>
                 </div>
 
