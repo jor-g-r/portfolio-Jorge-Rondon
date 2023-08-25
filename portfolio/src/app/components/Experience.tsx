@@ -92,7 +92,7 @@ const Experience = () => {
                         time='august 2021 - october 2022'
                         description={`With my background in UI/UX design, I bring a unique perspective to my role as 
                                       a functionality tester. I ensure high standards of visual accuracy from Figma 
-                                      projects and also serve as a backup front-end developer utilizing, css, PHP or Next.js.`}  
+                                      projects and also serve as a backup front-end developer utilizing, css, PHP and or Next.js.`}  
                         />
 
                         <WorkDetails 
