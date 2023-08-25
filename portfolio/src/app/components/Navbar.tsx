@@ -56,7 +56,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             <div className="flex justify-between">
               <div className="cursor-default">
                 <h5 className={`group lg:text-sm text-lg font-bold ease-in duration-500 text-dark-900 bg-white-100 
-                              hover:bg-yellow-400 h-14 w-14  lg:h-10 lg:w-10 pr-[6px] p-1 flex items-end justify-end rounded tracking-tighter`}>
+                              hover:bg-yellow-400 h-12 w-12  lg:h-10 lg:w-10 pr-[6px] p-1 flex items-end justify-end rounded tracking-tighter`}>
                   J 
                   <span className='group-hover:hidden group-hover:opacity-0 ease-in duration-500'>F</span>
                   <span className='hidden group-hover:block opacity-0 group-hover:opacity-100 ease-in duration-500'>S</span>
@@ -65,19 +65,19 @@ const Navbar: React.FC<NavbarProps> = (props) => {
 
 
               <div className="lg:hidden">
-                  <div className= {`w-24 items-center justify-center ${menuOpen ? 'active' : ''} `}
+                  <div className= {`w-20 items-center justify-center ${menuOpen ? 'active' : ''} `}
                                   onClick={toggleNav}>
 
-                    <div className={`group flex h-14 w-14 cursor-pointer float-right items-center justify-center rounded border 
+                    <div className={`group flex h-12 w-12 cursor-pointer float-right items-center justify-center rounded border 
                                    border-dark-600 bg-white p-2  hover:bg-dark-900 ${ menuOpen ? 'border-dark-400' : ''}`} 
                                     onClick={() => setMenuOpen(!menuOpen)} >
                       <div className="space-y-2">
-                        <span className={`block h-0.5 w-9 origin-center bg-white-300 transition-transform duration-500 ease-in-out 
+                        <span className={`block h-0.5 w-8 origin-center bg-white-300 transition-transform duration-500 ease-in-out 
                                           ${ menuOpen ? 'translate-y-[5px] rotate-45' : ' ' }
                                           `}>
                         </span>
                         <span className={`block h-0.5  origin-center bg-orange-500 transition-transform duration-500 ease-in-out 
-                                          ${ menuOpen ? 'w-9 -translate-y-[5.1px] -rotate-45' : 'w-7' }
+                                          ${ menuOpen ? 'w-8 -translate-y-[5.1px] -rotate-45' : 'w-6' }
                                           `}>
                         </span>
                       </div>

@@ -1,5 +1,6 @@
 "use client"; 
 import Image from 'next/image'
+import {motion, useScroll} from 'framer-motion'
 
 import cwdlogo from '../img/cwd-logo.jpg'
 import imageidlogo from '../img/imageID-logo.jpg'
@@ -34,14 +35,15 @@ const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, positio
                                   </a>
 
                                   <div className="text-2xl">
-                                    <h3 className="font-bold">{company}</h3>
-                                    <div className="flex flex-col lg:flex-row gap-x-2 text-sm text-white-500 capitalize">
-                                        <h5 className='uppercase condensed text-white-300'>{position}</h5> <span className='hidden lg:block'>|</span> <p>{time}</p>
+                                    <h3 className="font-bold text-base md:text-lg">{company}</h3>
+                                    <div className="flex flex-col lg:flex-row gap-x-2 text-xs md:text-md text-white-500 capitalize">
+                                        <h5 className='uppercase condensed text-white-300'>{position}</h5> 
+                                        <span className='hidden lg:block'>|</span> <p>{time}</p>
                                     </div>    
                                   </div>
                                </div>
 
-                               <div className='leading-7 text-justify'>
+                               <div className='leading-5 lg:leading-7 text-xs md:text-md lg:text-base text-justify'>
                                     <div>{description}</div>
                                </div>
                         </li>
@@ -69,7 +71,9 @@ const Experience = () => {
               
 
                 <div className="relative mx-auto">
-                    <ul className=" flex flex-col gap-16">
+
+                    <div className="absolute lg:left-[2%] xl:left-[18%] top-0 w-[2px] h-full bg-white-200 origin-top" />
+                    <ul className=" flex flex-col gap-16 lg:gap-20 items-center pt-12 pl-[12%] lg:pl-[5%]">
 
                         <WorkDetails 
                         company='WYN Solutions'
