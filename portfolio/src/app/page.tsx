@@ -12,21 +12,21 @@ export default function Home() {
 
 
   return (
-    <main className='h-[3200px]'>
+    <main className='h- [3200px]'>
         <Navbar title="Testing" theme="light" />
         {/* }
         
 
-     
-       
-        
-      {*/}
-
-<Hero />
+      <Hero />
 
 <About />
 
 <Skills />
+       
+        
+      {*/}
+
+
         
 
        <Experience />

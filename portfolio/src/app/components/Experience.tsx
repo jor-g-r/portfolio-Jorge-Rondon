@@ -1,6 +1,5 @@
 "use client"; 
 import Image from 'next/image'
-import DOMPurify from "dompurify";
 
 import cwdlogo from '../img/cwd-logo.jpg'
 import imageidlogo from '../img/imageID-logo.jpg'
@@ -22,7 +21,7 @@ interface WorkDetailsProps {
 
 const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, position, time, description}) => {
     
-    const sanitizedDescription = DOMPurify.sanitize(description)
+
     return (
         <>
             <li className="w-full max-w-[642px] border-solid border border-white-100 py-5 lg:py-6 px-4 lg:px-7">
@@ -43,7 +42,7 @@ const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, positio
                                </div>
 
                                <div className='leading-7 text-justify'>
-                                    <div dangerouslySetInnerHTML={{ __html: sanitizedDescription}}></div>
+                                    <div>{description}</div>
                                </div>
                         </li>
         </>
@@ -80,7 +79,7 @@ const Experience = () => {
                         time='december 2022 - may 2023'
                         description={`As a Webmaster at a specialized marketing agency for car dealerships, 
                                      I played a crucial role in managing and creating landing pages across 
-                                     multiple websites for various stores throughout the USA. <br /><br />
+                                     multiple websites for various stores throughout the USA.
                                      My responsibilities included overseeing the performance of these landing 
                                      pages and ensuring smooth process executions.`}  
                         />
