@@ -1,11 +1,13 @@
 "use client"; 
 import Image from 'next/image'
 import {motion, useScroll} from 'framer-motion'
+import {useRef} from 'react'
 
 import cwdlogo from '../img/cwd-logo.jpg'
 import imageidlogo from '../img/imageID-logo.jpg'
 import fpslogo from '../img/fps-logo.jpg'
 import wynlogo from '../img/wyn-logo.jpg'
+import IconCircle from '../icons/IconCircle';
 
 
 
@@ -22,10 +24,13 @@ interface WorkDetailsProps {
 
 const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, position, time, description}) => {
     
-
+    const ref = useRef(null);
     return (
         <>
-            <li className="w-full max-w-[642px] border-solid border border-white-100 py-5 lg:py-6 px-4 lg:px-7">
+
+         
+            <li ref={ref} className="w-full max-w-[642px] border-solid border border-white-100 py-5 lg:py-6 px-4 lg:px-7">                               
+            <IconCircle reference={ref} />                  
                                <div className="flex gap-4 pb-3 items-center">
                                   <a className="" href={siteUrl} target='_blank'>
                                     <Image className='rounded-md w-full max-h-[67px] lg:max-h-[52px]'
@@ -46,7 +51,7 @@ const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, positio
                                <div className='leading-5 lg:leading-7 text-xs md:text-md lg:text-base text-justify'>
                                     <div>{description}</div>
                                </div>
-                        </li>
+            </li>
         </>
     )
 }
@@ -59,10 +64,15 @@ const Experience = () => {
         fps: fpslogo,
         wyn: wynlogo
     }
-    
+    const ref = useRef(null);
+    const {scrollYProgress} = useScroll({
+        target: ref,
+        offset: ["start end", "center start"]
+    })
+
     return(
         <>
-        <section className="border-solid border-b border-dark-500 pb-20 lg:pb-16" id="experience">
+        <section className="border-solid border-b border-dark-500 pb-96 lg:p b-16 " id="experience">
             <div className="container mx-auto pt-20 px-8 lg:px-[68px]">
                
                 <div className="pb-6">
@@ -70,10 +80,17 @@ const Experience = () => {
                 </div>
               
 
-                <div className="relative mx-auto">
+                <div ref={ref}  className="relative mx-auto w-full xl:max-w-[824px]">
 
-                    <div className="absolute lg:left-[2%] xl:left-[18%] top-0 w-[2px] h-full bg-white-200 origin-top" />
+                    <motion.div 
+                    
+                    style={{scaleY: scrollYProgress}}
+                    
+                    className="absolute left-0 top-0 w-[2px] h-full bg-white-200 origin-top"/>
+
                     <ul className=" flex flex-col gap-16 lg:gap-20 items-center pt-12 pl-[12%] lg:pl-[5%]">
+
+                  
 
                         <WorkDetails 
                         company='WYN Solutions'
