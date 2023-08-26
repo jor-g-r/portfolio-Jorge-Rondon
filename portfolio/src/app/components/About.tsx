@@ -13,7 +13,7 @@ export default function About () {
 
                 <div className="flex flex-col items-center lg:items-start md:flex-row ">
 
-                        <div className="w-full lg:max-w-[762px]">
+                        <div className="w-full lg:max-w-[762px] pb-14">
                             <h2 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide pt-4">About</h2>
 
                             <div className="description max-h-72 mt-7 mb-7 flex flex-col gap-6 p-6 overflow-y-scroll 
@@ -39,7 +39,7 @@ export default function About () {
                                 </p>
                             </div>
                         </div>
-                        <div className="pl-12 lg:px-16 self-baseline">
+                        <div className="pl-12 lg:px-16 self-end">
                             <Image 
                             
                             src={aboutImage}

@@ -142,7 +142,7 @@ const Experience = () => {
                         <WorkDetails 
                         company='Chattanooga Web Design'
                         logo={logo.cwd}
-                        siteUrl='https://imageid.com.co/'
+                        siteUrl='https://www.chattanoogawebdesign.com/'
                         position='Webmaster'
                         time='january 2021 - april 2021'
                         description={`As the webmaster at a marketing agency in Chattanooga, TN, I specialize in web development using the Elementor builder, 
