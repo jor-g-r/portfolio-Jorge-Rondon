@@ -18,7 +18,7 @@ export default function Home() {
         {/* }
         
 
-     
+      viewport={{once:true}}
         
       {*/}
 
@@ -27,10 +27,12 @@ export default function Home() {
 
       <About />
 
-      <Skills />
+ 
        
 
        <Experience />
+
+       <Skills />
 
        <Certifications />
         

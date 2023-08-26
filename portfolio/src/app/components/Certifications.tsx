@@ -35,22 +35,22 @@ const Certification:React.FC<CertificationProps> = ({CourseName, logo, siteUrl, 
                          initial ={{y:70}}
                          whileInView={{y:0}}
                          transition={{duration: 0.75, type: 'spring'}}       
-                         className="border-solid border flex gap-x-4 border-white-100 py-3 lg:py-4 px-3 lg:px-5"> 
+                         className="border-solid border gap-x-4 grid grid-cols-6 border-white-100 py-3 lg:py-4 px-3 lg:px-5"> 
 
-                                <motion.div className="w-72 pt-1" 
+                                <motion.div className="col-span-1 pt-1" 
 
                                     whileHover={{scale:1.025}}
                                     whileTap={{scale: 0.95}}
                                     transition={{duration: .5}}
                                 >
                                     <a className="" href={siteUrl} target='_blank'>
-                                        <Image className='rounded-md w-full shadow-lg'
+                                        <Image className='rounded-md shadow-lg'
                                            src={logo}  
                                            alt="Course logo"/>
                                     </a>
                                 </motion.div>
 
-                               <div className="flex flex-col pb-3 items-start">
+                               <div className="flex flex-col pb-3 items-start col-span-5">
                                   
 
                                   <div className="text-2xl">
@@ -105,14 +105,14 @@ const Certifications = () => {
                     
                     className="absolute left-0 top-0 w-[1px] h-full bg-primary-700 origin-top"/>
 
-                    <ul className=" flex flex-col gap-8 lg:gap-14 items-center pt-12 pl-[12%] lg:pl-[5%]">
+                    <ul className=" flex flex-col gap-6 lg:gap-12 items-center pt-12 pl-[12%] lg:pl-[5%]">
 
                   
 
                         <Certification 
                         CourseName='Javascript Algorithms & Data structures'
                         logo={logo.FCC}
-                        siteUrl='https://www.wynwithus.com/'
+                        siteUrl='https://www.freecodecamp.org/certification/georgejfrj/javascript-algorithms-and-data-structures'
                      
                         time='19th July 2023'
                         description={`Once I understood the basics, I applied my knowledge by creating algorithms for string manipulation, 
@@ -122,29 +122,63 @@ const Certifications = () => {
 
 
                         <Certification 
-                        CourseName='Javascript Algorithms & Data structures'
-                        logo={logo.FCC}
-                        siteUrl='https://www.wynwithus.com/'
+                        CourseName='Javascript Fundamentals'
+                        logo={logo.solo}
+                        siteUrl='https://www.sololearn.com/Certificate/CT-ANS4JHDJ/pdf'
                      
-                        time='19th July 2023'
-                        description={`Once I understood the basics, I applied my knowledge by creating algorithms for string manipulation, 
-                                      factorializing numbers, and calculating the International Space Station's orbit. During this process, 
-                                      I also grasped two key programming styles: Object-Oriented Programming (OOP) and Functional Programming (FP).`}  
+                        time='21th February 2020'
+                        description={`Mastering JavaScript fundamentals through SoloLearn was transformative. Crafting algorithms, predicting orbits, 
+                                      and continuous challenges sharpened my skills. Basic exposure to OOP and minimal FP. Community-driven, empowering, 
+                                      and immersive platform.`}  
                         />
 
 
 
                         <Certification 
-                        CourseName='Javascript Algorithms & Data structures'
-                        logo={logo.FCC}
-                        siteUrl='https://www.wynwithus.com/'
+                        CourseName='Programming basis'
+                        logo={logo.platzi}
+                        siteUrl='https://platzi.com/p/jorgerondon/curso/1050-course/diploma/detalle/'
                      
-                        time='19th July 2023'
-                        description={`Once I understood the basics, I applied my knowledge by creating algorithms for string manipulation, 
-                                      factorializing numbers, and calculating the International Space Station's orbit. During this process, 
-                                      I also grasped two key programming styles: Object-Oriented Programming (OOP) and Functional Programming (FP).`}  
+                        time='27th November 2019'
+                        description={`Platzi took me from scratch to coding adeptness. I conquered JavaScript, grasped HTML intricacies, and honed algorithmic 
+                                      prowess. It guided me through expert logic, coding fluency, and crafting a complete web game. A highly effective platform 
+                                      for mastering complex concepts. Mastering HTML, CSS, and JavaScript Proficiency in algorithmic design
+                                      Software development using functions, objects, and events Expertise in web game programming`}  
                         />
 
+
+                        <Certification 
+                        CourseName='Responsive Web Design'
+                        logo={logo.FCC}
+                        siteUrl='https://www.freecodecamp.org/certification/georgejfrj/responsive-web-design'
+                     
+                        time='12th September 2019'
+                        description={`This Responsive Web Design Certification by freeCodeCamp introduces essential web development languages: HTML for content 
+                                      and CSS for design. You'll create a cat photo app for HTML/CSS basics, build a penguin using modern CSS variables, and ensure 
+                                      accessibility with a quiz site. Discover responsive design with Flexbox for screen adaptation and CSS Grid for magazine layouts.`}  
+                        />      
+
+                        <Certification 
+                        CourseName='Full CSS Course'
+                        logo={logo.solo}
+                        siteUrl='https://www.sololearn.com/Certificate/CT-OMSJVAQ8/pdf'
+                     
+                        time='26th June 2018'
+                        description={`Explored CSS on SoloLearn, mastering styling techniques. Learned about selectors, properties, and layout tools. Implemented responsive 
+                                      designs with media queries. Built a personal project, honing skills in CSS animations, transitions, and Flexbox layouts. Gained practical 
+                                      CSS expertise through interactive challenges.`}  
+                        />  
+
+                        <Certification 
+                        CourseName='HTML Fundamentals'
+                        logo={logo.solo}
+                        siteUrl='https://www.sololearn.com/Certificate/CT-OMSJVAQ8/pdf'
+                     
+                        time='10th June 2018'
+                        description={`Completed a comprehensive web layout course on SoloLearn, focusing on HTML mastery. Covered essential concepts like semantic tags, forms, 
+                                      and multimedia integration. Built diverse webpage structures, from simple layouts to complex grid systems. Applied learned skills to design 
+                                      and code interactive websites, fostering solid HTML proficiency`}  
+                        />              
                        
                         
                     </ul>
