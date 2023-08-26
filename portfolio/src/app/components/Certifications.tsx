@@ -37,13 +37,18 @@ const Certification:React.FC<CertificationProps> = ({CourseName, logo, siteUrl, 
                          transition={{duration: 0.75, type: 'spring'}}       
                          className="border-solid border flex gap-x-4 border-white-100 py-3 lg:py-4 px-3 lg:px-5"> 
 
-                                <div className="w-72">
+                                <motion.div className="w-72 pt-1" 
+
+                                    whileHover={{scale:1.025}}
+                                    whileTap={{scale: 0.95}}
+                                    transition={{duration: .5}}
+                                >
                                     <a className="" href={siteUrl} target='_blank'>
-                                        <Image className='rounded-md w-full shadow-md hover:shadow-neutral-800 duration-500 ease-in-out'
+                                        <Image className='rounded-md w-full shadow-lg'
                                            src={logo}  
                                            alt="Course logo"/>
                                     </a>
-                                </div>
+                                </motion.div>
 
                                <div className="flex flex-col pb-3 items-start">
                                   
