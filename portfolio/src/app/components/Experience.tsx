@@ -24,13 +24,21 @@ interface WorkDetailsProps {
 
 const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, position, time, description}) => {
     
+    
     const ref = useRef(null);
     return (
         <>
+            
+            
+            <li  className="w-full max-w-[642px]">                               
+            <IconCircle reference={ref} />   
+                    <motion.div 
+                        ref={ref}
+                         initial ={{y:70}}
+                         whileInView={{y:0}}
+                         transition={{duration: 0.75, type: 'spring'}}       
+                        className="border-solid border border-white-100 py-5 lg:py-6 px-4 lg:px-7"> 
 
-         
-            <li ref={ref} className="w-full max-w-[642px] border-solid border border-white-100 py-5 lg:py-6 px-4 lg:px-7">                               
-            <IconCircle reference={ref} />                  
                                <div className="flex gap-4 pb-3 items-center">
                                   <a className="" href={siteUrl} target='_blank'>
                                     <Image className='rounded-md w-full max-h-[67px] lg:max-h-[52px]'
@@ -51,6 +59,7 @@ const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, positio
                                <div className='leading-5 lg:leading-7 text-xs md:text-md lg:text-base text-justify'>
                                     <div>{description}</div>
                                </div>
+                    </motion.div>     
             </li>
         </>
     )
@@ -82,13 +91,16 @@ const Experience = () => {
 
                 <div ref={ref}  className="relative mx-auto w-full xl:max-w-[824px]">
 
+
+                    <div className="absolute animate-pulse left-0 top-0 w-[1px] h-full bg-white-400 opacity-80 origin-top"/>
+
                     <motion.div 
                     
                     style={{scaleY: scrollYProgress}}
                     
-                    className="absolute left-0 top-0 w-[2px] h-full bg-white-200 origin-top"/>
+                    className="absolute left-0 top-0 w-[1px] h-full bg-primary-700 origin-top"/>
 
-                    <ul className=" flex flex-col gap-16 lg:gap-20 items-center pt-12 pl-[12%] lg:pl-[5%]">
+                    <ul className=" flex flex-col gap-8 lg:gap-14 items-center pt-12 pl-[12%] lg:pl-[5%]">
 
                   
 

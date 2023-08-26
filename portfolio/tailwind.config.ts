@@ -22,6 +22,7 @@ const config: Config = {
           primary: {
             DEFAULT : "#FFA216",
             600: "#C87800",
+            700: "#A56300"
           },
           white: {
             100: "#EFE9F4",
