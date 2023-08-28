@@ -81,12 +81,12 @@ const Certifications = () => {
     const ref = useRef(null);
     const {scrollYProgress} = useScroll({
         target: ref,
-        offset: ["start end", "center start"]
+        offset: ["center end", "center start"]
     })
 
     return(
         <>
-        <section className="border-solid border-b border-dark-500 pb-96 lg:p b-16 " id="certification">
+        <section className="border-solid border-b border-dark-500 pb-56 lg:p b-16 " id="certification">
             <div className="container mx-auto pt-20 px-8 lg:px-[68px]">
                
                 <div className="pb-6">

@@ -81,7 +81,7 @@ const Experience = () => {
 
     return(
         <>
-        <section className="border-solid border-b border-dark-500 pb-96 lg:p b-16 " id="experience">
+        <section className="border-solid border-b border-dark-500 pb-56 lg:p b-16 " id="experience">
             <div className="container mx-auto pt-20 px-8 lg:px-[68px]">
                
                 <div className="pb-6">
