@@ -14,7 +14,7 @@ const Skill:React.FC<SkillProps> = ({name, x, y}) => {
     return(
         <>
           <motion.div className="flex-items-center justify-center rounded-full absolute font-bold text-[8px] md:text-sm lg:text-base lg:font-normal
-                                         bg-white-400 text-dark-900 px-2 py-1 lg:px-3 lg:py-2 cursor-pointer"
+                                         bg-white-100 text-dark-900 px-2 py-1 lg:px-3 lg:py-2 cursor-pointer"
                                 whileHover={{scale:1.05}}
                                 initial ={{x:0, y:0}}
                                 whileInView ={{x: `${x}vw`, y:`${y}vw`}}
@@ -43,7 +43,7 @@ export default function Skills (){
                 <div className="w-full h-screen-2/3 lg:h-[68vh] relative flex items-center justify-center rounded-full circular-bg- bg-circular-orange lg:bg-circular-orange-lg ">
 
                     <motion.div className="flex-items-center justify-center rounded-full lg:text-lg z-30
-                                         bg-white-400 text-dark-900 px-4 py-5 cursor-pointer"
+                                         bg-white-100 text-dark-900 px-4 py-5 cursor-pointer"
                                 whileHover={{scale:1.15}} >
                         WEB
                     </motion.div>

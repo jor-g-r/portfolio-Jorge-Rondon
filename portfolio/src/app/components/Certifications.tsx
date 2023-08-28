@@ -81,7 +81,7 @@ const Certifications = () => {
     const ref = useRef(null);
     const {scrollYProgress} = useScroll({
         target: ref,
-        offset: ["center end", "center start"]
+        offset: ["start end", "center start"]
     })
 
     return(
