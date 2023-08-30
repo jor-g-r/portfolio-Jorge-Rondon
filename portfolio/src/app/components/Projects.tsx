@@ -65,7 +65,8 @@ export default function Projects (){
                         {projectItems.map((item) =>{
                             return (
                                 <>
-                                <div className={`w-full p-5 flex bg-gray-300 bg-opacity-20 rounded-md 
+                                
+                                <div className={`w-full p-5 flex bg-card-gradient shadow-lg border-dark-600 border backdrop-blur-lg bg-blend bg-opacity-20 rounded-md 
                                                             ${item.row === 2 ? 'lg:row-span-2 md:col-span-2 lg:col-span-1' : ''} 
                                                             ${item.col === 2 ? 'md:col-span-2 md:flex-row md:gap-x-6 flex-col' : 'flex-col'}`}>
                                     <a href={item.url}>
@@ -88,7 +89,8 @@ export default function Projects (){
                                             {item.tags.map((tag, index) => {
                                                 return (
                                                     <>
-                                                    <span key={index} className='text-dark-950 bg-white-100 px-3 py-1 rounded-full text-xs cursor-default hover:scale-105 ease-out duration-500'>
+                                                    <span key={index} 
+                                                    className='text-dark-950 bg-white-100 px-3 py-1 rounded-full text-xs xl:text-sm cursor-default hover:scale-105 ease-out duration-500'>
                                                         {tag}
                                                     </span>
                                                     </>

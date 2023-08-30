@@ -21,23 +21,23 @@ export default function Home() {
 
       viewport={{once:true}}
         
-      <Hero />
-
-      <About />
-
- 
-       
-
-       <Experience />
-
-       <Skills />
-
-       <Certifications />
+      
 
 
 
       {*/}
+      <Hero />
 
+<About />
+
+
+ 
+
+ <Experience />
+
+ <Skills />
+
+ <Certifications />
 
       <Projects />
         
