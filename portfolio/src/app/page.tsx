@@ -19,7 +19,7 @@ export default function Home() {
         {/* }
         
 
-      viewport={{once:true}}
+   
         
       
 
@@ -40,7 +40,7 @@ export default function Home() {
  <Certifications />
 
       <Projects />
-        
+
     </main>
   )
 }

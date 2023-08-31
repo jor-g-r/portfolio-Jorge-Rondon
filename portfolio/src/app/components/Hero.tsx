@@ -15,9 +15,9 @@ export default function Hero () {
     const { scrollYProgress } = useScroll();
     return(
         <>
-         <section className="h-[89vh] hero-bg border-b border-solid border-dark-500 overflow-x-hidden" id='hero'>
-
-            <div className="container mx-auto lg:px-16 h-full">
+         <section className="h-[89vh] border-b border-solid border-dark-500 overflow-x-hidden z-10 relative" id='hero'>
+            <div className="absolute w-full h-full hero-bg"></div>
+            <div className="container mx-auto lg:px-16 h-full z-30">
                 
                 
                 <div className="relative flex flex-col justify-center  h-full">

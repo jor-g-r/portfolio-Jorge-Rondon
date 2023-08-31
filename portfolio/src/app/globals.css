@@ -214,3 +214,8 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(255, 162, 22, 0.60);
 }
+
+
+#tsparticles > canvas {
+  position: absolute !important;
+}

@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${roboto.variable} ${roboto_condensed.variable} bg-dark-600`}>
-      <body className={`${roboto.className} gradient-linear-dark`}>{children}</body>
+      <body className={`${roboto.className} `}>{children}</body>
     </html>
   )
 }

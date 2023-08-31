@@ -8,8 +8,10 @@ export default function About () {
 
     return (
         <>
-        <section className="border-b border-solid border-dark-500 " id='about'>
-            <div className="container mx-auto px-8 lg:px-[68px] pt-20">
+        <section className="border-b border-solid border-dark-500 z-10 relative" id='about'>
+            <div className="absolute w-full h-full bg-gradient-linear-dark z-20"></div>
+
+            <div className="container mx-auto px-8 lg:px-[68px] pt-20 z-40 relative">
 
                 <div className="flex flex-col items-center lg:items-start md:flex-row ">
 
@@ -17,7 +19,7 @@ export default function About () {
                             <h2 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide pt-4">About</h2>
 
                             <div className="description max-h-72 mt-7 mb-7 flex flex-col gap-6 p-6 overflow-y-scroll 
-                                          bg-dark-900 shadow-inner bg-opacity-60 text-white-100 text-justify leading-[26.7px]">
+                                          bg-dark-950 shadow-inner bg-opacity-80 text-white-100 text-justify leading-[26.7px]">
                                 <p>
                                 With over 6 years of experience in the tech industry, 
                                 I am a self-taught Front-End Developer 2 two years  of experience with a strong background in UI design. 

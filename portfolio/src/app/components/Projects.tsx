@@ -2,6 +2,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import imgProject from '../img/prev-project1.jpg'
+import ParticlesComponent from './ParticlesComponent';
 
 
 const projectsInitialData = [
@@ -54,7 +55,12 @@ export default function Projects (){
 
     return(
         <>
-        <section className="border-b min-h-screen border-solid border-dark-500 pb-32" id='projects'>
+           
+        <section className="border-b min-h-screen border-solid border-dark-500 pb-32 relative" id='projects'>
+            <div className="absolute w-full h-full top-0 left-0">
+                <ParticlesComponent  /> 
+            </div>
+           
             <div className="container mx-auto px-8 xl:px-[68px] pt-12">
                 <div className="mx-auto">
                     <h2 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide text-center pt-4">Projects</h2>
@@ -66,7 +72,7 @@ export default function Projects (){
                             return (
                                 <>
                                 
-                                <div className={`w-full p-5 flex bg-card-gradient shadow-lg border-dark-600 border backdrop-blur-lg bg-blend bg-opacity-20 rounded-md 
+                                <div className={`w-full p-5 flex bg-card-gradient shadow-lg border-dark-600 border backdrop-blur-sm bg-blend bg-opacity-10 rounded-md 
                                                             ${item.row === 2 ? 'lg:row-span-2 md:col-span-2 lg:col-span-1' : ''} 
                                                             ${item.col === 2 ? 'md:col-span-2 md:flex-row md:gap-x-6 flex-col' : 'flex-col'}`}>
                                     <a href={item.url}>
@@ -106,7 +112,7 @@ export default function Projects (){
                     </div>
                 </div>
             </div>
-
+                     
         </section>
         </>
     )
