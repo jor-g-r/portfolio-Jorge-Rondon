@@ -5,45 +5,50 @@ import imgProject from '../img/prev-project1.jpg'
 import ParticlesComponent from './ParticlesComponent';
 import IconExternalLink from '../icons/IconExternalLink';
 
+import picAwsomeGallery from '../img/projects/project-AwsomeRides.jpg'
+import picBGS from '../img/projects/project-BGS.jpg'
+import picZelda from '../img/projects/project-ZeldaMemory.jpg'
+import picSimon from '../img/projects/project-simonsays.jpg'
+
 
 const projectsInitialData = [
     {
         name: 'Unsplash Vehicles Gallery',
-        thumbnail: imgProject,
+        thumbnail: picAwsomeGallery,
         alt : 'project image description',
-        url: 'url',
+        url: 'https://galleryunsplash-7e644a86-rho.vercel.app/',
         description: ' Lorem ipsum dolor, provident ducimus cupiditate similique excepturi architecto voluptate perferendis. Culpa ab nemo reprehenderit, expedita quae dignissimos aliquid fugit dolorum. ',
-        tags: ['Javascript', 'Tailwind.css', 'React.js'],
+        tags: ['Iterative Development', 'Javascript', 'Tailwind.css', 'React.js', 'Next.js', 'Swiper.js', 'Yarn'],
         row: 2,
         col: 1,
     },
     {
-        name: ' name2',
-        thumbnail: imgProject,
+        name: 'Zelda Memory',
+        thumbnail: picZelda,
         alt : 'project image description',
-        url: 'url',
+        url: 'https://jor-g-r.github.io/MemoryZelda/',
         description: ' Lorem ipsum dolor, provident ducimus cupiditate similique excepturi architecto voluptate perferendis. Culpa ab nemo reprehenderit, expedita quae dignissimos aliquid fugit dolorum. ',
-        tags: ['Javascript', 'Tailwind.css', 'React.js'],
+        tags: ['Javascript', 'Bootstrap', 'Vanilla.js'],
         row: 1,
         col: 1,
     },
     {
-        name: ' name1',
-        thumbnail: imgProject,
+        name: 'Simon Says',
+        thumbnail: picSimon,
         alt : 'project image description',
-        url: 'url',
+        url: 'https://jor-g-r.github.io/SimonSays/',
         description: ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit est molestias temporibus',
-        tags: ['Javascript', 'Tailwind.css', 'React.js'],
+        tags: ['Javascript', 'Bootstrap', 'Vanilla.js'],
         row: 1,
         col: 1,
     },
     {
-        name: ' name1',
-        thumbnail: imgProject,
+        name: 'Best General Services',
+        thumbnail: picBGS,
         alt : 'project image description',
-        url: 'url',
+        url: 'https://bestgeneralservicessrl.com/',
         description: ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit est molestias temporibus',
-        tags: ['Javascript', 'Tailwind.css', 'React.js'],
+        tags: ['Web Design', 'Wordpress', 'Elementor', 'CSS'],
         row: 1,
         col: 2,
     }
@@ -76,11 +81,11 @@ export default function Projects (){
                                 <div className={`group w-full p-5 flex bg-card-gradient shadow-lg border-dark-600 hover:border-dark-400 border backdrop-blur-sm bg-blend bg-opacity-10 rounded-md 
                                                             ${item.row === 2 ? 'lg:row-span-2 md:col-span-2 lg:col-span-1' : ''} 
                                                             ${item.col === 2 ? 'md:col-span-2 md:flex-row md:gap-x-6 flex-col' : 'flex-col'}`}>
-                                    <a className='relative' href={item.url}>
+                                    <a target='_blank' className='relative' href={item.url}>
                                         <Image 
                                         src={item.thumbnail}
                                         alt={item.alt}
-                                        className={`w-full lg:max-w-[404px] rounded-sm border hover:border-2 duration-300 ease-in ${item.col === 2 ? 'md:max-w-[296px]': ''}`}
+                                        className={`w-full lg:min-w-[404px] rounded-sm hover:border border-dark-400 duration-100 ease-in ${item.col === 2 ? 'md:max-w-[296px]': ''}`}
                                      
                                         />
                                         <div className="absolute bottom-[1%] right-[1%]">
@@ -89,9 +94,9 @@ export default function Projects (){
                                     </a>
                                     <div className="flex flex-col justify-between h-full">
                                         <div className="text-white-100 mt-6 w-full">
-                                            <a className='' href={item.url}>
-                                                <h3 className='text-xl condensed capitalize pb-3 lg:text-[32px] font-bold'>{item.name}</h3>
-                                            </a>
+                                            
+                                            <h3 className='text-xl condensed capitalize pb-3 lg:text-[32px] font-bold'>{item.name}</h3>
+                                          
                                             <p className=''>{item.description}</p>
                                         </div>
 
