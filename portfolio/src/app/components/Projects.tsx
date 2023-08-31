@@ -1,7 +1,6 @@
 "use client"; 
 import { useState } from 'react'
 import Image from 'next/image'
-import imgProject from '../img/prev-project1.jpg'
 import ParticlesComponent from './ParticlesComponent';
 import IconExternalLink from '../icons/IconExternalLink';
 
@@ -17,7 +16,13 @@ const projectsInitialData = [
         thumbnail: picAwsomeGallery,
         alt : 'project image description',
         url: 'https://galleryunsplash-7e644a86-rho.vercel.app/',
-        description: ' Lorem ipsum dolor, provident ducimus cupiditate similique excepturi architecto voluptate perferendis. Culpa ab nemo reprehenderit, expedita quae dignissimos aliquid fugit dolorum. ',
+        description:  `As a dedicated web developer and classic car enthusiast, I tackled the creation of a dynamic car 
+                       gallery project. Building on its visually simple design, I confidently crafted it without relying 
+                       on tools like Figma. While I had previously created a static version using HTML and Bootstrap, 
+                       this upgraded iteration utilizes advanced technologies like Next.js, Tailwind CSS, and Swiper. 
+                       The result is a sleek interface showcasing diverse categories such as muscle cars, bikes, trucks, 
+                       and electric vehicles. To enhance user experience, I incorporated a customizable dark mode feature.`,
+
         tags: ['Iterative Development', 'Javascript', 'Tailwind.css', 'React.js', 'Next.js', 'Swiper.js', 'Yarn'],
         row: 2,
         col: 1,
@@ -27,7 +32,9 @@ const projectsInitialData = [
         thumbnail: picZelda,
         alt : 'project image description',
         url: 'https://jor-g-r.github.io/MemoryZelda/',
-        description: ' Lorem ipsum dolor, provident ducimus cupiditate similique excepturi architecto voluptate perferendis. Culpa ab nemo reprehenderit, expedita quae dignissimos aliquid fugit dolorum. ',
+        description: `Strengthened skills through a JavaScript memory game, bridging the gap between fundamental understanding 
+                      and advanced frameworks. Inspired by 'The Legend of Zelda,' I revamped a tutorial project, ironing out bugs 
+                      and adding personalized touches.`,
         tags: ['Javascript', 'Bootstrap', 'Vanilla.js'],
         row: 1,
         col: 1,
@@ -37,7 +44,7 @@ const projectsInitialData = [
         thumbnail: picSimon,
         alt : 'project image description',
         url: 'https://jor-g-r.github.io/SimonSays/',
-        description: ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit est molestias temporibus',
+        description: `Utilizing my enhanced JavaScript skills from an intensive course, I recreated the classic 'Simon Says' game. Beyond the course's scope, I refined the project, introducing additional interactions and personal touches for an engaging user experience.`,
         tags: ['Javascript', 'Bootstrap', 'Vanilla.js'],
         row: 1,
         col: 1,
@@ -47,8 +54,12 @@ const projectsInitialData = [
         thumbnail: picBGS,
         alt : 'project image description',
         url: 'https://bestgeneralservicessrl.com/',
-        description: ' Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit est molestias temporibus',
-        tags: ['Web Design', 'Wordpress', 'Elementor', 'CSS'],
+        description: `Revamped a Lima-based pest control company's online presence using WordPress and Elementor. 
+                      Seamlessly integrated SEO strategies to enhance the site's visibility and user engagement. 
+                      Designed a user-friendly platform highlighting their specialized industrial pest control and 
+                      disinfection services. Resulted in an impressive website that effectively communicates their 
+                      expertise and establishes credibility in the field.`,
+        tags: ['Web Design', 'Wordpress', 'Elementor', 'SEO'],
         row: 1,
         col: 2,
     }
@@ -97,7 +108,7 @@ export default function Projects (){
                                             
                                             <h3 className='text-xl condensed capitalize pb-3 lg:text-[32px] font-bold'>{item.name}</h3>
                                           
-                                            <p className=''>{item.description}</p>
+                                            <p className='leading-6'>{item.description}</p>
                                         </div>
 
                                         <div className="flex gap-2 mt-3 flex-wrap">
