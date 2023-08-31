@@ -37,7 +37,7 @@ const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, positio
                          initial ={{y:70}}
                          whileInView={{y:0}}
                          transition={{duration: 0.75, type: 'spring'}}       
-                        className="border-solid border border-white-100 py-5 lg:py-6 px-4 lg:px-7"> 
+                        className="border-solid border border-white-100 hover:border-primary-700 hover:border-opacity-70 py-5 lg:py-6 px-4 lg:px-7"> 
 
                                <div className="flex gap-4 pb-3 items-center">
                                   <a className="" href={siteUrl} target='_blank'>
@@ -56,7 +56,7 @@ const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, positio
                                   </div>
                                </div>
 
-                               <div className='leading-5 lg:leading-7 text-xs md:text-md lg:text-base text-justify'>
+                               <div className='leading-5 lg:leading-7 text-xs md:text-md lg:text-base'>
                                     <div>{description}</div>
                                </div>
                     </motion.div>     

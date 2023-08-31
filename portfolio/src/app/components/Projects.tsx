@@ -61,31 +61,31 @@ export default function Projects (){
                 <ParticlesComponent  /> 
             </div>
            
-            <div className="container mx-auto px-8 xl:px-[68px] pt-12">
+            <div className="container mx-auto px-8 xl:px-[68px] pt-16">
                 <div className="mx-auto">
-                    <h2 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide text-center pt-4">Projects</h2>
+                    <h2 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide text-center">Projects</h2>
                 </div>
             
-                <div className="w-full pt-20">
+                <div className="w-full pt-14">
                     <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {projectItems.map((item) =>{
                             return (
                                 <>
                                 
-                                <div className={`w-full p-5 flex bg-card-gradient shadow-lg border-dark-600 border backdrop-blur-sm bg-blend bg-opacity-10 rounded-md 
+                                <div className={`group w-full p-5 flex bg-card-gradient shadow-lg border-dark-600 hover:border-dark-400 border backdrop-blur-sm bg-blend bg-opacity-10 rounded-md 
                                                             ${item.row === 2 ? 'lg:row-span-2 md:col-span-2 lg:col-span-1' : ''} 
                                                             ${item.col === 2 ? 'md:col-span-2 md:flex-row md:gap-x-6 flex-col' : 'flex-col'}`}>
-                                    <a href={item.url}>
+                                    <a className='' href={item.url}>
                                         <Image 
                                         src={item.thumbnail}
                                         alt={item.alt}
-                                        className={`w-full lg:max-w-[404px] rounded-sm border ${item.col === 2 ? 'md:max-w-[296px]': ''}`}
+                                        className={`w-full lg:max-w-[404px] rounded-sm border hover:border-2 duration-300 ease-in ${item.col === 2 ? 'md:max-w-[296px]': ''}`}
                                      
                                         />
                                     </a>
                                     <div className="flex flex-col justify-between h-full">
                                         <div className="text-white-100 mt-6 w-full">
-                                            <a href={item.url}>
+                                            <a className='' href={item.url}>
                                                 <h3 className='text-xl condensed capitalize pb-3 lg:text-[32px] font-bold'>{item.name}</h3>
                                             </a>
                                             <p className=''>{item.description}</p>
@@ -96,7 +96,7 @@ export default function Projects (){
                                                 return (
                                                     <>
                                                     <span key={index} 
-                                                    className='text-dark-950 bg-white-100 px-3 py-1 rounded-full text-xs xl:text-sm cursor-default hover:scale-105 ease-out duration-500'>
+                                                    className='text-dark-950 bg-white-200 group-hover:bg-white-100 px-3 py-1 rounded-full text-xs xl:text-sm cursor-default hover:scale-105 ease-out duration-500'>
                                                         {tag}
                                                     </span>
                                                     </>

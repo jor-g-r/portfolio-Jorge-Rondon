@@ -34,10 +34,10 @@ export default function Hero () {
                         </h3>
 
 
-                        <button className="ui-btn mx-auto">
-                            <span className='flex items-center gap-1 condensed font-light uppercase'>
-                                Resume
-                                <IconDownload />
+                        <button className="ui-btn mx-auto rounded-sm">
+                            <span className='flex items-center gap-1 condensed font-light uppercase '>
+                                PDF Resume
+                                <IconDownload/>
                             </span>
                         </button>
                        
@@ -70,7 +70,7 @@ export default function Hero () {
                 
             <motion.h4 
             className='m-auto flex flex-col sm:flex-row justify-center text-center leading-6 py-2
-                     text-white-500 font-light lg:text-xl tracking-[10px] lg:tracking-[14px] uppercase'
+                     text-white-400 font-light lg:text-xl tracking-[10px] lg:tracking-[14px] uppercase'
             style={{
                 opacity: scrollYProgress,
                 transition: 'opacity 0.125s ease-in-out',

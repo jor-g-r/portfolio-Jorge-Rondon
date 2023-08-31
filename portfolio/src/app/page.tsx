@@ -14,7 +14,7 @@ export default function Home() {
 
 
   return (
-    <main className='h- [3200px]'>
+    <main className=''>
         <Navbar title="Testing" theme="light" />
         {/* }
         

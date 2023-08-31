@@ -9,7 +9,7 @@ const IconCircle: React.FC<IconCircleProps> = ({ reference }) => {
   const {scrollYProgress} = useScroll(
         {
             target : reference,
-            offset: ["center end", "start center"]
+            offset: ["start end", "start center"]
         }
     )
 

@@ -35,7 +35,7 @@ const Certification:React.FC<CertificationProps> = ({CourseName, logo, siteUrl, 
                          initial ={{y:70}}
                          whileInView={{y:0}}
                          transition={{duration: 0.75, type: 'spring'}}       
-                         className="border-solid border gap-x-4 grid grid-cols-6 border-white-100 py-3 lg:py-4 px-3 lg:px-5"> 
+                         className="border-solid border gap-x-4 grid grid-cols-6 border-white-100 hover:border-primary-700 hover:border-opacity-70 py-3 lg:py-4 px-3 lg:px-5"> 
 
                                 <motion.div className="col-span-1 pt-1" 
 
@@ -55,11 +55,11 @@ const Certification:React.FC<CertificationProps> = ({CourseName, logo, siteUrl, 
 
                                   <div className="text-2xl">
                                     <h3 className="font-bold text-base md:text-lg">{CourseName}</h3>
-                                    <p className="text-xs md:text-md text-white-500 capitalize">{time}</p>
+                                    <p className="text-xs md:text-md text-white-500 capitalize py-1">{time}</p>
                                     
                                   </div>
 
-                                  <div className='leading-4 lg:leading-5 text-xs md:text-md  text-justify'>
+                                  <div className='leading-4 lg:leading-6 text-xs md:text-md lg:text-base'>
                                     <div>{description}</div>
                                   </div>
                                </div>
