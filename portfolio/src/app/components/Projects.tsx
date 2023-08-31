@@ -91,15 +91,15 @@ export default function Projects (){
                                 
                                 <div className={`group w-full p-5 flex bg-card-gradient shadow-lg border-dark-600 hover:border-dark-400 border backdrop-blur-sm bg-blend bg-opacity-10 rounded-md 
                                                             ${item.row === 2 ? 'lg:row-span-2 md:col-span-2 lg:col-span-1' : ''} 
-                                                            ${item.col === 2 ? 'md:col-span-2 md:flex-row md:gap-x-6 flex-col' : 'flex-col'}`}>
+                                                            ${item.col === 2 ? 'lg:col-span-2 xl:flex-row md:gap-x-6 flex-col' : 'flex-col'}`}>
                                     <a target='_blank' className='relative' href={item.url}>
                                         <Image 
                                         src={item.thumbnail}
                                         alt={item.alt}
-                                        className={`w-full lg:min-w-[404px] rounded-sm hover:border border-dark-400 duration-100 ease-in ${item.col === 2 ? 'md:max-w-[296px]': ''}`}
+                                        className={`w-full xl:min-w-[312px] rounded-sm hover:border border-dark-400 duration-100 ease-in ${item.col === 2 ? '': ''}`}
                                      
                                         />
-                                        <div className="absolute bottom-[1%] right-[1%]">
+                                        <div className={`absolute  right-[2%] ${item.col === 2 ? '2xl:bottom-[2%] xl:bottom-[8%] md:bottom-[4%] bottom-[2%]': 'bottom-[2%]'}`}>
                                             <IconExternalLink />
                                         </div>
                                     </a>

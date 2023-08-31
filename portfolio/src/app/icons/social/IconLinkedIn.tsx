@@ -4,7 +4,7 @@ export default function IconLinkedIn (){
   return (
     <>
       
-      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg width="30" height="30" className="group" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" clip-rule="evenodd" 
                 d="M12.5 25C19.4036 25 25 19.4036 25 12.5C25 5.59644 19.4036 0 12.5 0C5.59644 0 0 5.59644 
                 0 12.5C0 19.4036 5.59644 25 12.5 25ZM14.2998 11.5876C14.3484 11.4284 14.5487 11.1385 14.966 
@@ -40,8 +40,8 @@ export default function IconLinkedIn (){
                 9.30256 8.65184 9.11064 9.02368 8.76137C9.39602 8.41163 9.59705 7.92954 9.59705 
                 7.40899H9.5972L9.59691 7.39725C9.58432 6.87928 9.38788 6.4009 9.01996 6.05261C8.65192 5.7042 
                 8.14559 5.51705 7.56746 5.51705Z"
-
-                fill="white" fill-opacity="0.8"
+                className="group-hover:fill-primary"
+                fill="white" fill-opacity="0.88"
                 />
       </svg>
 

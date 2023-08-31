@@ -19,25 +19,18 @@ export default function About () {
                             <h2 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide pt-4">About</h2>
 
                             <div className="description max-h-72 mt-7 mb-7 flex flex-col gap-6 p-6 overflow-y-scroll 
-                                          bg-dark-950 shadow-inner bg-opacity-80 text-white-100 text-justify leading-[26.7px]">
+                                          bg-dark-950 shadow-inner bg-opacity-80 text-white-100 leading-[34px]">
                                 <p>
-                                With over 6 years of experience in the tech industry, 
-                                I am a self-taught Front-End Developer 2 two years  of experience with a strong background in UI design. 
-                                This expertise has become one of my key strengths and allowed me to expand my skills into the role of QA developer. I have extensive 
-                                experience working with WordPress page builders such as Elementor and Visual Composer and am confident in navigating WordPress 
-                                environments, file managers, and design tools. 
-                                I am committed to staying up-to-date with the latest technologies and continuously improving my skills.
+                                With 6+ years in the tech industry, including 2 years as a self-taught Front-End Developer, 
+                                I'm equipped with a strong UI design background. This strength led me to expand into QA development. 
+                                I'm skilled in WordPress page builders, including Elementor and Visual Composer, and adept at navigating 
+                                WordPress environments and design tools. I'm committed to staying current with technology trends.
                                 </p>
 
                                 <p>
-                                As a Front-End Developer, my daily focus is to master JavaScript, specifically Next.js. I am an avid learner and am constantly striving 
-                                to improve my skills in this area. Additionally, I am highly proficient in using version control systems like Git and GitHub. 
-                                I understand the importance of being adaptable and having an open mind to new technology tools.
-                                </p>
-
-                                <p>
-                                Furthermore, I am deeply passionate about learning and maintaining healthy habits, which have enabled me to succeed thus far. 
-                                I am always eager to seize any growth opportunities that come my way and continue to advance my skills and knowledge.
+                                My focus is on mastering JavaScript, especially Next.js, as a Front-End Developer. Proficient in Git and GitHub, 
+                                I value adaptability and openness to new tech tools. Passionate about learning and maintaining healthy habits, 
+                                I'm eager for growth opportunities to advance my skills and knowledge.
                                 </p>
                             </div>
                         </div>
