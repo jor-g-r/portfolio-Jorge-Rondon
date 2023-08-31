@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import imgProject from '../img/prev-project1.jpg'
 import ParticlesComponent from './ParticlesComponent';
+import IconExternalLink from '../icons/IconExternalLink';
 
 
 const projectsInitialData = [
@@ -75,13 +76,16 @@ export default function Projects (){
                                 <div className={`group w-full p-5 flex bg-card-gradient shadow-lg border-dark-600 hover:border-dark-400 border backdrop-blur-sm bg-blend bg-opacity-10 rounded-md 
                                                             ${item.row === 2 ? 'lg:row-span-2 md:col-span-2 lg:col-span-1' : ''} 
                                                             ${item.col === 2 ? 'md:col-span-2 md:flex-row md:gap-x-6 flex-col' : 'flex-col'}`}>
-                                    <a className='' href={item.url}>
+                                    <a className='relative' href={item.url}>
                                         <Image 
                                         src={item.thumbnail}
                                         alt={item.alt}
                                         className={`w-full lg:max-w-[404px] rounded-sm border hover:border-2 duration-300 ease-in ${item.col === 2 ? 'md:max-w-[296px]': ''}`}
                                      
                                         />
+                                        <div className="absolute bottom-[1%] right-[1%]">
+                                            <IconExternalLink />
+                                        </div>
                                     </a>
                                     <div className="flex flex-col justify-between h-full">
                                         <div className="text-white-100 mt-6 w-full">
