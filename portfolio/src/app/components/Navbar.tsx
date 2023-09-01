@@ -17,13 +17,28 @@ interface NavbarBtnProps {
 
 
 const NavbarBtn: React.FC<NavbarBtnProps> = ({href, title}) => {
+  const scrollToSection = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+  
+    const targetId = event.currentTarget.getAttribute('href');
+    
+    if (targetId !== null) {
+      const targetElement = document.querySelector(targetId);
+  
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+        });
+      }
+    }
+  };  
   return (
-    <Link href={href} className='group relative tracking-widest'>
-        {title}
-      <span className='h-[1px] w-0 bg-white-100 absolute left-0 -bottom-0.5
-      group-hover:w-full transition-all ease-in-out duration-500'>
-        &nbsp;
-      </span>
+    <Link href={href}   onClick={scrollToSection} className='group relative tracking-widest' >
+          {title}
+        <span className='h-[1px] w-0 bg-white-100 absolute left-0 -bottom-0.5
+        group-hover:w-full transition-all ease-in-out duration-500'>
+          &nbsp;
+        </span>
     </Link>
   )
 }
@@ -94,15 +109,15 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                               ${ isNavVisible ? 'pt-6 flex   ' : 'pt-0 hidden' }`}
                                 
                                 
-                                transition={{ duration: .3, ease: "easeIn" }} // Configuración de la transición
+                                transition={{ duration: .3, ease: "easeIn" }} 
                                >
 
                 <li><NavbarBtn title='About Me' href="#about"  /></li>
-                <li><NavbarBtn title='Projects' href="#projects"  /></li>
-                <li><NavbarBtn title='Backgrounds' href="#backgrounds " /></li>
                 <li><NavbarBtn title='Experience' href="#experience"  /></li>
+                <li><NavbarBtn title='Certifications' href="#certification"  /></li>
+                <li><NavbarBtn title='Projects' href="#projects" /></li>
                 <li className='mt-2 lg:mt-0'>
-                  <Link className='bg-white-100 text-dark-600 px-4  py-1 rounded-sm hover:bg-primary duration-300 ease-in' href="#">Contact</Link>
+                  <Link className='bg-white-100 text-dark-600 px-4  py-1 rounded-sm hover:bg-primary duration-300 ease-in' href="#footer">Contact</Link>
                 </li>
               </motion.ul>
 

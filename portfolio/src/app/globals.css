@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --body-bg: linear-gradient(90deg, #0F0F0F 0%, #242424 100%);
   --body-bg-1: linear-gradient(90deg, #0B0B0B 0%, #1E1E1E 100%);
