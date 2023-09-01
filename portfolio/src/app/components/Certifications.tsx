@@ -86,11 +86,11 @@ const Certifications = () => {
 
     return(
         <>
-        <section className="border-solid border-b border-dark-500 pb-56 lg:p b-16 relative z-10 " id="certification">
+        <section className="border-solid border-b border-dark-500 pb-28 lg:p b-16 relative z-10 " id="certification">
             
         <div className="absolute w-full h-full bg-gradient-linear-dark z-20"></div>
             
-            <div className="container mx-auto pt-20 px-8 lg:px-[68px] z-30 relative">
+            <div className="container mx-auto pt-16 px-8 lg:px-[68px] z-30 relative">
                
                 <div className="pb-6">
                     <h2 className="condensed text-center text-4xl lg:text-5xl uppercase -tracking-wide pt-4">Certifications</h2>

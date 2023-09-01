@@ -73,17 +73,17 @@ export default function Projects (){
     return(
         <>
            
-        <section className="border-b min-h-screen border-solid border-dark-500 pb-32 relative" id='projects'>
+        <section className="border-b min-h-screen border-solid border-dark-500 pb-28 relative" id='projects'>
             <div className="absolute w-full h-full top-0 left-0">
                 <ParticlesComponent  /> 
             </div>
            
-            <div className="container mx-auto px-8 xl:px-[68px] pt-16">
+            <div className="container mx-auto px-8 xl:px-[68px] pt-20">
                 <div className="mx-auto">
                     <h2 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide text-center">Projects</h2>
                 </div>
             
-                <div className="w-full pt-14">
+                <div className="w-full pt-16">
                     <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {projectItems.map((item) =>{
                             return (

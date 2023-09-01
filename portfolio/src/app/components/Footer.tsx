@@ -47,15 +47,15 @@ export default function Footer () {
 
                     <div className="flex flex-col lg:items-end">
                         <div className="text-center my-4">
-                            <motion.span style={{
+                            <motion.span style={{ 
                                             opacity: scrollYProgress,
                                             transition: 'opacity 0.125s ease-in-out',
                                             }}
-                                        className="text-dark-400 text-lg font-thin text-center lg:text-right my-3">THANKS FOR WATCHING
+                                        className="text-dark-400 text-lg font-thin text-center lg:text-right my-3">THANKS FOR STOPPING BY
                             </motion.span>
                         </div>
                         
-                        <div className="">
+                        <div className="m-auto lg:m-0">
                             <BtnBackTop />
                         </div>
                     </div>

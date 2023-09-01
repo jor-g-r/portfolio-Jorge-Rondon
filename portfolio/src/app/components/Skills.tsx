@@ -35,7 +35,7 @@ export default function Skills (){
         <>
         <section className="border-solid border-b border-dark-500 pb-20 lg:pb-16" id="skills">
 
-            <div className="container mx-auto pt-20 px-8 lg:px-[68px]">
+            <div className="container mx-auto mt-1 pt-16 px-8 lg:px-[68px]">
                 <div className="pb-6">
                     <h2 className="condensed text-center text-4xl lg:text-5xl uppercase -tracking-wide pt-4">Skills</h2>
                 </div>
