@@ -8,6 +8,8 @@ import Certifications from './components/Certifications'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
 
+
+
 export default function Home() {
 
 
