@@ -50,7 +50,7 @@ export default function Hero () {
                         <div className="self-end pb-3">
                             <IconArrowDown isHovered={isHovered}/>
                         </div>
-                        <div className="lg:text-xl tracking-tight leading-8 lg:leading-10 cursor-default">
+                        <div className="lg:text-xl tracking-tight leading-8 lg:leading-10 cursor-default pr-4 md:pr-2">
                             <p className='drop-shadow-lg'>Experienced Web Developer with strong UI/UX skills.</p>
                             <p className='drop-shadow-lg'>Skilled in CMS and WordPress environments.</p>
                             <p className='drop-shadow-lg'>Passionate about new technologies and a fan of hands-on learning.</p>
