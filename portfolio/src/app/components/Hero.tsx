@@ -1,5 +1,5 @@
 "use client"; 
-import { useState} from 'react';
+import { useState, useEffect} from 'react';
 import { motion, useScroll } from 'framer-motion';
 
 
@@ -10,6 +10,22 @@ import IconDownload from '../icons/IconDownload';
 
 
 export default function Hero () {
+     
+    if (typeof document !== 'undefined') {
+        const resumeBtn = document.getElementById('resume');
+            if (resumeBtn) {
+            resumeBtn.addEventListener('click', function() {
+                window.dataLayer.push({
+                    event: 'CV_Downloaded',
+                    event_category: 'PDF',
+                    event_label: 'HaveResume',
+                });
+            });
+        }
+      }
+      
+     
+
     const [isHovered, setIsHovered] = useState(false); 
     
     const { scrollYProgress } = useScroll();
@@ -34,7 +50,7 @@ export default function Hero () {
                         </h3>
 
 
-                        <a target='_blank' href="https://drive.google.com/file/d/1l5Io-dBY-p2khBxIn2LZPz-0vqjhj6SX/view" className="ui-btn mx-auto rounded-sm w-fit">
+                        <a target='_blank' href="https://drive.google.com/file/d/1l5Io-dBY-p2khBxIn2LZPz-0vqjhj6SX/view" className="ui-btn mx-auto rounded-sm w-fit" id="resume">
                             <span className='flex items-center gap-1 condensed font-light uppercase '>
                                 PDF Resume
                                 <IconDownload/>
