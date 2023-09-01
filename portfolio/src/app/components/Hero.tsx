@@ -34,12 +34,12 @@ export default function Hero () {
                         </h3>
 
 
-                        <button className="ui-btn mx-auto rounded-sm">
+                        <a target='_blank' href="https://drive.google.com/file/d/1l5Io-dBY-p2khBxIn2LZPz-0vqjhj6SX/view" className="ui-btn mx-auto rounded-sm w-fit">
                             <span className='flex items-center gap-1 condensed font-light uppercase '>
                                 PDF Resume
                                 <IconDownload/>
                             </span>
-                        </button>
+                        </a>
                        
                     </div>
 
