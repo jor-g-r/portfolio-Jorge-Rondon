@@ -16,29 +16,17 @@ export default function Home() {
 
   return (
     <main className=''>
-        <Navbar title="Testing" theme="light" />
-        {/* }
-        
+      <Navbar title="Testing" theme="light" />
+    
+      <Hero/>
 
-   
-        
+      <About />
       
+      <Experience />
 
+      <Skills />
 
-
-      {*/}
-      <Hero />
-
-<About />
-
-
- 
-
- <Experience />
-
- <Skills />
-
- <Certifications />
+      <Certifications />
 
       <Projects />
 

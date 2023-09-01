@@ -1,79 +1,15 @@
 "use client"; 
-import { useState, useEffect} from 'react';
-import { motion, MotionValue, useScroll } from 'framer-motion';
+import { useState} from 'react';
+import { motion, useScroll } from 'framer-motion';
 
 
 
 import IconArrowDown from '../icons/IconArrowDownn';
 import IconDownload from '../icons/IconDownload';
 
-export function useMediaQuery(query: string): boolean {
-    const [matches, setMatches] = useState<boolean>(false);
-  
-    useEffect(() => {
-      const media = window.matchMedia(query);
-      if (media.matches !== matches) {
-        setMatches(media.matches);
-      }
-      const listener = () => {
-        setMatches(media.matches);
-      };
-      if (typeof media.addEventListener === "function") {
-        media.addEventListener("change", listener);
-      } else {
-        media.addListener(listener);
-      }
-      return () => {
-        if (typeof media.removeEventListener === "function") {
-          media.removeEventListener("change", listener);
-        } else {
-          media.removeListener(listener);
-        }
-      };
-    }, [matches, query]);
-  
-    return matches;
-  }
-
-interface HeroProps {
-   MotionValue : number | any;
-}
 
 
-const Hero:React.FC<HeroProps> = () => {
-    function useMediaQuery(query: string): boolean {
-        const [matches, setMatches] = useState<boolean>(false);
-      
-        useEffect(() => {
-          const media = window.matchMedia(query);
-          if (media.matches !== matches) {
-            setMatches(media.matches);
-          }
-          const listener = () => {
-            setMatches(media.matches);
-          };
-          if (typeof media.addEventListener === "function") {
-            media.addEventListener("change", listener);
-          } else {
-            media.addListener(listener);
-          }
-          return () => {
-            if (typeof media.removeEventListener === "function") {
-              media.removeEventListener("change", listener);
-            } else {
-              media.removeListener(listener);
-            }
-          };
-        }, [matches, query]);
-      
-        return matches;
-      }
-
-    
-   
-    const isMobile: boolean = useMediaQuery('(max-width: 600px)');
-    const transitionDuration: string = isMobile ? '0.025s' : '0.125s';
-      
+export default function Hero () {
     const [isHovered, setIsHovered] = useState(false); 
     
     const { scrollYProgress } = useScroll();
@@ -135,11 +71,10 @@ const Hero:React.FC<HeroProps> = () => {
             <motion.h4 
             className='m-auto flex flex-col sm:flex-row justify-center text-center leading-6 py-2
                      text-white-400 font-light lg:text-xl tracking-[10px] lg:tracking-[14px] uppercase'
-                     style={{
-                        opacity: scrollYProgress as unknown as MotionValue<number>,
-                        transition: `opacity ${transitionDuration} ease-in-out`,
-                    }}
-                    >
+            style={{
+                opacity: scrollYProgress,
+                transition: 'opacity 0.125s ease-in-out',
+              }}>
                  <span>Web Design &</span> &nbsp;Web Development
             </motion.h4>
          
@@ -147,4 +82,3 @@ const Hero:React.FC<HeroProps> = () => {
         </>
     );
 };
-export default Hero

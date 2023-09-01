@@ -22,15 +22,15 @@ export default function About () {
                                           bg-dark-950 shadow-inner bg-opacity-80 text-white-100 leading-[34px]">
                                 <p>
                                 With 6+ years in the tech industry, including 2 years as a self-taught Front-End Developer, 
-                                I'm equipped with a strong UI design background. This strength led me to expand into QA development. 
-                                I'm skilled in WordPress page builders, including Elementor and Visual Composer, and adept at navigating 
-                                WordPress environments and design tools. I'm committed to staying current with technology trends.
+                                I&apos;m equipped with a strong UI design background. This strength led me to expand into QA development. 
+                                I&apos;m skilled in WordPress page builders, including Elementor and Visual Composer, and adept at navigating 
+                                WordPress environments and design tools. I&apos;m committed to staying current with technology trends.
                                 </p>
 
                                 <p>
                                 My focus is on mastering JavaScript, especially Next.js, as a Front-End Developer. Proficient in Git and GitHub, 
                                 I value adaptability and openness to new tech tools. Passionate about learning and maintaining healthy habits, 
-                                I'm eager for growth opportunities to advance my skills and knowledge.
+                                I&apos;m eager for growth opportunities to advance my skills and knowledge.
                                 </p>
                             </div>
                         </div>
