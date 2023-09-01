@@ -41,7 +41,7 @@ const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, positio
 
                                <div className="flex gap-4 pb-3 items-center">
                                   <a className="" href={siteUrl} target='_blank'>
-                                    <Image className='rounded-md w-full max-h-[67px] lg:max-h-[52px]'
+                                    <Image className='rounded-md w-auto max-h-[67px] lg:max-h-[52px]'
                                            height={72}
                                            src={logo}  
                                            alt="company logo"/>
