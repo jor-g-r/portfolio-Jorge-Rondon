@@ -66,17 +66,6 @@ const projectsInitialData = [
         col: 2,
     },
     {
-        name: 'VanargandLodge',
-        thumbnail: picVanargand,
-        alt : 'project image description',
-        url: 'https://www.vanargandlodge.com/',
-        description: `Crafted a serene web presence for Vanargand Lodge in Dagget, MI,during my tenure at FrontPorch Solutions. 
-                      Using Next.js, TypeScript, and Tailwind CSS. Simplistic and impactful, it embodies my web development prowess.`,
-        tags: ['Javascript', 'Tailwind.css', 'Next.js', 'Swiper.js', 'Yarn'],
-        row: 1,
-        col: 1,
-    },
-    {
         name: 'Cartagena MusicFest 2021',
         thumbnail: picCartagenaFest,
         alt : 'project image description',
@@ -85,6 +74,17 @@ const projectsInitialData = [
                       Cartagena Music Festival. I designed and developed the website's schedule, performer information, 
                       and essential elements for this renowned musical event, celebrating global culture and classical music.`,
         tags: ['Javascript', 'Wordpress', 'WPBakery', 'CSS'],
+        row: 1,
+        col: 1,
+    },
+    {
+        name: 'VanargandLodge',
+        thumbnail: picVanargand,
+        alt : 'project image description',
+        url: 'https://www.vanargandlodge.com/',
+        description: `Crafted a serene web presence for Vanargand Lodge in Dagget, MI, during my tenure at FrontPorch Solutions. 
+                      Using Next.js, TypeScript, and Tailwind CSS. Simplistic and impactful, it embodies my web development prowess.`,
+        tags: ['Javascript', 'Tailwind.css', 'Next.js', 'Swiper.js', 'Yarn'],
         row: 1,
         col: 1,
     }
