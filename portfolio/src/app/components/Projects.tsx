@@ -9,6 +9,7 @@ import picBGS from '../img/projects/project-BGS.jpg'
 import picZelda from '../img/projects/project-ZeldaMemory.jpg'
 import picSimon from '../img/projects/project-simonsays.jpg'
 import picVanargand from '../img/projects/project-Vanargand.jpg'
+import picCartagenaFest from '../img/projects/project-Cartagena.jpg'
 
 
 const projectsInitialData = [
@@ -75,6 +76,18 @@ const projectsInitialData = [
         row: 1,
         col: 1,
     },
+    {
+        name: 'Cartagena MusicFest 2021',
+        thumbnail: picCartagenaFest,
+        alt : 'project image description',
+        url: 'https://www.cartagenamusicfestival.com/',
+        description: `While collaborating with ImageID in 2021, I revitalized the online presence of the prestigious 
+                      Cartagena Music Festival. I designed and developed the website's schedule, performer information, 
+                      and essential elements for this renowned musical event, celebrating global culture and classical music.`,
+        tags: ['Javascript', 'Wordpress', 'WPBakery', 'CSS'],
+        row: 1,
+        col: 1,
+    }
 
 ]
 
