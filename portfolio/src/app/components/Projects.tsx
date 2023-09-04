@@ -8,6 +8,7 @@ import picAwsomeGallery from '../img/projects/project-AwsomeRides.jpg'
 import picBGS from '../img/projects/project-BGS.jpg'
 import picZelda from '../img/projects/project-ZeldaMemory.jpg'
 import picSimon from '../img/projects/project-simonsays.jpg'
+import picVanargand from '../img/projects/project-Vanargand.jpg'
 
 
 const projectsInitialData = [
@@ -62,7 +63,18 @@ const projectsInitialData = [
         tags: ['Web Design', 'Wordpress', 'Elementor', 'SEO'],
         row: 1,
         col: 2,
-    }
+    },
+    {
+        name: 'VanargandLodge',
+        thumbnail: picVanargand,
+        alt : 'project image description',
+        url: 'https://www.vanargandlodge.com/',
+        description: `Crafted a serene web presence for Vanargand Lodge in Dagget, MI,during my tenure at FrontPorch Solutions. 
+                      Using Next.js, TypeScript, and Tailwind CSS. Simplistic and impactful, it embodies my web development prowess.`,
+        tags: ['Javascript', 'Tailwind.css', 'Next.js', 'Swiper.js', 'Yarn'],
+        row: 1,
+        col: 1,
+    },
 
 ]
 
