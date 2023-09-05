@@ -49,32 +49,32 @@ export default function Skills (){
                     </motion.div>
 
                                                     {/*Mobile - Desktop */ }
-                    <Skill name="CMS-CMR" x={isMobile ? -16 : -8} y={isMobile ? -11 : -4} />
-                    <Skill name="CSS" x={isMobile ? 0 : 0} y={isMobile ? 13 : 6} />
-                    <Skill name="HTML" x={isMobile ? 0 : 0} y={isMobile ? -13 : -6} />
+                    <Skill name="CMS-CMR" x={isMobile ? -16 : -8} y={isMobile ? -11 : -4} key={1}/>
+                    <Skill name="CSS" x={isMobile ? 0 : 0} y={isMobile ? 13 : 6} key={2}/>
+                    <Skill name="HTML" x={isMobile ? 0 : 0} y={isMobile ? -13 : -6} key={3}/>
 
-                    <Skill name="GitHub" x={isMobile ? 15 : 12} y={isMobile ? -17 : -10} />
-                    <Skill name="Javascript" x={isMobile ? 18 : 10} y={isMobile ? 0 : .5} />
+                    <Skill name="GitHub" x={isMobile ? 15 : 12} y={isMobile ? -17 : -10} key={4}/>
+                    <Skill name="Javascript" x={isMobile ? 18 : 10} y={isMobile ? 0 : .5} key={5}/>
 
-                    <Skill name="React.js" x={isMobile ? 14 : 13} y={isMobile ? 10 : 5.5} />
-                    <Skill name="Next.js" x={isMobile ? 25 : 18} y={isMobile ? 16 : 10} />
-                    <Skill name="Gsap" x={isMobile ? 32 : 27} y={isMobile ? 5 : 2} />
+                    <Skill name="React.js" x={isMobile ? 14 : 13} y={isMobile ? 10 : 5.5} key={6}/>
+                    <Skill name="Next.js" x={isMobile ? 25 : 18} y={isMobile ? 16 : 10} key={7}/>
+                    <Skill name="Gsap" x={isMobile ? 32 : 27} y={isMobile ? 5 : 2} key={8}/>
 
-                    <Skill name="Framer Motion" x={isMobile ? 30 : 26} y={isMobile ? -9 : -6} />
-                    <Skill name="Node.js" x={isMobile ? 24 : 19} y={isMobile ? -24 : -15} />
+                    <Skill name="Framer Motion" x={isMobile ? 30 : 26} y={isMobile ? -9 : -6} key={9}/>
+                    <Skill name="Node.js" x={isMobile ? 24 : 19} y={isMobile ? -24 : -15} key={10}/>
 
-                    <Skill name="Tailwind" x={isMobile ? 8 : 7} y={isMobile ? 21 : 11} />
-                    <Skill name="Bootstrap" x={isMobile ? -8.5 : -7} y={isMobile ? 21 : 11} />
+                    <Skill name="Tailwind" x={isMobile ? 8 : 7} y={isMobile ? 21 : 11} key={11}/>
+                    <Skill name="Bootstrap" x={isMobile ? -8.5 : -7} y={isMobile ? 21 : 11} key={12}/>
 
-                    <Skill name="Wordpress" x={isMobile ? -25 : -18} y={isMobile ? 2 : .5} />
-                    <Skill name="Hubspot" x={isMobile ? -19 : -16} y={isMobile ? -22 : -14} />
+                    <Skill name="Wordpress" x={isMobile ? -25 : -18} y={isMobile ? 2 : .5} key={13}/>
+                    <Skill name="Hubspot" x={isMobile ? -19 : -16} y={isMobile ? -22 : -14} key={14}/>
 
-                    <Skill name="E-Mail dev" x={isMobile ? 0 : 0} y={isMobile ? -27 : -12} />
-                    <Skill name="Web Design" x={isMobile ? -16 : -18} y={isMobile ? 30 : 12} />
+                    <Skill name="E-Mail dev" x={isMobile ? 0 : 0} y={isMobile ? -27 : -12} key={15}/>
+                    <Skill name="Web Design" x={isMobile ? -16 : -18} y={isMobile ? 30 : 12} key={16}/>
 
-                    <Skill name="Figma" x={isMobile ? -15 : -14} y={isMobile ? 10 : 6} />
-                    <Skill name="Elementor" x={isMobile ? -30 : -26} y={isMobile ? 14 : 6} />
-                    <Skill name="WP Bakery" x={isMobile ? -33 : -25} y={isMobile ? -7 : -6} />
+                    <Skill name="Figma" x={isMobile ? -15 : -14} y={isMobile ? 10 : 6} key={17}/>
+                    <Skill name="Elementor" x={isMobile ? -30 : -26} y={isMobile ? 14 : 6} key={18}/>
+                    <Skill name="WP Bakery" x={isMobile ? -33 : -25} y={isMobile ? -7 : -6} key={19}/>
 
                 </div>
             </div>
