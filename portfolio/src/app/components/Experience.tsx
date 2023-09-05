@@ -40,12 +40,14 @@ const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, positio
                         className="border-solid border border-white-100 hover:border-primary-700 hover:border-opacity-70 py-5 lg:py-6 px-4 lg:px-7"> 
 
                                <div className="flex gap-4 pb-3 items-center">
-                                  <a className="" href={siteUrl} target='_blank'>
+                                  <motion.a className="" href={siteUrl} target='_blank'
+                                  whileHover={{scale:1.1}}
+                                  >
                                     <Image className='rounded-md w-auto max-h-[67px] lg:max-h-[52px]'
                                            height={72}
                                            src={logo}  
                                            alt="company logo"/>
-                                  </a>
+                                  </motion.a>
 
                                   <div className="text-2xl">
                                     <h3 className="font-bold text-base md:text-lg">{company}</h3>

@@ -52,7 +52,7 @@ export default function Hero () {
 
                         <a target='_blank' href="https://drive.google.com/file/d/1l5Io-dBY-p2khBxIn2LZPz-0vqjhj6SX/view" className="ui-btn mx-auto rounded-sm w-fit" id="resume">
                             <span className='flex items-center gap-1 condensed font-light uppercase '>
-                                PDF Resume
+                                Resume
                                 <IconDownload/>
                             </span>
                         </a>

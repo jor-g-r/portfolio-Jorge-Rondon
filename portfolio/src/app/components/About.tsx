@@ -21,7 +21,7 @@ export default function About () {
                             <div className="description max-h-72 mt-7 mb-4 flex flex-col gap-6 p-6 overflow-y-scroll 
                                           bg-dark-950 shadow-inner bg-opacity-80 text-white-100 leading-[34px]">
                                 <p>
-                                With 6+ years in the tech industry, including 2 years as a self-taught Front-End Developer, 
+                                With 6+ years in the tech industry, 4 as freelancer designer and 2 years as Front-End/Web Developer, 
                                 I&apos;m equipped with a strong UI design background. This strength led me to expand into QA development. 
                                 I&apos;m skilled in WordPress page builders, including Elementor and Visual Composer, and adept at navigating 
                                 WordPress environments and design tools. I&apos;m committed to staying current with technology trends.

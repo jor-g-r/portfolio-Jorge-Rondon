@@ -39,7 +39,7 @@ const Certification:React.FC<CertificationProps> = ({CourseName, logo, siteUrl, 
 
                                 <motion.div className="col-span-1 pt-1" 
 
-                                    whileHover={{scale:1.025}}
+                                    whileHover={{scale:1.05}}
                                     whileTap={{scale: 0.95}}
                                     transition={{duration: .5}}
                                 >
