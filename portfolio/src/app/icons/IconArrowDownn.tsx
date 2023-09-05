@@ -1,4 +1,4 @@
-import { motion, useScroll } from "framer-motion"
+import { motion } from "framer-motion"
 
 interface IconArrowDownProps {
   isHovered: boolean;
@@ -14,7 +14,7 @@ const IconArrowDown: React.FC<IconArrowDownProps> = ({isHovered}) => {
     <g filter=" ">
 
        <motion.path d="M23.2256 2.99431L23.2256 54.5698" 
-        strokeWidth="2" stroke-linejoin="round"
+        strokeWidth="2" strokeLinejoin="round"
         
         initial={{ y: 330, stroke: "#FFFFFF", pathLength: 0 }}
         animate={{
@@ -37,7 +37,7 @@ const IconArrowDown: React.FC<IconArrowDownProps> = ({isHovered}) => {
     </g>
   <defs>
     <filter id="filter0_d_327_27" x="0.2052" y="0.994308" width="48.0231" height="59.1955" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feFlood floodOpacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
       <feOffset dx="1" dy="1"/>
       <feGaussianBlur stdDeviation="1.5"/>

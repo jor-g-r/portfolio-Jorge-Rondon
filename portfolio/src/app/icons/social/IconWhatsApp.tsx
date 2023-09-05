@@ -19,7 +19,7 @@ export default function IconWhatsApp (){
         14.482 15.7908 14.5366 16.0771 14.6445C16.3633 14.7524 17.8971 15.5376 18.2084 15.7001C18.5209 15.8626 18.7284 
         15.9432 18.8059 16.0784C18.8834 16.2123 18.8834 16.8623 18.6234 17.6202Z" 
         className="group-hover:fill-primary"
-        fill="white" fill-opacity="0.88"/>
+        fill="white" fillOpacity="0.88"/>
       </svg>
 
 

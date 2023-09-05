@@ -16,7 +16,7 @@ export default function IconGitHub (){
           15.3587 18.8448 17.4609 14.6885 17.8978C15.8323 18.504 16.6667 20.2074 16.6667 21.4907V24.3832C16.6667 24.4932 
           16.6427 24.5726 16.6302 24.6667C21.501 22.9327 25 18.2353 25 12.6957C25 5.68451 19.4031 0 12.5 0Z" 
           className="group-hover:fill-primary"
-          fill="white" fill-opacity="0.88"
+          fill="white" fillOpacity="0.88"
           />
       </svg>
 

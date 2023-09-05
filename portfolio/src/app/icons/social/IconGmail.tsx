@@ -5,7 +5,7 @@ export default function IconGmail (){
     <>
       
       <svg width="30" height="30" className="group" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" 
+        <path fillRule="evenodd" clipRule="evenodd" 
               d="M12.5 25C19.4036 25 25 19.4036 25 12.5C25 5.59644 19.4036 0 12.5 
                  0C5.59644 0 0 5.59644 0 12.5C0 19.4036 5.59644 25 12.5 25ZM7.18795 
                  7.56606C6.29158 7.56606 5.56616 8.29497 5.56616 9.19108V16.3378C5.56616 
@@ -27,7 +27,7 @@ export default function IconGmail (){
                  9.63768 17.2787 9.71065C17.4271 9.78362 17.5212 9.93464 17.5212 
                  10.1001V17.094ZM8.83093 8.4339H15.8402L12.3357 11.2089L8.83093 8.4339Z" 
                  className="group-hover:fill-primary"
-                 fill="white" fill-opacity="0.88"/>
+                 fill="white" fillOpacity="0.88"/>
       </svg>
 
 
