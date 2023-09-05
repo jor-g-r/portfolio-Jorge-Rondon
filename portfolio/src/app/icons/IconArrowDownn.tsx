@@ -36,7 +36,7 @@ const IconArrowDown: React.FC<IconArrowDownProps> = ({isHovered}) => {
         />
     </g>
   <defs>
-    <filter id="filter0_d_327_27" x="0.2052" y="0.994308" width="48.0231" height="59.1955" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+    <filter id="filter0_d_327_27" x="0.2052" y="0.994308" width="48.0231" height="59.1955" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
       <feFlood flood-opacity="0" result="BackgroundImageFix"/>
       <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
       <feOffset dx="1" dy="1"/>
