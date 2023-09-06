@@ -14,7 +14,7 @@ import picCartagenaFest from '../img/projects/project-Cartagena.jpg'
 
 const projectsInitialData = [
     {
-        name: 'Unsplash Vehicles Gallery',
+        name: 'Awsome Rides Gallery',
         thumbnail: picAwsomeGallery,
         alt : 'project image description',
         url: 'https://galleryunsplash-7e644a86-rho.vercel.app/',
