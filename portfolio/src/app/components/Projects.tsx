@@ -28,7 +28,7 @@ const projectsInitialData = [
         tags: ['Iterative Development', 'Javascript', 'Tailwind.css', 'React.js', 'Next.js', 'Swiper.js', 'Yarn'],
         row: 2,
         col: 1,
-        id: 0
+        key: 0
     },
     {
         name: 'Zelda Memory',
@@ -41,7 +41,7 @@ const projectsInitialData = [
         tags: ['Javascript', 'Bootstrap', 'Vanilla.js'],
         row: 1,
         col: 1,
-        id: 1
+        key: 1
     },
     {
         name: 'Simon Says',
@@ -52,7 +52,7 @@ const projectsInitialData = [
         tags: ['Javascript', 'Bootstrap', 'Vanilla.js'],
         row: 1,
         col: 1,
-        id: 2
+        key: 2
     },
     {
         name: 'Best General Services',
@@ -67,7 +67,7 @@ const projectsInitialData = [
         tags: ['Web Design', 'Wordpress', 'Elementor', 'SEO'],
         row: 1,
         col: 2,
-        id: 3
+        key: 3
     },
     {
         name: 'Cartagena MusicFest 2021',
@@ -80,7 +80,7 @@ const projectsInitialData = [
         tags: ['Javascript', 'Wordpress', 'WPBakery', 'CSS'],
         row: 1,
         col: 1,
-        id: 4
+        key: 4
     },
     {
         name: 'VanargandLodge',
@@ -92,7 +92,7 @@ const projectsInitialData = [
         tags: ['Javascript', 'Tailwind.css', 'Next.js', 'Swiper.js', 'Yarn'],
         row: 1,
         col: 1,
-        id: 5
+        key: 5
     }
 
 ]
@@ -120,7 +120,7 @@ export default function Projects (){
                             return (
                                 <>
                                 
-                                <div key={item.id} className={`group w-full p-5 flex bg-card-gradient shadow-lg border-dark-600 hover:border-dark-400 border backdrop-blur-sm bg-blend bg-opacity-10 rounded-md 
+                                <div key={item.key} className={`group w-full p-5 flex bg-card-gradient shadow-lg border-dark-600 hover:border-dark-400 border backdrop-blur-sm bg-blend bg-opacity-10 rounded-md 
                                                             ${item.row === 2 ? 'lg:row-span-2 md:col-span-2 lg:col-span-1' : ''} 
                                                             ${item.col === 2 ? 'lg:col-span-2 xl:flex-row md:gap-x-6 flex-col' : 'flex-col'}`}>
                                     <a target='_blank' className='relative' href={item.url}>

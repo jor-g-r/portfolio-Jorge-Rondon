@@ -16,12 +16,12 @@ interface CertificationProps {
     siteUrl: string;
     time: string;
     description: string;
-    key: number;
+    index: number;
 }
 
 
 
-const Certification:React.FC<CertificationProps> = ({CourseName, logo, siteUrl, time, description, key}) => {
+const Certification:React.FC<CertificationProps> = ({CourseName, logo, siteUrl, time, description, index}) => {
     
     
     const ref = useRef(null);
@@ -29,7 +29,7 @@ const Certification:React.FC<CertificationProps> = ({CourseName, logo, siteUrl, 
         <>
             
             
-            <li key={key} className="w-full max-w-[642px]">                               
+            <li key={index} className="w-full max-w-[642px]">                               
             <IconCircle reference={ref} />   
                     <motion.div 
                         ref={ref}
@@ -114,7 +114,7 @@ const Certifications = () => {
                   
 
                         <Certification 
-                        key={0}
+                        index={0}
                         CourseName='Javascript Algorithms & Data structures'
                         logo={logo.FCC}
                         siteUrl='https://www.freecodecamp.org/certification/georgejfrj/javascript-algorithms-and-data-structures'
@@ -127,7 +127,7 @@ const Certifications = () => {
 
 
                         <Certification 
-                        key={1}
+                        index={1}
                         CourseName='Javascript Fundamentals'
                         logo={logo.solo}
                         siteUrl='https://www.sololearn.com/Certificate/CT-ANS4JHDJ/pdf'
@@ -141,7 +141,7 @@ const Certifications = () => {
 
 
                         <Certification 
-                        key={2}
+                        index={2}
                         CourseName='Programming basis'
                         logo={logo.platzi}
                         siteUrl='https://platzi.com/p/jorgerondon/curso/1050-course/diploma/detalle/'
@@ -155,7 +155,7 @@ const Certifications = () => {
 
 
                         <Certification 
-                        key={0}
+                        index={3}
                         CourseName='Responsive Web Design'
                         logo={logo.FCC}
                         siteUrl='https://www.freecodecamp.org/certification/georgejfrj/responsive-web-design'
@@ -167,7 +167,7 @@ const Certifications = () => {
                         />      
 
                         <Certification 
-                        key={0}
+                        index={4}
                         CourseName='Full CSS Course'
                         logo={logo.solo}
                         siteUrl='https://www.sololearn.com/Certificate/CT-OMSJVAQ8/pdf'
@@ -179,7 +179,7 @@ const Certifications = () => {
                         />  
 
                         <Certification 
-                        key={0}
+                        index={5}
                         CourseName='HTML Fundamentals'
                         logo={logo.solo}
                         siteUrl='https://www.sololearn.com/Certificate/CT-OMSJVAQ8/pdf'

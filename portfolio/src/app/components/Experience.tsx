@@ -18,12 +18,12 @@ interface WorkDetailsProps {
     position: string;
     time: string;
     description: string;
-    key : number;
+    index : number;
 }
 
 
 
-const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, position, time, description, key}) => {
+const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, position, time, description, index}) => {
     
     
     const ref = useRef(null);
@@ -31,7 +31,7 @@ const WorkDetails:React.FC<WorkDetailsProps> = ({company, logo, siteUrl, positio
         <>
             
             
-            <li  className="w-full max-w-[642px]">                               
+            <li key={index} className="w-full max-w-[642px]">                               
             <IconCircle reference={ref} />   
                     <motion.div 
                         ref={ref}
@@ -111,7 +111,7 @@ const Experience = () => {
                   
 
                         <WorkDetails 
-                        key={0}
+                        index={0}
                         company='WYN Solutions'
                         logo={logo.wyn}
                         siteUrl='https://www.wynwithus.com/'
@@ -125,7 +125,7 @@ const Experience = () => {
                         />
 
                         <WorkDetails 
-                        key={1}
+                        index={1}
                         company='FrontPorch Solutions'
                         logo={logo.fps}
                         siteUrl='https://www.frontporchsolutions.com/'
@@ -137,7 +137,7 @@ const Experience = () => {
                         />
 
                         <WorkDetails 
-                        key={2}
+                        index={2}
                         company='ImageID'
                         logo={logo.imageID}
                         siteUrl='https://imageid.com.co/'
@@ -149,7 +149,7 @@ const Experience = () => {
                         />
 
                         <WorkDetails 
-                        key={3}
+                        index={3}
                         company='Chattanooga Web Design'
                         logo={logo.cwd}
                         siteUrl='https://www.chattanoogawebdesign.com/'
