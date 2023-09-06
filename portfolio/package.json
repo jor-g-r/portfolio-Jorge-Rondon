@@ -30,9 +30,11 @@
     "tsparticles": "^2.12.0",
     "tsparticles-slim": "^2.12.0",
     "typescript": "5.1.6",
-    "usehooks-ts": "^2.9.1"
+    "usehooks-ts": "^2.9.1",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
-    "@types/dompurify": "^3.0.2"
+    "@types/dompurify": "^3.0.2",
+    "@types/uuid": "^9.0.3"
   }
 }

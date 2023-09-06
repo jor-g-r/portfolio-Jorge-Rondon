@@ -1,5 +1,7 @@
 "use client"; 
 import { useState } from 'react'
+import { v4 as uuidv4 } from 'uuid';
+
 import Image from 'next/image'
 import ParticlesComponent from './ParticlesComponent';
 import IconExternalLink from '../icons/IconExternalLink';
@@ -13,7 +15,9 @@ import picCartagenaFest from '../img/projects/project-Cartagena.jpg'
 
 
 const projectsInitialData = [
-    {
+    {   
+
+        id: uuidv4(),
         name: 'Awsome Rides Gallery',
         thumbnail: picAwsomeGallery,
         alt : 'project image description',
@@ -25,12 +29,19 @@ const projectsInitialData = [
                        The result is a sleek interface showcasing diverse categories such as muscle cars, bikes, trucks, 
                        and electric vehicles. To enhance user experience, I incorporated a customizable dark mode feature.`,
 
-        tags: ['Iterative Development', 'Javascript', 'Tailwind.css', 'React.js', 'Next.js', 'Swiper.js', 'Yarn'],
+        tags: [
+            {id: uuidv4(), text:'Iterative Development'}, 
+            {id: uuidv4(), text:'Javascript'}, 
+            {id: uuidv4(), text:'Tailwind.css'}, 
+            {id: uuidv4(), text:'React.js'}, 
+            {id: uuidv4(), text:'Next.js'}, 
+            {id: uuidv4(), text:'Swiper.js'}, 
+            {id: uuidv4(), text:'Yarn'}],
         row: 2,
         col: 1,
-        key: 0
     },
-    {
+    {   
+        id: uuidv4(),
         name: 'Zelda Memory',
         thumbnail: picZelda,
         alt : 'project image description',
@@ -38,23 +49,30 @@ const projectsInitialData = [
         description: `Strengthened skills through a JavaScript memory game, bridging the gap between fundamental understanding 
                       and advanced frameworks. Inspired by 'The Legend of Zelda,' I revamped a tutorial project, ironing out bugs 
                       and adding personalized touches.`,
-        tags: ['Javascript', 'Bootstrap', 'Vanilla.js'],
+        tags: [
+            {id: uuidv4(), text:'Javascript'}, 
+            {id: uuidv4(), text:'Bootstrap'}, 
+            {id: uuidv4(), text:'Vanilla.js'}],
         row: 1,
         col: 1,
-        key: 1
     },
-    {
+    {   
+        id: uuidv4(),
         name: 'Simon Says',
         thumbnail: picSimon,
         alt : 'project image description',
         url: 'https://jor-g-r.github.io/SimonSays/',
         description: `Utilizing my enhanced JavaScript skills from an intensive course, I recreated the classic 'Simon Says' game. Beyond the course's scope, I refined the project, introducing additional interactions and personal touches for an engaging user experience.`,
-        tags: ['Javascript', 'Bootstrap', 'Vanilla.js'],
+        tags: [
+            {id: uuidv4(), text:'Javascript'}, 
+            {id: uuidv4(), text:'Bootstrap'}, 
+            {id: uuidv4(), text:'Vanilla.js'}],
         row: 1,
         col: 1,
-        key: 2
+        
     },
-    {
+    {   
+        id: uuidv4(),
         name: 'Best General Services',
         thumbnail: picBGS,
         alt : 'project image description',
@@ -64,12 +82,17 @@ const projectsInitialData = [
                       Designed a user-friendly platform highlighting their specialized industrial pest control and 
                       disinfection services. Resulted in an impressive website that effectively communicates their 
                       expertise and establishes credibility in the field.`,
-        tags: ['Web Design', 'Wordpress', 'Elementor', 'SEO'],
+        tags: [
+            {id: uuidv4(), text:'Web Design'}, 
+            {id: uuidv4(), text:'Wordpress'}, 
+            {id: uuidv4(), text:'Elementor'}, 
+            {id: uuidv4(), text:'SEO'}],
         row: 1,
         col: 2,
-        key: 3
+      
     },
     {
+        id: uuidv4(),
         name: 'Cartagena MusicFest 2021',
         thumbnail: picCartagenaFest,
         alt : 'project image description',
@@ -77,22 +100,32 @@ const projectsInitialData = [
         description: `While collaborating with ImageID in 2021, I revitalized the online presence of the prestigious 
                       Cartagena Music Festival. I designed and developed the website's schedule, performer information, 
                       and essential elements for this renowned musical event, celebrating global culture and classical music.`,
-        tags: ['Javascript', 'Wordpress', 'WPBakery', 'CSS'],
+        tags: [
+            {id: uuidv4(), text:'Javascript'}, 
+            {id: uuidv4(), text:'Wordpress'}, 
+            {id: uuidv4(), text:'WPBakery'},
+            {id: uuidv4(), text: 'CSS'}],
         row: 1,
         col: 1,
-        key: 4
+        
     },
-    {
+    {   
+        id: uuidv4(),
         name: 'VanargandLodge',
         thumbnail: picVanargand,
         alt : 'project image description',
         url: 'https://www.vanargandlodge.com/',
         description: `Crafted a serene web presence for Vanargand Lodge in Dagget, MI, during my tenure at FrontPorch Solutions. 
                       Using Next.js, TypeScript, and Tailwind CSS. Simplistic and impactful, it embodies my web development prowess.`,
-        tags: ['Javascript', 'Tailwind.css', 'Next.js', 'Swiper.js', 'Yarn'],
+        tags: [
+            {id: uuidv4(), text:'Javascript'}, 
+            {id: uuidv4(), text:'Tailwind.css'}, 
+            {id: uuidv4(), text:'Next.js'}, 
+            {id: uuidv4(), text:'Swiper.js'}, 
+            {id: uuidv4(), text:'Yarn'}],
         row: 1,
         col: 1,
-        key: 5
+        
     }
 
 ]
@@ -115,12 +148,12 @@ export default function Projects (){
                 </div>
             
                 <div className="w-full pt-16">
-                    <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <ul className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {projectItems.map((item) =>{
                             return (
-                                <>
+                               
                                 
-                                <div key={item.key} className={`group w-full p-5 flex bg-card-gradient shadow-lg border-dark-600 hover:border-dark-400 border backdrop-blur-sm bg-blend bg-opacity-10 rounded-md 
+                                <li key={item.id} className={`group w-full p-5 flex bg-card-gradient shadow-lg border-dark-600 hover:border-dark-400 border backdrop-blur-sm bg-blend bg-opacity-10 rounded-md 
                                                             ${item.row === 2 ? 'lg:row-span-2 md:col-span-2 lg:col-span-1' : ''} 
                                                             ${item.col === 2 ? 'lg:col-span-2 xl:flex-row md:gap-x-6 flex-col' : 'flex-col'}`}>
                                     <a target='_blank' className='relative' href={item.url}>
@@ -142,25 +175,25 @@ export default function Projects (){
                                             <p className='leading-6'>{item.description}</p>
                                         </div>
 
-                                        <div className="flex gap-2 mt-3 flex-wrap">
-                                            {item.tags.map((tag, index) => {
+                                        <ul className="flex gap-2 mt-3 flex-wrap">
+                                            {item.tags.map((tag) => {
                                                 return (
-                                                    <>
-                                                    <span key={index} 
+                                                   
+                                                    <li key={tag.id} 
                                                     className='text-dark-950 bg-white-200 group-hover:bg-white-100 px-3 py-1 rounded-full text-xs xl:text-sm cursor-default hover:scale-105 ease-out duration-500'>
-                                                        {tag}
-                                                    </span>
-                                                    </>
+                                                        {tag.text}
+                                                    </li>
+                                                   
                                                 )
                                             })}
-                                        </div>
+                                        </ul>
                                     </div>
-                                </div>
+                                </li>
                                 
-                                </>
+                               
                             )
                         })}
-                    </div>
+                    </ul>
                 </div>
             </div>
                      
