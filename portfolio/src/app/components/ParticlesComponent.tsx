@@ -25,7 +25,7 @@ const ParticlesComponent: React.FC = () => {
   }, [])
 
   const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine);
+    
 
     // Puedes inicializar la instancia de tsParticles (engine) aquí, agregando formas personalizadas o preajustes
     // Esto carga el paquete bundle de tsparticles, es el método más sencillo para tener todo listo
