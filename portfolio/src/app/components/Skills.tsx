@@ -40,7 +40,7 @@ export default function Skills (){
                     <h2 className="condensed text-center text-4xl lg:text-5xl uppercase -tracking-wide pt-4">Skills</h2>
                 </div>
 
-                <div className="w-full h-screen-2/3 lg:h-[68vh] relative flex items-center justify-center rounded-full circular-bg- bg-circular-orange lg:bg-circular-orange-lg ">
+                <div className="w-full h-screen-2/3 lg:h-[68vh] relative flex items-center justify-center rounded-full circular-bg- bg-circular-orange lg:bg-circular-orange-lg z-30">
 
                     <motion.div className="flex-items-center justify-center rounded-full lg:text-lg z-30
                                          bg-white-100 text-dark-900 px-4 py-5 cursor-pointer"
