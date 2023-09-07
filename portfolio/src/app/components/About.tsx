@@ -21,16 +21,20 @@ export default function About () {
                             <div className="description max-h-72 mt-7 mb-4 flex flex-col gap-6 p-6 overflow-y-scroll 
                                           bg-dark-950 shadow-inner bg-opacity-80 text-white-100 leading-[34px]">
                                 <p>
-                                With 6+ years in the tech industry, 4 as freelancer designer and 2 years as Front-End/Web Developer, 
-                                I&apos;m equipped with a strong UI design background. This strength led me to expand into QA development. 
-                                I&apos;m skilled in WordPress page builders, including Elementor and Visual Composer, and adept at navigating 
-                                WordPress environments and design tools. I&apos;m committed to staying current with technology trends.
+                                Hey there, thanks for dropping by! In the past six years, my journey in tech has been quite a ride. 
+                                I started as a self-taught designer and freelance creative back in October 2016. As time went on, my passion for 
+                                UI design grew stronger, propelling me to become a self-taught front-end developer.
                                 </p>
 
                                 <p>
-                                My focus is on mastering JavaScript, especially Next.js, as a Front-End Developer. Proficient in Git and GitHub, 
-                                I value adaptability and openness to new tech tools. Passionate about learning and maintaining healthy habits, 
-                                I&apos;m eager for growth opportunities to advance my skills and knowledge.
+                                Things really kicked into gear around January 2021 when I fully embraced my role as a web developer. 
+                                This marked a turning point in my career journey. I&apos;ve been on a mission to master JavaScript and Next.js, 
+                                always staying on top of the latest tech tools and trends.
+                                </p>
+
+                                <p>
+                                 My career path is a testament to my love for learning and self-improvement, taking me from a freelance designer to a skilled 
+                                 front-end developer. I&apos;m excited to connect with you and chat about my experiences and future goals.
                                 </p>
                             </div>
                         </div>
