@@ -54,18 +54,6 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
         )}
       </head>
       <body className={`${roboto.className} `}>
-      <noscript>
-          {`
-            <iframe
-              src="https://www.googletagmanager.com/ns.html?id=G-FKPTBY45WN"
-              height="0"
-              width="0"
-              style="display:none;visibility:hidden"
-            ></iframe>
-          `}
-
-        </noscript>
-        
         
         
         {children}</body>
