@@ -209,15 +209,20 @@ body {
   border-radius: 1.6px;
   background: rgba(255, 162, 22, 0.45);
 }
+body::-webkit-scrollbar-track{
+  background: rgba(16, 16, 16, 0.543);
+  border: 1px solid rgb(37, 37, 37);
+}
 
 ::-webkit-scrollbar-thumb {
   border-radius: .75px;
-  background: rgba(255, 255, 255, 0.533);
+  background: #ffa2178f;
+  border-radius: 1.6px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 162, 22, 0.60);
+  background: #ffa117;
 }
 
 

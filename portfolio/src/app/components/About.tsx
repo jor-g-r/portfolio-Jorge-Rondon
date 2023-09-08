@@ -19,7 +19,7 @@ export default function About () {
                             <h2 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide pt-4">About</h2>
 
                             <div className="description max-h-72 mt-7 mb-4 flex flex-col gap-6 p-6 overflow-y-scroll 
-                                          bg-dark-950 shadow-inner bg-opacity-80 text-white-100 leading-[34px]">
+                                          bg-[#121212] shadow-inner bg-opacity-80 text-white-100 leading-[34px]">
                                 <p>
                                 Hey there, thanks for dropping by! In the past six years, my journey in tech has been quite a ride. 
                                 I started as a self-taught designer and freelance creative back in October 2016. As time went on, my passion for 
