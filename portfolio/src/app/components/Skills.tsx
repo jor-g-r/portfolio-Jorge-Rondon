@@ -37,7 +37,7 @@ export default function Skills (){
 
             <div className="container mx-auto mt-1 pt-16 px-8 lg:px-[68px]">
                 <div className="pb-6">
-                    <h2 className="condensed text-center text-4xl lg:text-5xl uppercase -tracking-wide pt-4">Skills</h2>
+                    <h2 className="condensed text-center text-4xl lg:text-5xl uppercase -tracking-wide pt-4 z-40">Skills</h2>
                 </div>
 
                 <div className="w-full h-screen-2/3 lg:h-[68vh] relative flex items-center justify-center rounded-full circular-bg- bg-circular-orange lg:bg-circular-orange-lg z-30">

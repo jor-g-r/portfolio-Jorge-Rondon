@@ -73,7 +73,7 @@ const ParticlesComponent: React.FC = () => {
                         color: "#656565",
                         distance: 120,
                         enable: true,
-                        opacity: 0.25,
+                        opacity: 0.3,
                         width: 1,
                     },
                     move: {
@@ -83,7 +83,7 @@ const ParticlesComponent: React.FC = () => {
                             default: "bounce",
                         },
                         random: true,
-                        speed: 1,
+                        speed: .5,
                         straight: false,
                     },
                     number: {
@@ -100,7 +100,7 @@ const ParticlesComponent: React.FC = () => {
                         type: "triangle",
                     },
                     size: {
-                        value: { min: 1, max: 3 },
+                        value: { min: 1, max: 2 },
                     },
                 },
                 detectRetina: true,

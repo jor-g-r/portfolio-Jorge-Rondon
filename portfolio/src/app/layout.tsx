@@ -27,7 +27,7 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
   }, []);
 
   return (
-    <html lang="en" className={`${roboto.variable} ${roboto_condensed.variable} bg-neutral-900`}>
+    <html lang="en" className={`${roboto.variable} ${roboto_condensed.variable} bg-[#121212]`}>
         
       <head>
       <title>Frontend Developer Jorge Rondón</title>
