@@ -155,8 +155,8 @@ const Experience = () => {
                         siteUrl='https://www.chattanoogawebdesign.com/'
                         position='Webmaster'
                         time='january 2021 - april 2021'
-                        description={`As the webmaster at a marketing agency in Chattanooga, TN, I specialize in web development using the Elementor builder, 
-                                      with a focus on achieving high visual standards.`}  
+                        description={`As part of the development team, I worked as a Front-End developer at a marketing agency in Chattanooga, TN. 
+                                      I specialize in web development using the Elementor builder, with a focus on achieving high visual standards.`}  
                         />
                         
                     </ul>
