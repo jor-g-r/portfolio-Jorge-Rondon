@@ -73,7 +73,7 @@ const ParticlesComponent: React.FC = () => {
                         color: "#656565",
                         distance: 120,
                         enable: true,
-                        opacity: 0.3,
+                        opacity: 0.2,
                         width: 1,
                     },
                     move: {
