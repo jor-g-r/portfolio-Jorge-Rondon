@@ -153,7 +153,7 @@ export default function Projects (){
                             return (
                                
                                 
-                                <li key={item.id} className={`group w-full p-5 flex bg-card-gradient shadow-lg border-dark-600 hover:border-dark-400 border backdrop-blur-sm bg-blend bg-opacity-10 rounded-md 
+                                <li key={item.id} className={`group w-full p-5 flex bg-card-gradient shadow-lg border-stone-800 hover:border-neutral-700  border backdrop-blur-[2.15px] bg-blend bg-opacity-10 rounded-md 
                                                             ${item.row === 2 ? 'lg:row-span-2 md:col-span-2 lg:col-span-1' : ''} 
                                                             ${item.col === 2 ? 'lg:col-span-2 xl:flex-row md:gap-x-6 flex-col' : 'flex-col'}`}>
                                     <a target='_blank' className='relative' href={item.url}>
