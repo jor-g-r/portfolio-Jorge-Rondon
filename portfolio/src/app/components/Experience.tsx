@@ -131,9 +131,12 @@ const Experience = () => {
                         siteUrl='https://www.frontporchsolutions.com/'
                         position='QA Developer'
                         time='august 2021 - october 2022'
-                        description={`With my background in UI/UX design, I bring a unique perspective to my role as 
-                                      a functionality tester. I ensure high standards of visual accuracy from Figma 
-                                      projects and also serve as a backup front-end developer utilizing, css, PHP and or Next.js.`}  
+                        description={`Drawing from my experience in UI/UX design, I bring a unique perspective to my role as a 
+                                      functionality tester. With a keen eye for detail, I ensure high standards of visual accuracy 
+                                      in Figma projects. My background as a designer has played a pivotal role in honing this skill. 
+                                      In cases where older projects lacked visual references, my designer's sensibility allowed me 
+                                      to make consistent and meaningful suggestions for improvement. Additionally, I serve as a 
+                                      proficient backup front-end developer, well-versed in CSS, PHP, and Next.js.`}  
                         />
 
                         <WorkDetails 
