@@ -36,7 +36,7 @@ export default function Footer () {
                             <a target="_blank" className="hover:scale-125 ease-in duration-300" href="https://www.linkedin.com/in/jfrrj19gmail/">
                                 <IconLinkedIn/>
                             </a>
-                            <a target="_blank" className="hover:scale-125 ease-in duration-300" href="mailto:jfrrj19@gmail.com">
+                            <a target="_blank" className="hover:scale-125 ease-in duration-300" href="mailto:jorg.pot.07@gmail.com">
                                 <IconGmail />
                             </a>
                             <a target="_blank" className="hover:scale-125 ease-in duration-300" href="https://twitter.com/jfrrj19">
