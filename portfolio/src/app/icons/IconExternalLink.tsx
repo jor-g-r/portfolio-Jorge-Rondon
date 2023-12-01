@@ -3,7 +3,7 @@ export default function IconExternalLink (){
 
   return (
     <>
-      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px">
+      <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="28px" height="28px">
         <path className="shadow-lg fill-white-100 opacity-50"  d="M 25.980469 2.9902344 A 1.0001 1.0001 0 0 0 25.869141 3 L 20 3 A 1.0001 
                  1.0001 0 1 0 20 5 L 23.585938 5 L 13.292969 15.292969 A 1.0001 1.0001 0 
                  1 0 14.707031 16.707031 L 25 6.4140625 L 25 10 A 1.0001 1.0001 0 1 0 27 
