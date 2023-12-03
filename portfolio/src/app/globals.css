@@ -47,11 +47,8 @@ body {
   --hover-btn-color: #212121;
   --default-btn-color: #414141;
   --font-size: 16px;
-  /* 👆 this field should not be empty */
-  /* 👆 this field should not be empty */
 }
 
-/* button settings 👆 */
 
 .ui-btn {
   box-sizing: border-box;
@@ -207,7 +204,7 @@ body {
 /* Handle */
 .description::-webkit-scrollbar-thumb {
   border-radius: 1.6px;
-  background: rgba(255, 162, 22, 0.45);
+  background: rgba(255, 162, 22, 0.48);
 }
 body::-webkit-scrollbar-track{
   background: rgba(16, 16, 16, 0.543);
