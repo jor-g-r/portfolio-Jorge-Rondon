@@ -154,7 +154,7 @@ export default function Projects (){
                                
                                 
                                 <li key={item.id} className={`group w-full p-5 flex bg-card-gradient shadow-lg border-stone-800 hover:border-neutral-700  border backdrop-blur-[2.15px] bg-blend bg-opacity-10 rounded-md 
-                                                            ${item.row === 2 ? 'lg:row-span-2 md:col-span-2 lg:col-span-1' : ''} 
+                                                            ${item.row === 2 ? 'lg:row-span-2 md:col-span-2 lg:col-span-1' : ' '} 
                                                             ${item.col === 2 ? 'lg:col-span-2 xl:flex-row md:gap-x-6 flex-col' : 'flex-col'}`}>
                                     <a target='_blank' className='relative' href={item.url}>
                                         <Image 
