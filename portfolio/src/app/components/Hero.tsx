@@ -46,7 +46,7 @@ export default function Hero () {
                             Frontend Developer
                         </motion.h1>
                         <h3 className='text-3xl text-primary pt-2 pb-4'>
-                            Jorge Francisco
+                            Jorge Francisco de Jesús
                         </h3>
 
 
