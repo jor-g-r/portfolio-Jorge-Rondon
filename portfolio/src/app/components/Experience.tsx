@@ -147,7 +147,7 @@ const Experience = () => {
                         position='Webmaster'
                         time='april 2021 - august 2021'
                         description={`As a webmaster at ImageID, one of the largest marketing agencies in Colombia, I was responsible 
-                                      for managing multiple websites using WordPress as the CMS, primarily through builders such as Elementor, 
+                                      for managing multiple websites using WordPress as the CMS, primarily through page builders such as Elementor, 
                                       WPBakery, and Beaver Builder. I also had experience in managing e-commerce databases.`}  
                         />
 
