@@ -43,7 +43,10 @@ const NavbarBtn: React.FC<NavbarBtnProps> = ({href, title}) => {
   )
 }
 
-
+const navVariants = {
+  hidden: { height: 0 },
+  visible: { height: "auto" },
+ };
 
 const Navbar: React.FC<NavbarProps> = (props) => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -104,12 +107,18 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             </div>
             
             <div className="lg:w-2/3 w-4/5 max-w-xl">
-              <motion.ul className={`lg:flex  flex-col lg:flex-row 
-                              pb-3 lg:pb-0 justify-between lg:gap-3 gap-y-2 pt-6 lg:pt-1 uppercase lg:capitalize duration-300 ease-in transition-transform
-                              ${ isNavVisible ? 'pt-6 flex   ' : 'pt-0 hidden' }`}
-                                
-                                
-                                transition={{ duration: .3, ease: "easeIn" }} 
+              <motion.div className="overflow-hidden"
+               variants={navVariants}
+               initial="hidden"
+               animate={isNavVisible ? "visible" : "hidden"}
+               transition={{ duration: .3, ease: "easeIn" }}
+               >
+                 <motion.ul className={`flex  flex-col lg:flex-row 
+                              pb-3 lg:pb-0 justify-between lg:gap-3 gap-y-1 pt-6 lg:pt-1 uppercase lg:capitalize
+                              ${ isNavVisible ? 'h-auto' : 'pt-0 overflow-hidden' }
+                              
+                              `}
+                             
                                >
 
                 <li><NavbarBtn title='About Me' href="#about"  /></li>
@@ -120,6 +129,9 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                   <Link className='bg-white-100 text-dark-600 px-4  py-1 rounded-sm hover:bg-primary duration-300 ease-in' href="#footer">Contact</Link>
                 </li>
               </motion.ul>
+
+              </motion.div>
+             
 
                               
 
