@@ -65,7 +65,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           <motion.div className=" flex flex-col lg:flex-row justify-between lg:items-center px-7 lg:px-16  py-3  transition-transform duration-500 ease-in "
           
           
-          >  {/* Este contenedor */}
+          >  
 
               
             <div className="flex justify-between">
