@@ -107,6 +107,21 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             </div>
             
             <div className="lg:w-2/3 w-4/5 max-w-xl">
+              <div className="hidden lg:flex justify-end">
+                <ul className={`flex flex-col lg:flex-row 
+                              pb-3 lg:pb-0 justify-between lg:gap-4 xl:gap-6 gap-y-1 pt-6 lg:pt-1 uppercase lg:capitalize
+                              ${ isNavVisible ? 'h-auto' : 'pt-0 overflow-hidden' }        
+                              `}>
+                    <li><NavbarBtn title='About Me' href="#about"  /></li>
+                    <li><NavbarBtn title='Experience' href="#experience"  /></li>
+                    <li><NavbarBtn title='Certifications' href="#certification"  /></li>
+                    <li><NavbarBtn title='Projects' href="#projects" /></li>
+                    <li className='mt-2 lg:mt-0'>
+                      <Link className='bg-white-100 text-dark-600 px-4  py-1 rounded-sm hover:bg-primary duration-300 ease-in' href="#footer">Contact</Link>
+                    </li>
+                </ul>
+              </div>
+
               <motion.div className="overflow-hidden"
                variants={navVariants}
                initial="hidden"
