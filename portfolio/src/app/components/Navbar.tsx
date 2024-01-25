@@ -146,15 +146,9 @@ const Navbar: React.FC<NavbarProps> = (props) => {
               </motion.ul>
 
               </motion.div>
-             
+                          
 
-                              
-
-              
             </div>
-
-
-          
 
 
           </motion.div>
