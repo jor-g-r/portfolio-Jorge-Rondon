@@ -141,7 +141,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
                 <li><NavbarBtn title='Certifications' href="#certification"  /></li>
                 <li><NavbarBtn title='Projects' href="#projects" /></li>
                 <li className='mt-2 lg:mt-0'>
-                  <Link className='bg-white-100 text-dark-600 px-4  py-1 rounded-sm hover:bg-primary duration-300 ease-in' href="#footer">Contact</Link>
+                  <Link className='bg-white-100 text-dark-600 px-4 py-1 rounded-sm hover:bg-primary duration-300 ease-in' href="#footer">Contact</Link>
                 </li>
               </motion.ul>
 
