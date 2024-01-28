@@ -138,10 +138,13 @@ export default function Projects (){
         <>
            
         <section className="min-h-screen pb-28 relative" id='projects'>
+
+            {/* 
             <div className="sticky w-full bg-dark-950 h-7 top-[63px] z-50 flex items-center justify-center border-solid border-dark-500 border-y bg-opacity-95">
                 <p className='text-[10px] uppercase tracking-widest text-white-600 opacity-50'>Ask for private projects</p>
             </div>
             
+            */}
             <div className="absolute w-full h-full top-0 left-0">
                 <ParticlesComponent  /> 
             </div>
