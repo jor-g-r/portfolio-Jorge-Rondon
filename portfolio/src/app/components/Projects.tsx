@@ -145,7 +145,7 @@ export default function Projects (){
             </div>
             
             */}
-            <div className="absolute w-full h-full top-0 left-0">
+            <div className="absolute w-full h-full top-0 left-0 ">
                 <ParticlesComponent  /> 
             </div>
            
@@ -170,6 +170,7 @@ export default function Projects (){
                                         className={`w-full xl:min-w-[312px] rounded-sm hover:border border-dark-400 duration-100 ease-in ${item.col === 2 ? '': ''}`}
                                      
                                         />
+                                        
                                         <div className={`absolute  right-[2%] ${item.col === 2 ? '2xl:bottom-[2%] xl:bottom-[8%] md:bottom-[4%] bottom-[2%]': 'bottom-[2%]'}`}>
                                             <IconExternalLink />
                                         </div>
