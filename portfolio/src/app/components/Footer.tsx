@@ -30,9 +30,7 @@ export default function Footer () {
                             <a target="_blank" className="hover:scale-125 ease-in duration-300" href="https://github.com/jor-g-r">
                                 <IconGitHub />
                             </a>
-                            <a target="_blank" className="hover:scale-125 ease-in duration-300" href="https://api.whatsapp.com/send?phone=+573001334185&text=Hi+Jorge+%F0%9F%92%A1%0AI+would+like+to+know+more+about+your+Frontend+Dev+services">
-                                <IconWhatsApp />
-                            </a>
+                           
                             <a target="_blank" className="hover:scale-125 ease-in duration-300" href="https://www.linkedin.com/in/jfrrj19gmail/">
                                 <IconLinkedIn/>
                             </a>
