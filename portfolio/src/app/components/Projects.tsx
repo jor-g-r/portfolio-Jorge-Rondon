@@ -17,25 +17,23 @@ import picAppleVisionPro from "../img/projects/project-Apple Vision Pro Demo.jpg
 const projectsInitialData = [
   {
     id: uuidv4(),
-    name: "Awsome Rides Gallery",
-    thumbnail: picAwsomeGallery,
-    alt: "project image description",
-    url: "https://galleryunsplash-7e644a86-rho.vercel.app/",
-    description: `As a dedicated web developer and classic car enthusiast, I tackled the creation of a dynamic car 
-                       gallery project. Building on its visually simple design, I confidently crafted it without relying 
-                       on tools like Figma. While I had previously created a static version using HTML and Bootstrap, 
-                       this upgraded iteration utilizes advanced technologies like Next.js, Tailwind CSS, and Swiper. 
-                       The result is a sleek interface showcasing diverse categories such as muscle cars, bikes, trucks, 
-                       and electric vehicles. To enhance user experience, I incorporated a customizable dark mode feature.`,
+    name: "3D AppleVision Pro Demo",
+    thumbnail: picAppleVisionPro,
+    alt: "Apple Vision Pro Project Showcase",
+    url: "https://applevision-pro-3d-animation.vercel.app/",
+    description: `In my journey to enhance my frontend developer skills, I embarked on exploring 3D animations for web development. Embracing the Apple Vision Pro trend, I showcased its capabilities in this project.
+
+    Following a freecodecamp guide, I constructed the environment in vite with react.js. To manipulate 3D objects and create animations, I utilized WebGi (powered by Three.js) and GSAP.
+    
+    The outcome features Apple Vision Pro glasses moving in three dimensions as you scroll, and allows interactive manipulation of the 3D object in the final section with the 'try me' button.`,
 
     tags: [
-      { id: uuidv4(), text: "Iterative Development" },
       { id: uuidv4(), text: "Javascript" },
       { id: uuidv4(), text: "Tailwind.css" },
       { id: uuidv4(), text: "React.js" },
-      { id: uuidv4(), text: "Next.js" },
-      { id: uuidv4(), text: "Swiper.js" },
-      { id: uuidv4(), text: "Yarn" },
+      { id: uuidv4(), text: "Webgi - Three.js" },
+      { id: uuidv4(), text: "GSAP" },
+      { id: uuidv4(), text: "Vite" },
     ],
     row: 2,
     col: 1,
@@ -129,26 +127,27 @@ const projectsInitialData = [
     row: 1,
     col: 1,
   },
-
   {
     id: uuidv4(),
-    name: "3D AppleVision Pro Demo",
-    thumbnail: picAppleVisionPro,
-    alt: "Apple Vision Pro Project Showcase",
-    url: "https://applevision-pro-3d-animation.vercel.app/",
-    description: `In my journey to enhance my frontend developer skills, I embarked on exploring 3D animations for web development. Embracing the Apple Vision Pro trend, I showcased its capabilities in this project.
-
-    Following a freecodecamp guide, I constructed the environment in vite with react.js. To manipulate 3D objects and create animations, I utilized WebGi (powered by Three.js) and GSAP.
-    
-    The outcome features Apple Vision Pro glasses moving in three dimensions as you scroll, and allows interactive manipulation of the 3D object in the final section with the 'try me' button.`,
+    name: "Awsome Rides Gallery",
+    thumbnail: picAwsomeGallery,
+    alt: "project image description",
+    url: "https://galleryunsplash-7e644a86-rho.vercel.app/",
+    description: `As a dedicated web developer and classic car enthusiast, I tackled the creation of a dynamic car 
+                       gallery project. Building on its visually simple design, I confidently crafted it without relying 
+                       on tools like Figma. While I had previously created a static version using HTML and Bootstrap, 
+                       this upgraded iteration utilizes advanced technologies like Next.js, Tailwind CSS, and Swiper. 
+                       The result is a sleek interface showcasing diverse categories such as muscle cars, bikes, trucks, 
+                       and electric vehicles. To enhance user experience, I incorporated a customizable dark mode feature.`,
 
     tags: [
+      { id: uuidv4(), text: "Iterative Development" },
       { id: uuidv4(), text: "Javascript" },
       { id: uuidv4(), text: "Tailwind.css" },
       { id: uuidv4(), text: "React.js" },
-      { id: uuidv4(), text: "Webgi - Three.js" },
-      { id: uuidv4(), text: "GSAP" },
-      { id: uuidv4(), text: "Vite" },
+      { id: uuidv4(), text: "Next.js" },
+      { id: uuidv4(), text: "Swiper.js" },
+      { id: uuidv4(), text: "Yarn" },
     ],
     row: 2,
     col: 1,
