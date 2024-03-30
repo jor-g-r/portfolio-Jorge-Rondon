@@ -131,7 +131,7 @@ const projectsInitialData = [
     id: uuidv4(),
     name: "Awsome Rides Gallery",
     thumbnail: picAwsomeGallery,
-    alt: "project image description",
+    alt: "Awsome Rides Project Thumbnail",
     url: "https://galleryunsplash-7e644a86-rho.vercel.app/",
     description: `As a dedicated web developer and classic car enthusiast, I tackled the creation of a dynamic car 
                        gallery project. Building on its visually simple design, I confidently crafted it without relying 
