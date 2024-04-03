@@ -42,7 +42,7 @@ const projectsInitialData = [
     id: uuidv4(),
     name: "VanargandLodge",
     thumbnail: picVanargand,
-    alt: "project image description",
+    alt: "Vanagand Lodge project Thumbnail",
     url: "https://www.vanargandlodge.com/",
     description: `Crafted a serene web presence for Vanargand Lodge in Dagget, MI, during my tenure at FrontPorch Solutions. 
                       Using Next.js, TypeScript, and Tailwind CSS. Simplistic and impactful, it embodies my web development prowess.`,
@@ -60,7 +60,7 @@ const projectsInitialData = [
     id: uuidv4(),
     name: "Cartagena MusicFest 2021",
     thumbnail: picCartagenaFest,
-    alt: "project image description",
+    alt: "Festival de Cartagena 2021 project thumbnail",
     url: "https://www.cartagenamusicfestival.com/",
     description: `While collaborating with ImageID in 2021, I revitalized the online presence of the prestigious 
                       Cartagena Music Festival. I designed and developed the website's schedule, performer information, 
@@ -79,7 +79,7 @@ const projectsInitialData = [
     id: uuidv4(),
     name: "Best General Services",
     thumbnail: picBGS,
-    alt: "project image description",
+    alt: "Best General Services thumbnail",
     url: "https://bestgeneralservicessrl.com/",
     description: `Revamped a Lima-based pest control company's online presence using WordPress and Elementor. 
                       Seamlessly integrated SEO strategies to enhance the site's visibility and user engagement. 
@@ -99,7 +99,7 @@ const projectsInitialData = [
     id: uuidv4(),
     name: "Zelda Memory",
     thumbnail: picZelda,
-    alt: "project image description",
+    alt: "zelda memory thumbnail",
     url: "https://jor-g-r.github.io/MemoryZelda/",
     description: `Strengthened skills through a JavaScript memory game, bridging the gap between fundamental understanding 
                       and advanced frameworks. Inspired by 'The Legend of Zelda,' I revamped a tutorial project, ironing out bugs 
@@ -116,7 +116,7 @@ const projectsInitialData = [
     id: uuidv4(),
     name: "Simon Says",
     thumbnail: picSimon,
-    alt: "project image description",
+    alt: "Simon says thumbnail",
     url: "https://jor-g-r.github.io/SimonSays/",
     description: `Utilizing my enhanced JavaScript skills from an intensive course, I recreated the classic 'Simon Says' game. Beyond the course's scope, I refined the project, introducing additional interactions and personal touches for an engaging user experience.`,
     tags: [
