@@ -40,7 +40,7 @@ const projectsInitialData = [
   },
   {
     id: uuidv4(),
-    name: "VanargandLodge",
+    name: "Vanargand Lodge",
     thumbnail: picVanargand,
     alt: "Vanagand Lodge project Thumbnail",
     url: "https://www.vanargandlodge.com/",
