@@ -25,7 +25,7 @@ const projectsInitialData = [
 
     Following a freecodecamp guide, I constructed the environment in vite with react.js. To manipulate 3D objects and create animations, I utilized WebGi (powered by Three.js) and GSAP.
     
-    The outcome features Apple Vision Pro glasses moving in three dimensions as you scroll, and allows interactive manipulation of the 3D object in the final section with the 'try me' button.`,
+    The outcome features Apple Vision Pro glasses moving in three dimensions as you scroll, and allows interactive manipulation of the 3D object in the final section with the "try me" button.`,
 
     tags: [
       { id: uuidv4(), text: "Javascript" },
