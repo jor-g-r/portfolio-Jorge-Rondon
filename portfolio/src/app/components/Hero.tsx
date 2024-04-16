@@ -77,8 +77,8 @@ export default function Hero() {
                   Skilled in CMS and WordPress environments.
                 </p>
                 <p className="drop-shadow-lg">
-                  Passionate about new technologies and a fan of hands-on
-                  learning.
+                  Passionate about new technologies, a React enthusiast, and a
+                  fan of hands-on learning.
                 </p>
               </div>
             </div>
