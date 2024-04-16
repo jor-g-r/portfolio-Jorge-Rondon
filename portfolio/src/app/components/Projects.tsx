@@ -30,7 +30,7 @@ const projectsInitialData = [
     tags: [
       { id: uuidv4(), text: "Javascript" },
       { id: uuidv4(), text: "Tailwind.css" },
-      { id: uuidv4(), text: "React.js" },
+      { id: uuidv4(), text: "REACT" },
       { id: uuidv4(), text: "Webgi - Three.js" },
       { id: uuidv4(), text: "GSAP" },
       { id: uuidv4(), text: "Vite" },
@@ -47,9 +47,10 @@ const projectsInitialData = [
     description: `Crafted a serene web presence for Vanargand Lodge in Dagget, MI, during my tenure at FrontPorch Solutions. 
                       Using Next.js, TypeScript, and Tailwind CSS. Simplistic and impactful, it embodies my web development prowess.`,
     tags: [
-      { id: uuidv4(), text: "Javascript" },
+      { id: uuidv4(), text: "Typescript" },
       { id: uuidv4(), text: "Tailwind.css" },
       { id: uuidv4(), text: "Next.js" },
+      { id: uuidv4(), text: "REACT" },
       { id: uuidv4(), text: "Swiper.js" },
       { id: uuidv4(), text: "Yarn" },
     ],
@@ -142,9 +143,9 @@ const projectsInitialData = [
 
     tags: [
       { id: uuidv4(), text: "Iterative Development" },
-      { id: uuidv4(), text: "Javascript" },
+      { id: uuidv4(), text: "Typescript" },
       { id: uuidv4(), text: "Tailwind.css" },
-      { id: uuidv4(), text: "React.js" },
+      { id: uuidv4(), text: "REACT" },
       { id: uuidv4(), text: "Next.js" },
       { id: uuidv4(), text: "Swiper.js" },
       { id: uuidv4(), text: "Yarn" },
