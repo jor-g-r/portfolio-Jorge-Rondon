@@ -1,25 +1,27 @@
-"use client"; 
-import './globals.css'
-import { Roboto, Roboto_Condensed } from 'next/font/google'
-import Script from 'next/script'
-import { useState, useEffect } from 'react'
+"use client";
+import "./globals.css";
+import { Roboto, Roboto_Condensed } from "next/font/google";
+import Script from "next/script";
+import { useState, useEffect } from "react";
 
 const roboto = Roboto({
-  subsets: ['latin'],
-  variable: '--font-roboto',
-  display: 'swap',
-  weight: ['100', '400', '500']
-})
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  display: "swap",
+  weight: ["100", "400", "500"],
+});
 const roboto_condensed = Roboto_Condensed({
-  subsets: ['latin'],
-  variable: '--font-roboto-condensed',
-  display: 'swap',
-  weight: ['400', '700']
-})
+  subsets: ["latin"],
+  variable: "--font-roboto-condensed",
+  display: "swap",
+  weight: ["400", "700"],
+});
 
-
-
-export default function RootLayout({children,}: {children: React.ReactNode}) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -27,17 +29,22 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
   }, []);
 
   return (
-    <html lang="en" className={`${roboto.variable} ${roboto_condensed.variable} bg-[#121212]`}>
-        
+    <html
+      lang="en"
+      className={`${roboto.variable} ${roboto_condensed.variable} bg-[#121212]`}
+    >
       <head>
-      <title>Frontend Developer Jorge Rondón</title>
-      <meta name="description" content="rontend Developer with a portfolio filled with exciting web projects. My portfolio showcases my expertise in modern technologies like Next.js, Tailwind CSS, and the powerful Framer Motion."></meta>
+        <title>Frontend Developer Jorge Rondón</title>
+        <meta
+          name="description"
+          content="Frontend Developer with a portfolio filled with exciting web projects. My portfolio showcases my expertise in modern technologies like Next.js, Tailwind CSS, and the powerful Framer Motion."
+        ></meta>
         <Script
           src={`https://www.googletagmanager.com/gtm.js?id=G-FKPTBY45WN`}
           strategy="lazyOnload"
         />
 
-          {loaded && (
+        {loaded && (
           <Script
             id="google-tag-manager"
             strategy="lazyOnload"
@@ -53,12 +60,7 @@ export default function RootLayout({children,}: {children: React.ReactNode}) {
           />
         )}
       </head>
-      <body className={`${roboto.className} `}>
-        
-        
-        {children}</body>
-
-
+      <body className={`${roboto.className} `}>{children}</body>
     </html>
-  )
+  );
 }
