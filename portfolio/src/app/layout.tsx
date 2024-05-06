@@ -32,7 +32,7 @@ export default function RootLayout({
           content="Frontend Developer with a portfolio filled with exciting web projects. My portfolio showcases my expertise in modern technologies like Next.js, Tailwind CSS, and the powerful Framer Motion."
         ></meta>
         <Script
-          src={`https://www.googletagmanager.com/gtm.js?id=G-FKPTBY45WN`}
+          src={`https://www.googletagmanager.com/gtm.js?id=GTM-K7VKR3M6`}
           strategy="lazyOnload"
         />
       </head>
@@ -41,7 +41,7 @@ export default function RootLayout({
         <noscript
           dangerouslySetInnerHTML={{
             __html: `
-      <iframe src="https://www.googletagmanager.com/ns.html?id=G-FKPTBY45WN"
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K7VKR3M6"
       height="0" width="0" style="display:none;visibility:hidden"></iframe>
     `,
           }}
