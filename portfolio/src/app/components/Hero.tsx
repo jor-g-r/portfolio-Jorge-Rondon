@@ -8,15 +8,15 @@ import IconDownload from "../icons/IconDownload";
 export default function Hero() {
   if (typeof document !== "undefined") {
     const resumeBtn = document.getElementById("resume");
-    if (resumeBtn) {
-      resumeBtn.addEventListener("click", function () {
-        window.dataLayer.push({
-          event: "CV_Downloaded",
-          event_category: "PDF",
-          event_label: "HaveResume",
-        });
-      });
-    }
+    // if (resumeBtn) {
+    //   resumeBtn.addEventListener("click", function () {
+    //     window.dataLayer.push({
+    //       event: "CV_Downloaded",
+    //       event_category: "PDF",
+    //       event_label: "HaveResume",
+    //     });
+    //   });
+    // }
   }
 
   const [isHovered, setIsHovered] = useState(false);
