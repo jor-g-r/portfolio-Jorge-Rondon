@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Roboto, Roboto_Condensed } from "next/font/google";
+import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
 
 const roboto = Roboto({
@@ -31,10 +32,8 @@ export default function RootLayout({
           name="description"
           content="Frontend Developer with a portfolio filled with exciting web projects. My portfolio showcases my expertise in modern technologies like Next.js, Tailwind CSS, and the powerful Framer Motion."
         ></meta>
-        <Script
-          src={`https://www.googletagmanager.com/gtm.js?id=GTM-K7VKR3M6`}
-          strategy="lazyOnload"
-        />
+
+        <GoogleTagManager gtmId="GTM-K7VKR3M6" />
       </head>
       <body className={`${roboto.className} `}>
         {children}
