@@ -52,7 +52,7 @@ export default function Hero() {
                 target="_blank"
                 href="https://public.pdf-archive.com/3Ka5AeNd/"
                 className="ui-btn mx-auto rounded-sm w-fit"
-                id="resume"
+                id="resumedownload"
               >
                 <span className="flex items-center gap-1 condensed font-light uppercase ">
                   Resume
