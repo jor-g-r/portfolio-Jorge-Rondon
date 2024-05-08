@@ -38,7 +38,7 @@ const WorkDetails: React.FC<WorkDetailsProps> = ({
           initial={{ y: 70 }}
           whileInView={{ y: 0 }}
           transition={{ duration: 0.75, type: "spring" }}
-          className="border-solid border border-white-100 hover:border-primary-700 hover:border-opacity-70 py-5 lg:py-6 px-4 lg:px-7"
+          className="border-solid border border-white-100 hover:border-primary-600 hover:border-opacity-70 py-5 lg:py-6 px-4 lg:px-7"
         >
           <div className="flex gap-4 pb-3 items-center">
             <motion.a
