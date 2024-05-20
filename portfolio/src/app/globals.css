@@ -299,7 +299,7 @@ body::-webkit-scrollbar-track{
 .button-footer:hover .clone > :nth-child(4) {
   transition-delay: 0.3s;
 }
-/* icon style and hover */
+/* icon style :hover */
 .button-footer svg {
   width: 20px;
   right: 0;
