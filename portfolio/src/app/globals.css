@@ -309,7 +309,7 @@ body::-webkit-scrollbar-track {
   transition-delay: 0.3s;
 }
 
-/* icon style hover */
+/* icon style :hover */
 .button-footer svg {
   width: 20px;
   right: 0;
