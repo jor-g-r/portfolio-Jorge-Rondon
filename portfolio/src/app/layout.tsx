@@ -1,7 +1,6 @@
 import "./globals.css";
 import { Roboto, Roboto_Condensed } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
-import Script from "next/script";
 
 const roboto = Roboto({
   subsets: ["latin"],
