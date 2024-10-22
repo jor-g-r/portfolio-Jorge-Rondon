@@ -35,7 +35,7 @@ export default function Hero() {
               <motion.h1
                 className="lg:text-8xl text-7xl font-bold"
                 initial={{ y: 0 }}
-                animate={{ y: [0, 5, 0], rotate: [0, -1, 0] }}
+                animate={{ y: [-0.5, 2, 0], rotate: [0, -1, 0.5] }}
                 transition={{
                   duration: 8,
                   repeat: Infinity,
@@ -50,7 +50,7 @@ export default function Hero() {
 
               <a
                 target="_blank"
-                href="https://public.pdf-archive.com/3Ka5AeNd/"
+                href="#"
                 className="ui-btn mx-auto rounded-sm w-fit"
                 id="resumedownload"
               >
