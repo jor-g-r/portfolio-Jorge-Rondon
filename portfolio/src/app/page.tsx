@@ -6,6 +6,7 @@ import Experience from "./components/Experience";
 import Certifications from "./components/Certifications";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
+import SkillSlider from "./components/SkillsSlider";
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
       <Navbar title="Testing" theme="light" />
 
       <Hero />
+
+      <SkillSlider />
 
       <About />
 
