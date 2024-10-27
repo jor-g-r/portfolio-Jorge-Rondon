@@ -321,3 +321,10 @@ body::-webkit-scrollbar-track {
 .button-footer:hover svg {
   transform: translateY(-50%) rotate(-90deg);
 }
+
+
+/* skils slider */
+.skillslider {
+  opacity: .2;
+  border: 1px solid greenyellow
+}

@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
+import "../globals.css";
 
 interface LogoProps {
   logo: string;
@@ -19,7 +20,7 @@ const Logo: React.FC<LogoProps> = ({ logo }) => (
 const SkillSlider = () => {
   return (
     <>
-      <div className="min-h-[20vh] bg-stone-950"></div>
+      <div className="min-h-[20vh] skillslider bg-stone-950"></div>
     </>
   );
 };
