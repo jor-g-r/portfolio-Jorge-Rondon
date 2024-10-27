@@ -29,7 +29,7 @@ interface Logo {
 }
 
 const LogoSingle: React.FC<Logo> = ({ src, alt }) => (
-  <div>
+  <div className="">
     <Image
       className="rounded opacity-90"
       src={src}
@@ -64,8 +64,8 @@ const SkillSlider = () => {
   return (
     <>
       <div className="border-b border-solid border-dark-500 overflow-x-hidden">
-        <div className="skillslider flex overflow-x-hidden">
-          <div className="flex flex-row-reverse gap-8 w-full py-8">
+        <div className="">
+          <div className="skillslider flex flex-row-reverse gap-8 w-full py-8">
             {logos.map((logo, index) => (
               <LogoSingle key={index} {...logo} />
             ))}
