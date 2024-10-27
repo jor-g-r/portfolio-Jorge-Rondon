@@ -325,6 +325,14 @@ body::-webkit-scrollbar-track {
 
 /* skils slider */
 .skillslider {
-  opacity: .2;
-  border: 1px solid greenyellow
+  animation: floatRight 36s linear infinite;
+}
+
+@keyframes floatRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
