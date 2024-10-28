@@ -8,7 +8,7 @@ html {
 
 :root {
   --body-bg: linear-gradient(90deg, #0F0F0F 0%, #242424 100%);
-  --body-bg-1: linear-gradient(90deg, #0B0B0B 0%, #1E1E1E 100%);
+  --body-bg-1: linear-gradient(92deg, #0b0b0b 20%, #1e1e1e 100%);
 }
 
 
@@ -325,7 +325,7 @@ body::-webkit-scrollbar-track {
 
 /* skils slider */
 .skillslider {
-  animation: floatRight 26s linear infinite;
+  animation: floatRight 30s linear infinite;
 }
 
 @keyframes floatRight {

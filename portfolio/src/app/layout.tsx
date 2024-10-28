@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${roboto.variable} ${roboto_condensed.variable} bg-[#121212]`}
+      className={`${roboto.variable} ${roboto_condensed.variable} bg-[#101010]`}
     >
       <head>
         <title>Frontend Developer Jorge Rondón</title>

@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, useScroll } from "framer-motion";
 
 import IconArrowDown from "../icons/IconArrowDownn";
@@ -22,6 +22,7 @@ export default function Hero() {
   const [isHovered, setIsHovered] = useState(false);
 
   const { scrollYProgress } = useScroll();
+
   return (
     <>
       <section
@@ -91,7 +92,7 @@ export default function Hero() {
                      text-neutral-50 font-light lg:text-xl tracking-[10px] lg:tracking-[14px] uppercase"
           style={{
             opacity: scrollYProgress,
-            transition: "opacity 0.125s ease-in-out",
+            transition: "opacity 0.12s ease-in-out",
           }}
         >
           <span>Web Design &</span> &nbsp;Web Development
