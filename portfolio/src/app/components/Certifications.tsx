@@ -2,7 +2,6 @@
 import Image from "next/image";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
-
 import platzi from "../img/logo-Platzi.jpg";
 import freeCodeCamp from "../img/logo-FreeCodeCamp.jpg";
 import soloLearn from "../img/logo-SoloLearn.jpg";
@@ -85,7 +84,7 @@ const Certifications = () => {
   return (
     <>
       <section
-        className="border-solid border-b border-dark-500 pb-28 lg:p b-16 relative z-10 "
+        className="border-solid  pb-28 lg:p b-16 relative z-10 "
         id="certification"
       >
         <div className="absolute w-full h-full bg-gradient-linear-dark z-20"></div>

@@ -321,3 +321,18 @@ body::-webkit-scrollbar-track {
 .button-footer:hover svg {
   transform: translateY(-50%) rotate(-90deg);
 }
+
+
+/* skils slider */
+.skillslider {
+  animation: floatRight 26s linear infinite;
+}
+
+@keyframes floatRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
