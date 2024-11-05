@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <>
       <section
-        className="border-b border-solid border-dark-500 z-10 relative"
+        className="border-y border-solid border-dark-500 z-10 relative"
         id="footer"
       >
         <div className="absolute w-full h-full bg-neutral-950 bg-opacity-40 z-20"></div>
