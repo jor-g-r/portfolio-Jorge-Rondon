@@ -328,6 +328,10 @@ body::-webkit-scrollbar-track {
   animation: floatRight 28s cubic-bezier(0.31, 0.59, 0.89, 0.3) infinite;
 }
 
+.skillslider:hover {
+  animation-play-state: paused;
+}
+
 @keyframes floatRight {
   0% {
     transform: translateX(-100%);
