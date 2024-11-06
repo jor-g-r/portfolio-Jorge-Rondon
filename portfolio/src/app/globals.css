@@ -325,7 +325,7 @@ body::-webkit-scrollbar-track {
 
 /* skils slider */
 .skillslider {
-  animation: floatRight 30s linear infinite;
+  animation: floatRight 28s cubic-bezier(0.31, 0.59, 0.89, 0.3) infinite;
 }
 
 @keyframes floatRight {

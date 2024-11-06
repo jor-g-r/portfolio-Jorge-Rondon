@@ -37,6 +37,7 @@ const LogoSingle: React.FC<Logo> = ({ src, alt }) => (
       alt={alt}
       height={58}
       width={58}
+      title={alt}
     />
   </div>
 );
