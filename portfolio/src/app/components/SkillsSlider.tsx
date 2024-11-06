@@ -32,7 +32,7 @@ interface Logo {
 const LogoSingle: React.FC<Logo> = ({ src, alt }) => (
   <div className="">
     <Image
-      className="rounded opacity-90"
+      className="rounded opacity-90 brightness-95 hover:opacity-100 hover:brightness-105 cursor-crosshair"
       src={src}
       alt={alt}
       height={58}
