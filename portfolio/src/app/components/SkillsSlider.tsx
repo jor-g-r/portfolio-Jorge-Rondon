@@ -21,6 +21,7 @@ import skillWebflow from "../img/skills/Webflow.jpg";
 import skillWordpress from "../img/skills/Wordpress.jpg";
 import skillElementor from "../img/skills/Elementor.jpg";
 import skillJet from "../img/skills/Jet.jpg";
+import skillShopify from "../img/skills/Shopify.jpg";
 import skillHubspot from "../img/skills/Hubspot.jpg";
 
 interface Logo {
@@ -59,6 +60,7 @@ const SkillSlider = () => {
     { src: skillWordpress, alt: "Wordpress" },
     { src: skillElementor, alt: "Elementor" },
     { src: skillJet, alt: "Jet Elements" },
+    { src: skillShopify, alt: "Shopify" },
     { src: skillHubspot, alt: "Hubspot" },
   ];
   return (
