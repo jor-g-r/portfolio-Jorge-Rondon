@@ -31,7 +31,7 @@ interface Logo {
 const LogoSingle: React.FC<Logo> = ({ src, alt }) => (
   <div className="">
     <Image
-      className="rounded opacity-90 brightness-95 hover:opacity-100 hover:brightness-105 cursor-crosshair"
+      className="rounded opacity-90 brightness-95 hover:opacity-100 hover:brightness-105 cursor-crosshair max-w-[58px] max-h-[58px]"
       src={src}
       alt={alt}
       height={58}
@@ -66,7 +66,7 @@ const SkillSlider = () => {
     <>
       <div className="border-b border-solid border-dark-500 overflow-x-hidden">
         <div className="">
-          <div className="skillslider flex flex-row-reverse gap-8 w-full py-8">
+          <div className="skillslider flex flex-row-reverse lg:gap-8 gap-4 w-full lg:py-8 py-4">
             {logos.map((logo, index) => (
               <LogoSingle key={index} {...logo} />
             ))}
