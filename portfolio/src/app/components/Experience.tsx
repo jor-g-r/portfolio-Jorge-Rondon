@@ -7,6 +7,7 @@ import cwdlogo from "../img/cwd-logo.jpg";
 import imageidlogo from "../img/imageID-logo.jpg";
 import fpslogo from "../img/fps-logo.jpg";
 import wynlogo from "../img/wyn-logo.jpg";
+import contenderlogo from "../img/contender-logo.jpg";
 import IconCircle from "../icons/IconCircle";
 
 interface WorkDetailsProps {
@@ -81,6 +82,7 @@ const Experience = () => {
     imageID: imageidlogo,
     fps: fpslogo,
     wyn: wynlogo,
+    contender: contenderlogo,
   };
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -112,6 +114,16 @@ const Experience = () => {
             />
 
             <ul className=" flex flex-col gap-8 lg:gap-14 items-center pt-12 pl-[12%] lg:pl-[5%]">
+              <WorkDetails
+                index={0}
+                company="Contender Studio"
+                logo={logo.contender}
+                siteUrl="https://www.contenderstudio.com/"
+                position="Web Developer"
+                time="March 2024 - Present"
+                description={`As the sole developer in the agency, I lead the creation and optimization of websites, managing all technical solutions. Additionally, I am expanding my expertise in event tracking with GTM and GA, as well as SEO. As the agency grows, my role is evolving toward leading the development department.`}
+              />
+
               <WorkDetails
                 index={0}
                 company="WYN Solutions"
