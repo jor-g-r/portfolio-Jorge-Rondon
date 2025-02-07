@@ -6,18 +6,14 @@ import IconArrowDown from "../icons/IconArrowDownn";
 import IconDownload from "../icons/IconDownload";
 
 export default function Hero() {
-  if (typeof document !== "undefined") {
+  useEffect(() => {
     const resumeBtn = document.getElementById("resume");
-    // if (resumeBtn) {
-    //   resumeBtn.addEventListener("click", function () {
-    //     window.dataLayer.push({
-    //       event: "CV_Downloaded",
-    //       event_category: "PDF",
-    //       event_label: "HaveResume",
-    //     });
-    //   });
-    // }
-  }
+    if (resumeBtn) {
+      resumeBtn.addEventListener("click", function () {
+        console.log("click");
+      });
+    }
+  }, []);
 
   const [isHovered, setIsHovered] = useState(false);
 

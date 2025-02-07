@@ -24,6 +24,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${roboto.variable} ${roboto_condensed.variable} bg-[#101010]`}
+      suppressHydrationWarning
     >
       <head>
         <title>Frontend Developer Jorge Rondón</title>
@@ -34,7 +35,7 @@ export default function RootLayout({
 
         <GoogleTagManager gtmId="GTM-K7VKR3M6" />
       </head>
-      <body className={`${roboto.className} `}>
+      <body className={`${roboto.className}`} suppressHydrationWarning>
         {children}
         <noscript
           dangerouslySetInnerHTML={{

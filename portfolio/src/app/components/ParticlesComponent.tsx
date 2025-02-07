@@ -26,18 +26,18 @@ const ParticlesComponent: React.FC = () => {
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(
-    async (container: Container | undefined) => {
-      await console.log(container);
-    },
-    []
-  );
+  // const particlesLoaded = useCallback(
+  //   async (container: Container | undefined) => {
+  //       await console.log(container);
+  //   },
+  //   []
+  // );
 
   return (
     <Particles
       id="tsparticles"
       init={particlesInit}
-      loaded={particlesLoaded}
+      // loaded={particlesLoaded}
       options={{
         fpsLimit: 40,
         interactivity: {
