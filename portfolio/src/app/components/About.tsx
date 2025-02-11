@@ -1,8 +1,17 @@
+"use client";
+import { motion, useScroll } from "framer-motion";
 import Image from "next/image";
-import jorgeImage from "../img/JorgeRondonFrontend.png";
+import jorgeImage from "../img/MyWorkspace2.webp";
+import { useRef } from "react";
 
 export default function About() {
   const aboutImage = jorgeImage;
+
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start center", "end center"],
+  });
 
   return (
     <>
@@ -10,60 +19,65 @@ export default function About() {
         className="border-b border-solid border-dark-500 z-10 relative"
         id="about"
       >
-        <div className="absolute w-full h-full bg-gradient-linear-dark z-20"></div>
+        <div className="absolute w-full h-full bg-gradient-linear-dark bg-opacity-10 z-20"></div>
 
-        <div className="container mx-auto px-8 lg:px-[68px] pt-20 z-40 relative">
-          <div className="flex flex-col items-center lg:items-start md:flex-row ">
-            <div className="w-full lg:max-w-[762px] pb-8">
+        <div className="container mx-auto px-8 lg:px-[68px] py-20 z-40 relative">
+          <div className="flex flex-col-reverse items-center lg:items-start md:flex-row">
+            <motion.div
+              ref={ref}
+              style={{
+                opacity: scrollYProgress,
+                transition: "opacity 0.3s ease-in-out",
+              }}
+              className="pt-6 lg:pt-0 lg:px-10 md:sticky top-24 lg:pb-14"
+            >
+              <Image
+                src={aboutImage}
+                width={462}
+                height={500}
+                alt="Jorge's workspace"
+                className="rounded-xs shadow-lg border-1 border-dark-600"
+              />
+            </motion.div>
+            <div className="w-full lg:max-w-[742px] pb-8">
               <h2 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide pt-4">
                 About
               </h2>
 
               <div
-                className="description max-h-72 mt-7 mb-4 flex flex-col gap-6 p-6 overflow-y-scroll 
-                                          bg-[#121212] shadow-inner bg-opacity-80 text-white-100 leading-[34px]"
+                className="description mt-7 mb-4 flex flex-col gap-6
+                                           text-white-100 leading-[34px]"
               >
                 <p>
-                  Welcome, I really appreciate you taking the time to read my
-                  professional history. For the last 8 years I&apos;ve been
-                  making a living from technology, while I don&apos;t have that
-                  much time as a developer, all the experience I&apos;ve
-                  gathered has helped me to understand very well where I stand.
+                  I started in the industry in 2016 as a freelance designer,
+                  exploring the fundamentals of design and user interfaces
+                  during the rise of Web 2.0. Over time, my interest in
+                  technology led me to specialize in front-end development,
+                  learning on my own and from more experienced professionals.
                 </p>
 
                 <p>
-                  In my first steps I started my career in technology as a
-                  self-taught designer with simple jobs, and as I faced bigger
-                  challenges I got more and more involved in the industry.
-                  Thanks to that experience, today I am a developer with solid
-                  knowledge in user experience and as such, I can make decisions
-                  based on that, as well as other skills that complement my
-                  professional profile.
+                  Since 2021, I have been working as a web developer with
+                  experience in WordPress and a strong focus on JavaScript and
+                  TypeScript, particularly with Next.js. Throughout my career, I
+                  have honed my ability to manage time efficiently, allowing me
+                  to balance continuous learning with collaborating on diverse
+                  projects.
                 </p>
 
                 <p>
-                  Things really kicked into gear around January 2021 when I
-                  fully embraced my role as a web developer. This marked a
-                  turning point in my career journey. I&apos;ve been on a
-                  mission to master JavaScript and Next.js, always staying on
-                  top of the latest tech tools and trends.
+                  Additionally, I have integrated AI tools into my workflow to
+                  optimize processes and enhance productivity. I understand how
+                  to ask the right questions and leverage AI as a strategic
+                  resource to stay on track and make informed decisions.
                 </p>
 
                 <p>
-                  My career path is a testament to my love for learning and
-                  self-improvement, taking me from a freelance designer to a
-                  skilled front-end developer. I&apos;m excited to connect with
-                  you and chat about my experiences and future goals.
+                  I am always looking for new opportunities that allow me to
+                  grow and contribute to innovative projects. If you have an
+                  idea in mind, I&apos;d be happy to be a part of it.
                 </p>
               </div>
-            </div>
-            <div className="pl-12 lg:px-16 self-end">
-              <Image
-                src={aboutImage}
-                width={500}
-                height={500}
-                alt="Picture of the author"
-              />
             </div>
           </div>
         </div>
