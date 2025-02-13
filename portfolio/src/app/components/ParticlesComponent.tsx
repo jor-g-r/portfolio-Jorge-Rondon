@@ -39,7 +39,7 @@ const ParticlesComponent: React.FC = () => {
       init={particlesInit}
       // loaded={particlesLoaded}
       options={{
-        fpsLimit: 40,
+        fpsLimit: 35,
         interactivity: {
           events: {
             onHover: {
@@ -66,14 +66,14 @@ const ParticlesComponent: React.FC = () => {
             color: "#656565",
             distance: 120,
             enable: true,
-            opacity: 0.4,
+            opacity: 0.5,
             width: 1,
           },
           move: {
             direction: "none",
             enable: true,
             outModes: {
-              default: "bounce",
+              default: "destroy",
             },
             random: true,
             speed: 0.4,
@@ -87,7 +87,7 @@ const ParticlesComponent: React.FC = () => {
             value: 50,
           },
           opacity: {
-            value: 0.15,
+            value: 0.2,
           },
           shape: {
             type: "triangle",

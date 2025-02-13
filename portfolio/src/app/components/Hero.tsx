@@ -91,10 +91,10 @@ export default function Hero() {
         <motion.h4
           ref={ref}
           className="m-auto flex flex-col sm:flex-row justify-center text-center leading-6 py-2
-                     text-neutral-500 font-light lg:text-xl tracking-[10px] lg:tracking-[14px] uppercase"
+                     text-neutral-400 font-light lg:text-xl tracking-[10px] lg:tracking-[14px] uppercase"
           style={{
             opacity: scrollYProgress,
-            transition: "opacity 0.52s ease-in-out",
+            transition: "opacity 0.35s ease-in-out",
           }}
         >
           <span>Web Design &</span> &nbsp;Web Development
