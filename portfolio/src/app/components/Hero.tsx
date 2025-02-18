@@ -17,6 +17,7 @@ export default function Hero() {
     if (resumeBtn) {
       resumeBtn.addEventListener("click", function () {
         console.log("click");
+        window.open("https://jumpshare.com/v/QZ7YqUtwDPE6QKLk67i6", "_blank");
       });
     }
   }, []);
@@ -52,7 +53,9 @@ export default function Hero() {
 
               <a
                 target="_blank"
-                href="#"
+                href="https://jumpshare.com/v/QZ7YqUtwDPE6QKLk67i6"
+                download="Jorge Francisco de Jesús - CV"
+                rel="noopener noreferrer"
                 className="ui-btn mx-auto rounded-sm w-fit"
                 id="resumedownload"
               >
