@@ -45,7 +45,7 @@ export default function Hero() {
                   scale: [1, 1.5, 1],
                 }}
               >
-                Frontend Developer
+                Frontend Developer 
               </motion.h1>
               <h3 className="text-3xl text-primary pt-2 pb-4">
                 Jorge Francisco de Jesús
