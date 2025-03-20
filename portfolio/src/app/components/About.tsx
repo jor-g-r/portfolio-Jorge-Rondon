@@ -1,7 +1,7 @@
 "use client";
 import { motion, useScroll } from "framer-motion";
 import Image from "next/image";
-import jorgeImage from "../img/MyWorkspace2.webp";
+import jorgeImage from "../img/JorgeBuildingPic.webp";
 import { useRef } from "react";
 
 export default function About() {
@@ -10,7 +10,7 @@ export default function About() {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start center", "end center"],
+    offset: ["start end", "start center"],
   });
 
   return (
@@ -21,25 +21,25 @@ export default function About() {
       >
         <div className="absolute w-full h-full bg-gradient-linear-dark bg-opacity-10 z-20"></div>
 
-        <div className="container mx-auto px-8 lg:px-[68px] py-20 z-40 relative">
+        <div className="max-w-[1312px] mx-auto px-8 lg:px-12 py-20 z-40 relative">
           <div className="flex flex-col-reverse items-center lg:items-start md:flex-row">
             <motion.div
-              ref={ref}
               style={{
                 opacity: scrollYProgress,
                 transition: "opacity 0.3s ease-in-out",
               }}
-              className="pt-6 lg:pt-0 lg:px-10 md:sticky top-24 lg:pb-14"
+              className="mt-6 lg:mt-0 lg:px-10 lg:mb-14 lg:max-w-md"
             >
               <Image
+                ref={ref}
                 src={aboutImage}
                 width={462}
                 height={500}
-                alt="Jorge's workspace"
+                alt="Jorge Rondon Developer"
                 className="rounded-xs shadow-lg border-1 border-dark-600"
               />
             </motion.div>
-            <div className="w-full lg:max-w-[742px] pb-8">
+            <div className="w-full pb-8">
               <h2 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide pt-4">
                 About
               </h2>
