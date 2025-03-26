@@ -49,11 +49,14 @@ export default function About() {
                                            text-white-100 leading-[34px]"
               >
                 <p>
-                  I started in the industry in 2016 as a freelance designer,
-                  exploring the fundamentals of design and user interfaces
-                  during the rise of Web 2.0. Over time, my interest in
+                  I started in the industry in 2016 as a freelance as a web
+                  designer, exploring the fundamentals of design and user
+                  interfaces during the rise of Web 2.0.
+                  Surrounding myself with talented people, I was able to learn
+                  from them and grow as a designer. Over time, my interest in
                   technology led me to specialize in front-end development,
-                  learning on my own and from more experienced professionals.
+                  learning on my own and from more experienced professionals who
+                  were willing to share their knowledge.
                 </p>
 
                 <p>
