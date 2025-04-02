@@ -7,7 +7,7 @@ import ParticlesComponent from "./ParticlesComponent";
 import IconExternalLink from "../icons/IconExternalLink";
 
 import picAwsomeGallery from "../img/projects/project-AwsomeRides.jpg";
-import picBGS from "../img/projects/project-BGS.jpg";
+import picKamaredine from "../img/projects/project-kamaredinex2.jpg";
 import picZelda from "../img/projects/project-ZeldaMemory.jpg";
 import picSimon from "../img/projects/project-simonsays.jpg";
 import picVanargand from "../img/projects/project-Vanargand.jpg";
@@ -78,17 +78,13 @@ const projectsInitialData = [
 
   {
     id: uuidv4(),
-    name: "Best General Services",
-    thumbnail: picBGS,
-    alt: "Best General Services thumbnail",
-    url: "https://bestgeneralservicessrl.com/",
-    description: `Revamped a Lima-based pest control company's online presence using WordPress and Elementor. 
-                      Seamlessly integrated SEO strategies to enhance the site's visibility and user engagement. 
-                      Designed a user-friendly platform highlighting their specialized industrial pest control and 
-                      disinfection services. Resulted in an impressive website that effectively communicates their 
-                      expertise and establishes credibility in the field.`,
+    name: "Kamaredine Properties",
+    thumbnail: picKamaredine,
+    alt: "Kamaredine Properties thumbnail",
+    url: "https://kamaredine.com/",
+    description: `Revamped the online presence for Kamaredine Properties, a hotel located in Burgas, Bulgaria. Given its prime location and diverse tourism, the website is multilingual, featuring English as the primary language, along with Bulgarian and Russian. Built using WordPress and Elementor, the design process did not rely on traditional design software. Instead, the designer created a stylescape that captured the desired colors, fonts, and overall essence. I adapted this vision into a template, iteratively crafting the layout in an intuitive manner, ensuring a polished and responsive design across all devices. `,
     tags: [
-      { id: uuidv4(), text: "Web Design" },
+      { id: uuidv4(), text: "Iterative Development" },
       { id: uuidv4(), text: "Wordpress" },
       { id: uuidv4(), text: "Elementor" },
       { id: uuidv4(), text: "SEO" },
