@@ -1,0 +1,119 @@
+[
+  {
+    "id": "unique-id-1",
+    "name": "3D AppleVision Pro Demo",
+    "thumbnail": "/img/projects/apple-vision-pro-3d-animation.png",
+    "alt": "Apple Vision Pro Project Showcase",
+    "url": "https://applevision-pro-3d-animation.vercel.app/",
+    "description": "In my journey to enhance my frontend developer skills, I embarked on exploring 3D animations for web development. Embracing the Apple Vision Pro trend, I showcased its capabilities in this project. Following a freecodecamp guide, I constructed the environment in vite with react.js. To manipulate 3D objects and create animations, I utilized WebGi (powered by Three.js) and GSAP. The outcome features Apple Vision Pro glasses moving in three dimensions as you scroll, and allows interactive manipulation of the 3D object in the final section with the 'try me' button.",
+    "tags": [
+      { "id": "tag-id-1", "text": "Javascript" },
+      { "id": "tag-id-2", "text": "Tailwind.css" },
+      { "id": "tag-id-3", "text": "REACT" },
+      { "id": "tag-id-4", "text": "Webgi - Three.js" },
+      { "id": "tag-id-5", "text": "GSAP" },
+      { "id": "tag-id-6", "text": "Vite" }
+    ],
+    "row": 2,
+    "col": 1
+  },
+  {
+    "id": "unique-id-2",
+    "name": "Vanargand Lodge",
+    "thumbnail": "/img/projects/vanargand-lodge.png",
+    "alt": "Vanagand Lodge project Thumbnail",
+    "url": "https://www.vanargandlodge.com/",
+    "description": "Crafted a serene web presence for Vanargand Lodge in Dagget, MI, during my tenure at FrontPorch Solutions. Using Next.js, TypeScript, and Tailwind CSS. Simplistic and impactful, it embodies my web development prowess.",
+    "tags": [
+      { "id": "tag-id-7", "text": "Typescript" },
+      { "id": "tag-id-8", "text": "Tailwind.css" },
+      { "id": "tag-id-9", "text": "Next.js" },
+      { "id": "tag-id-10", "text": "REACT" },
+      { "id": "tag-id-11", "text": "Swiper.js" },
+      { "id": "tag-id-12", "text": "Yarn" }
+    ],
+    "row": 1,
+    "col": 1
+  },
+  {
+    "id": "unique-id-3",
+    "name": "Cartagena MusicFest 2021",
+    "thumbnail": "/img/projects/cartagena-music-festival.png",
+    "alt": "Festival de Cartagena 2021 project thumbnail",
+    "url": "https://www.cartagenamusicfestival.com/",
+    "description": "While collaborating with ImageID in 2021, I revitalized the online presence of the prestigious Cartagena Music Festival. I designed and developed the website's schedule, performer information, and essential elements for this renowned musical event, celebrating global culture and classical music.",
+    "tags": [
+      { "id": "tag-id-13", "text": "Javascript" },
+      { "id": "tag-id-14", "text": "Wordpress" },
+      { "id": "tag-id-15", "text": "WPBakery" },
+      { "id": "tag-id-16", "text": "CSS" }
+    ],
+    "row": 1,
+    "col": 1
+  },
+  {
+    "id": "unique-id-4",
+    "name": "Best General Services",
+    "thumbnail": "/img/projects/best-general-services.png",
+    "alt": "Best General Services thumbnail",
+    "url": "https://bestgeneralservicessrl.com/",
+    "description": "Revamped a Lima-based pest control company's online presence using WordPress and Elementor. Seamlessly integrated SEO strategies to enhance the site's visibility and user engagement. Designed a user-friendly platform highlighting their specialized industrial pest control and disinfection services. Resulted in an impressive website that effectively communicates their expertise and establishes credibility in the field.",
+    "tags": [
+      { "id": "tag-id-17", "text": "Web Design" },
+      { "id": "tag-id-18", "text": "Wordpress" },
+      { "id": "tag-id-19", "text": "Elementor" },
+      { "id": "tag-id-20", "text": "SEO" }
+    ],
+    "row": 1,
+    "col": 2
+  },
+  {
+    "id": "unique-id-5",
+    "name": "Zelda Memory",
+    "thumbnail": "/img/projects/zelda-memory.png",
+    "alt": "zelda memory thumbnail",
+    "url": "https://jor-g-r.github.io/MemoryZelda/",
+    "description": "Strengthened skills through a JavaScript memory game, bridging the gap between fundamental understanding and advanced frameworks. Inspired by 'The Legend of Zelda,' I revamped a tutorial project, ironing out bugs and adding personalized touches.",
+    "tags": [
+      { "id": "tag-id-21", "text": "Javascript" },
+      { "id": "tag-id-22", "text": "Bootstrap" },
+      { "id": "tag-id-23", "text": "Vanilla.js" }
+    ],
+    "row": 1,
+    "col": 1
+  },
+  {
+    "id": "unique-id-6",
+    "name": "Simon Says",
+    "thumbnail": "/img/projects/simon-says.png",
+    "alt": "Simon says thumbnail",
+    "url": "https://jor-g-r.github.io/SimonSays/",
+    "description": "Utilizing my enhanced JavaScript skills from an intensive course, I recreated the classic 'Simon Says' game. Beyond the course's scope, I refined the project, introducing additional interactions and personal touches for an engaging user experience.",
+    "tags": [
+      { "id": "tag-id-24", "text": "Javascript" },
+      { "id": "tag-id-25", "text": "Bootstrap" },
+      { "id": "tag-id-26", "text": "Vanilla.js" }
+    ],
+    "row": 1,
+    "col": 1
+  },
+  {
+    "id": "unique-id-7",
+    "name": "Awsome Rides Gallery",
+    "thumbnail": "/img/projects/awsome-rides-gallery.png",
+    "alt": "Awsome Rides Project Thumbnail",
+    "url": "https://galleryunsplash-7e644a86-rho.vercel.app/",
+    "description": "As a dedicated web developer and classic car enthusiast, I tackled the creation of a dynamic car gallery project. Building on its visually simple design, I confidently crafted it without relying on tools like Figma. While I had previously created a static version using HTML and Bootstrap, this upgraded iteration utilizes advanced technologies like Next.js, Tailwind CSS, and Swiper. The result is a sleek interface showcasing diverse categories such as muscle cars, bikes, trucks, and electric vehicles. To enhance user experience, I incorporated a customizable dark mode feature.",
+    "tags": [
+      { "id": "tag-id-27", "text": "Iterative Development" },
+      { "id": "tag-id-28", "text": "Typescript" },
+      { "id": "tag-id-29", "text": "Tailwind.css" },
+      { "id": "tag-id-30", "text": "REACT" },
+      { "id": "tag-id-31", "text": "Next.js" },
+      { "id": "tag-id-32", "text": "Swiper.js" },
+      { "id": "tag-id-33", "text": "Yarn" }
+    ],
+    "row": 2,
+    "col": 1
+  }
+] 
