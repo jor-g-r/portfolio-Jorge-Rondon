@@ -13,6 +13,7 @@ import picSimon from "../img/projects/project-simonsays.jpg";
 import picVanargand from "../img/projects/project-Vanargand.jpg";
 import picCartagenaFest from "../img/projects/project-Cartagena.jpg";
 import picAppleVisionPro from "../img/projects/project-Apple Vision Pro Demo.jpg";
+import picIndentura from "../img/projects/project-Indentura.jpg";
 
 const projectsInitialData = [
   {
@@ -95,6 +96,51 @@ const projectsInitialData = [
   },
   {
     id: uuidv4(),
+    name: "Awsome Rides Gallery",
+    thumbnail: picAwsomeGallery,
+    alt: "Awsome Rides Project Thumbnail",
+    url: "https://galleryunsplash-7e644a86-rho.vercel.app/",
+    description: `As a dedicated web developer and classic car enthusiast, I tackled the creation of a dynamic car 
+                       gallery project. Building on its visually simple design, I confidently crafted it without relying 
+                       on tools like Figma. While I had previously created a static version using HTML and Bootstrap, 
+                       this upgraded iteration utilizes advanced technologies like Next.js, Tailwind CSS, and Swiper. 
+                       The result is a sleek interface showcasing diverse categories such as muscle cars, bikes, trucks, 
+                       and electric vehicles. To enhance user experience, I incorporated a customizable dark mode feature.`,
+
+    tags: [
+      { id: uuidv4(), text: "Iterative Development" },
+      { id: uuidv4(), text: "Typescript" },
+      { id: uuidv4(), text: "Tailwind.css" },
+      { id: uuidv4(), text: "REACT" },
+      { id: uuidv4(), text: "Next.js" },
+      { id: uuidv4(), text: "Swiper.js" },
+      { id: uuidv4(), text: "Yarn" },
+    ],
+    row: 2,
+    col: 1,
+  },
+  {
+    id: uuidv4(),
+    name: "Indentura",
+    thumbnail: picIndentura,
+    alt: "Indentura Project Thumbnail",
+    url: "https://www.indentura.com/",
+    description: `I took responsibility to fully develop Indentura's user interface through financial interface design standards as a front-end development expert specializing in this field. The exact Figma designs served as the foundation for me to develop pixel-perfect screens which executed the design concepts seamlessly for functional user interfaces. I developed more than 20 customized components using Next.js and Shadcn UI in a structured monorepo structure to establish a design system that guarantees visual unity in the entire application. My work integrates dynamic dashboards based on Recharts to show data along with complex form aspects validated by design patterns which adapt seamlessly between different display types. I turned complex financial interfaces into user-friendly visually appealing interfaces that drive user engagement while boosting platform trust in this project.`,
+
+    tags: [
+
+      { id: uuidv4(), text: "Typescript" },
+      { id: uuidv4(), text: "Tailwind.css" },
+      { id: uuidv4(), text: "REACT" },
+      { id: uuidv4(), text: "Next.js" },
+      { id: uuidv4(), text: "Shadcn UI" },
+      { id: uuidv4(), text: "Bun" },
+    ],
+    row: 2,
+    col: 1,
+  },
+  {
+    id: uuidv4(),
     name: "Zelda Memory",
     thumbnail: picZelda,
     alt: "zelda memory thumbnail",
@@ -125,31 +171,7 @@ const projectsInitialData = [
     row: 1,
     col: 1,
   },
-  {
-    id: uuidv4(),
-    name: "Awsome Rides Gallery",
-    thumbnail: picAwsomeGallery,
-    alt: "Awsome Rides Project Thumbnail",
-    url: "https://galleryunsplash-7e644a86-rho.vercel.app/",
-    description: `As a dedicated web developer and classic car enthusiast, I tackled the creation of a dynamic car 
-                       gallery project. Building on its visually simple design, I confidently crafted it without relying 
-                       on tools like Figma. While I had previously created a static version using HTML and Bootstrap, 
-                       this upgraded iteration utilizes advanced technologies like Next.js, Tailwind CSS, and Swiper. 
-                       The result is a sleek interface showcasing diverse categories such as muscle cars, bikes, trucks, 
-                       and electric vehicles. To enhance user experience, I incorporated a customizable dark mode feature.`,
-
-    tags: [
-      { id: uuidv4(), text: "Iterative Development" },
-      { id: uuidv4(), text: "Typescript" },
-      { id: uuidv4(), text: "Tailwind.css" },
-      { id: uuidv4(), text: "REACT" },
-      { id: uuidv4(), text: "Next.js" },
-      { id: uuidv4(), text: "Swiper.js" },
-      { id: uuidv4(), text: "Yarn" },
-    ],
-    row: 2,
-    col: 1,
-  },
+  
 ];
 
 export default function Projects() {
