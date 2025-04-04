@@ -87,6 +87,7 @@ const projectsInitialData = [
       { id: uuidv4(), text: "Iterative Development" },
       { id: uuidv4(), text: "Wordpress" },
       { id: uuidv4(), text: "Elementor" },
+      { id: uuidv4(), text: "CSS" },
       { id: uuidv4(), text: "SEO" },
     ],
     row: 1,
