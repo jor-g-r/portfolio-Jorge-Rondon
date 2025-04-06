@@ -18,27 +18,25 @@ import picIndentura from "../img/projects/project-Indentura.jpg";
 const projectsInitialData = [
   {
     id: uuidv4(),
-    name: "3D AppleVision Pro Demo",
-    thumbnail: picAppleVisionPro,
-    alt: "Apple Vision Pro Project Showcase",
-    url: "https://applevision-pro-3d-animation.vercel.app/",
-    description: `In my journey to enhance my frontend developer skills, I embarked on exploring 3D animations for web development. Embracing the Apple Vision Pro trend, I showcased its capabilities in this project.
-
-    Following a freecodecamp guide, I constructed the environment in vite with react.js. To manipulate 3D objects and create animations, I utilized WebGi (powered by Three.js) and GSAP.
-    
-    The outcome features Apple Vision Pro glasses moving in three dimensions as you scroll, and allows interactive manipulation of the 3D object in the final section with the "try me" button.`,
+    name: "Indentura",
+    thumbnail: picIndentura,
+    alt: "Indentura Project Thumbnail",
+    url: "https://www.indentura.com/",
+    description: `I took responsibility to fully develop Indentura's user interface through financial interface design standards as a front-end development expert specializing in this field. The exact Figma designs served as the foundation for me to develop pixel-perfect screens which executed the design concepts seamlessly for functional user interfaces. I developed more than 20 customized components using Next.js and Shadcn UI in a structured monorepo structure to establish a design system that guarantees visual unity in the entire application. My work integrates dynamic dashboards based on Recharts to show data along with complex form aspects validated by design patterns which adapt seamlessly between different display types. I turned complex financial interfaces into user-friendly visually appealing interfaces that drive user engagement while boosting platform trust in this project.`,
 
     tags: [
-      { id: uuidv4(), text: "Javascript" },
+
+      { id: uuidv4(), text: "Typescript" },
       { id: uuidv4(), text: "Tailwind.css" },
       { id: uuidv4(), text: "REACT" },
-      { id: uuidv4(), text: "Webgi - Three.js" },
-      { id: uuidv4(), text: "GSAP" },
-      { id: uuidv4(), text: "Vite" },
+      { id: uuidv4(), text: "Next.js" },
+      { id: uuidv4(), text: "Shadcn UI" },
+      { id: uuidv4(), text: "Bun" },
     ],
     row: 2,
     col: 1,
   },
+  
   {
     id: uuidv4(),
     name: "Vanargand Lodge",
@@ -121,20 +119,23 @@ const projectsInitialData = [
   },
   {
     id: uuidv4(),
-    name: "Indentura",
-    thumbnail: picIndentura,
-    alt: "Indentura Project Thumbnail",
-    url: "https://www.indentura.com/",
-    description: `I took responsibility to fully develop Indentura's user interface through financial interface design standards as a front-end development expert specializing in this field. The exact Figma designs served as the foundation for me to develop pixel-perfect screens which executed the design concepts seamlessly for functional user interfaces. I developed more than 20 customized components using Next.js and Shadcn UI in a structured monorepo structure to establish a design system that guarantees visual unity in the entire application. My work integrates dynamic dashboards based on Recharts to show data along with complex form aspects validated by design patterns which adapt seamlessly between different display types. I turned complex financial interfaces into user-friendly visually appealing interfaces that drive user engagement while boosting platform trust in this project.`,
+    name: "3D AppleVision Pro Demo",
+    thumbnail: picAppleVisionPro,
+    alt: "Apple Vision Pro Project Showcase",
+    url: "https://applevision-pro-3d-animation.vercel.app/",
+    description: `In my journey to enhance my frontend developer skills, I embarked on exploring 3D animations for web development. Embracing the Apple Vision Pro trend, I showcased its capabilities in this project.
+
+    Following a freecodecamp guide, I constructed the environment in vite with react.js. To manipulate 3D objects and create animations, I utilized WebGi (powered by Three.js) and GSAP.
+    
+    The outcome features Apple Vision Pro glasses moving in three dimensions as you scroll, and allows interactive manipulation of the 3D object in the final section with the "try me" button.`,
 
     tags: [
-
-      { id: uuidv4(), text: "Typescript" },
+      { id: uuidv4(), text: "Javascript" },
       { id: uuidv4(), text: "Tailwind.css" },
       { id: uuidv4(), text: "REACT" },
-      { id: uuidv4(), text: "Next.js" },
-      { id: uuidv4(), text: "Shadcn UI" },
-      { id: uuidv4(), text: "Bun" },
+      { id: uuidv4(), text: "Webgi - Three.js" },
+      { id: uuidv4(), text: "GSAP" },
+      { id: uuidv4(), text: "Vite" },
     ],
     row: 2,
     col: 1,
