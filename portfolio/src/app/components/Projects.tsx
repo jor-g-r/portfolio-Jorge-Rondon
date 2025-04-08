@@ -22,7 +22,7 @@ const projectsInitialData = [
     thumbnail: picIndentura,
     alt: "Indentura Project Thumbnail",
     url: "https://www.indentura.com/",
-    description: `I took responsibility to fully develop Indentura's user interface through financial interface design standards as a front-end development expert specializing in this field. The exact Figma designs served as the foundation for me to develop pixel-perfect screens which executed the design concepts seamlessly for functional user interfaces. I developed more than 20 customized components using Next.js and Shadcn UI in a structured monorepo structure to establish a design system that guarantees visual unity in the entire application. My work integrates dynamic dashboards based on Recharts to show data along with complex form aspects validated by design patterns which adapt seamlessly between different display types. I turned complex financial interfaces into user-friendly visually appealing interfaces that drive user engagement while boosting platform trust in this project.`,
+    description: `I was responsible for developing Indentura's user interface according to financial design standards as a front-end expert. Using the provided Figma designs, I created pixel-perfect screens that executed the design concepts for functional user interfaces. I developed over 20 customized components with Next.js and Shadcn UI in a structured monorepo, establishing a design system that ensures visual consistency across the application. My work includes dynamic dashboards based on Recharts to display data and complex forms validated by design patterns, adapting seamlessly to different display types. This project transformed complex financial interfaces into user-friendly, visually appealing designs that enhance user engagement and trust.`,
 
     tags: [
 
@@ -94,6 +94,29 @@ const projectsInitialData = [
   },
   {
     id: uuidv4(),
+    name: "3D AppleVision Pro Demo",
+    thumbnail: picAppleVisionPro,
+    alt: "Apple Vision Pro Project Showcase",
+    url: "https://applevision-pro-3d-animation.vercel.app/",
+    description: `In my journey to enhance my frontend developer skills, I embarked on exploring 3D animations for web development. Embracing the Apple Vision Pro trend, I showcased its capabilities in this project.
+
+    Following a freecodecamp guide, I constructed the environment in vite with react.js. To manipulate 3D objects and create animations, I utilized WebGi (powered by Three.js) and GSAP.
+    
+    The outcome features Apple Vision Pro glasses moving in three dimensions as you scroll, and allows interactive manipulation of the 3D object in the final section with the "try me" button.`,
+
+    tags: [
+      { id: uuidv4(), text: "Javascript" },
+      { id: uuidv4(), text: "Tailwind.css" },
+      { id: uuidv4(), text: "REACT" },
+      { id: uuidv4(), text: "Webgi - Three.js" },
+      { id: uuidv4(), text: "GSAP" },
+      { id: uuidv4(), text: "Vite" },
+    ],
+    row: 1,
+    col: 2,
+  },
+  {
+    id: uuidv4(),
     name: "Awsome Rides Gallery",
     thumbnail: picAwsomeGallery,
     alt: "Awsome Rides Project Thumbnail",
@@ -117,29 +140,7 @@ const projectsInitialData = [
     row: 2,
     col: 1,
   },
-  {
-    id: uuidv4(),
-    name: "3D AppleVision Pro Demo",
-    thumbnail: picAppleVisionPro,
-    alt: "Apple Vision Pro Project Showcase",
-    url: "https://applevision-pro-3d-animation.vercel.app/",
-    description: `In my journey to enhance my frontend developer skills, I embarked on exploring 3D animations for web development. Embracing the Apple Vision Pro trend, I showcased its capabilities in this project.
-
-    Following a freecodecamp guide, I constructed the environment in vite with react.js. To manipulate 3D objects and create animations, I utilized WebGi (powered by Three.js) and GSAP.
-    
-    The outcome features Apple Vision Pro glasses moving in three dimensions as you scroll, and allows interactive manipulation of the 3D object in the final section with the "try me" button.`,
-
-    tags: [
-      { id: uuidv4(), text: "Javascript" },
-      { id: uuidv4(), text: "Tailwind.css" },
-      { id: uuidv4(), text: "REACT" },
-      { id: uuidv4(), text: "Webgi - Three.js" },
-      { id: uuidv4(), text: "GSAP" },
-      { id: uuidv4(), text: "Vite" },
-    ],
-    row: 2,
-    col: 1,
-  },
+   
   {
     id: uuidv4(),
     name: "Zelda Memory",
@@ -207,7 +208,7 @@ export default function Projects() {
                 return (
                   <li
                     key={item.id}
-                    className={`group w-full p-5 flex bg-card-gradient shadow-lg border-stone-800 hover:border-neutral-700  border backdrop-blur-[2.15px] bg-blend bg-opacity-10 rounded-md 
+                    className={`group w-full p-5 flex gap-6 bg-card-gradient shadow-lg border-stone-800 hover:border-neutral-700  border backdrop-blur-[2.15px] bg-blend bg-opacity-10 rounded-md 
                                                             ${
                                                               item.row === 2
                                                                 ? "lg:row-span-2 md:col-span-2 lg:col-span-1"
@@ -239,7 +240,7 @@ export default function Projects() {
                       </div>
                     </a>
                     <div className="flex flex-col justify-between h-full">
-                      <div className="text-white-100 mt-6 w-full">
+                      <div className="text-white-100 w-full">
                         <h3 className="text-xl condensed capitalize pb-3 lg:text-[32px] font-bold">
                           {item.name}
                         </h3>
