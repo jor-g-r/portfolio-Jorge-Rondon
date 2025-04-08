@@ -14,6 +14,7 @@ import picVanargand from "../img/projects/project-Vanargand.jpg";
 import picCartagenaFest from "../img/projects/project-Cartagena.jpg";
 import picAppleVisionPro from "../img/projects/project-Apple Vision Pro Demo.jpg";
 import picIndentura from "../img/projects/project-Indentura.jpg";
+import picCharta from "../img/projects/project-Charta.jpg";
 
 const projectsInitialData = [
   {
@@ -22,7 +23,7 @@ const projectsInitialData = [
     thumbnail: picIndentura,
     alt: "Indentura Project Thumbnail",
     url: "https://www.indentura.com/",
-    description: `I was responsible for developing Indentura's user interface according to financial design standards as a front-end expert. Using the provided Figma designs, I created pixel-perfect screens that executed the design concepts for functional user interfaces. I developed over 20 customized components with Next.js and Shadcn UI in a structured monorepo, establishing a design system that ensures visual consistency across the application. My work includes dynamic dashboards based on Recharts to display data and complex forms validated by design patterns, adapting seamlessly to different display types. This project transformed complex financial interfaces into user-friendly, visually appealing designs that enhance user engagement and trust.`,
+    description: `Indentura's user interface was developed by a Front-end developer according to financial design standards. Using the provided Figma designs, I created pixel-perfect screens that executed the design concepts for functional user interfaces. I developed over 20 customized components with Next.js and Shadcn UI in a structured monorepo, establishing a design system that ensures visual consistency across the application. My work includes dynamic dashboards based on Recharts to display data and complex forms validated by design patterns, adapting seamlessly to different display types. This project transformed complex financial interfaces into user-friendly, visually appealing designs that enhance user engagement and trust.`,
 
     tags: [
 
@@ -33,10 +34,37 @@ const projectsInitialData = [
       { id: uuidv4(), text: "Shadcn UI" },
       { id: uuidv4(), text: "Bun" },
     ],
+    row: 1,
+    col: 2,
+  },
+  
+  
+  
+  
+  {
+    id: uuidv4(),
+    name: "Get Charta",
+    thumbnail: picCharta,
+    alt: "Get Charta project Thumbnail",
+    url: "https://www.getcharta.com/",
+    description: `Contributing as a Frontend Developer to Charta, a smart contract negotiation platform, 
+                  I was tasked with implementing the user interface refresh using Figma designs. My primary 
+                  focus involved adapting existing application logic into a new design system based on Chakra UI. 
+                  I meticulously reconstructed crucial components like negotiation panels and complex forms, 
+                  ensuring pixel-perfect accuracy and visual consistency. Navigating the specific structural 
+                  demands of Chakra UI required careful attention, yet resulted in a polished, cohesive interface 
+                  optimized for managing smart contracts, significantly improving user experience and trust in 
+                  the platform.`,
+    tags: [
+      { id: uuidv4(), text: "Typescript" },
+      { id: uuidv4(), text: "Tailwind.css" },
+      { id: uuidv4(), text: "Next.js" },
+      { id: uuidv4(), text: "REACT" },
+      { id: uuidv4(), text: "Chakra UI" },
+    ],
     row: 2,
     col: 1,
   },
-  
   {
     id: uuidv4(),
     name: "Vanargand Lodge",
@@ -56,6 +84,7 @@ const projectsInitialData = [
     row: 1,
     col: 1,
   },
+  
   {
     id: uuidv4(),
     name: "Cartagena MusicFest 2021",
@@ -74,8 +103,8 @@ const projectsInitialData = [
     row: 1,
     col: 1,
   },
-
-  {
+   
+ {
     id: uuidv4(),
     name: "Kamaredine Properties",
     thumbnail: picKamaredine,
@@ -92,6 +121,7 @@ const projectsInitialData = [
     row: 1,
     col: 2,
   },
+  
   {
     id: uuidv4(),
     name: "3D AppleVision Pro Demo",
@@ -112,8 +142,8 @@ const projectsInitialData = [
       { id: uuidv4(), text: "GSAP" },
       { id: uuidv4(), text: "Vite" },
     ],
-    row: 1,
-    col: 2,
+    row: 2,
+    col: 1,
   },
   {
     id: uuidv4(),
@@ -140,7 +170,22 @@ const projectsInitialData = [
     row: 2,
     col: 1,
   },
-   
+  {
+    id: uuidv4(),
+    name: "Simon Says",
+    thumbnail: picSimon,
+    alt: "Simon says thumbnail",
+    url: "https://jor-g-r.github.io/SimonSays/",
+    description: `Utilizing my enhanced JavaScript skills from an intensive course, I recreated the classic 'Simon Says' game. Beyond the course's scope, I refined the project, introducing additional interactions and personal touches for an engaging user experience.`,
+    tags: [
+      { id: uuidv4(), text: "Javascript" },
+      { id: uuidv4(), text: "Bootstrap" },
+      { id: uuidv4(), text: "Vanilla.js" },
+    ],
+    row: 1,
+    col: 1,
+  },
+
   {
     id: uuidv4(),
     name: "Zelda Memory",
@@ -158,21 +203,7 @@ const projectsInitialData = [
     row: 1,
     col: 1,
   },
-  {
-    id: uuidv4(),
-    name: "Simon Says",
-    thumbnail: picSimon,
-    alt: "Simon says thumbnail",
-    url: "https://jor-g-r.github.io/SimonSays/",
-    description: `Utilizing my enhanced JavaScript skills from an intensive course, I recreated the classic 'Simon Says' game. Beyond the course's scope, I refined the project, introducing additional interactions and personal touches for an engaging user experience.`,
-    tags: [
-      { id: uuidv4(), text: "Javascript" },
-      { id: uuidv4(), text: "Bootstrap" },
-      { id: uuidv4(), text: "Vanilla.js" },
-    ],
-    row: 1,
-    col: 1,
-  },
+  
   
 ];
 
