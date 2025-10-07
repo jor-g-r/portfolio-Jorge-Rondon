@@ -120,7 +120,7 @@ const Experience = () => {
                 logo={logo.contender}
                 siteUrl="https://www.contenderstudio.com/"
                 position="Web Developer"
-                time="March 2024 - Present"
+                time="March 2024 - July 2025"
                 description={`As the sole developer in the agency, I lead the creation and optimization of websites, managing all technical solutions. Additionally, I am expanding my expertise in event tracking with GTM and GA, as well as SEO. As the agency grows, my role is evolving toward leading the development department.`}
               />
 
