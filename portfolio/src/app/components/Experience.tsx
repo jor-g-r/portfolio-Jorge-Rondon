@@ -8,6 +8,7 @@ import imageidlogo from "../img/imageID-logo.jpg";
 import fpslogo from "../img/fps-logo.jpg";
 import wynlogo from "../img/wyn-logo.jpg";
 import contenderlogo from "../img/contender-logo.jpg";
+import mileagelogo from "../img/mileage-logo.jpeg";
 import IconCircle from "../icons/IconCircle";
 
 interface WorkDetailsProps {
@@ -83,6 +84,7 @@ const Experience = () => {
     fps: fpslogo,
     wyn: wynlogo,
     contender: contenderlogo,
+    mileage: mileagelogo,
   };
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -116,6 +118,16 @@ const Experience = () => {
             <ul className=" flex flex-col gap-8 lg:gap-14 items-center pt-12 pl-[12%] lg:pl-[5%]">
               <WorkDetails
                 index={0}
+                company="Mileage Design"
+                logo={logo.mileage}
+                siteUrl="https://www.mileagedesign.com/"
+                position="Head of Development"
+                time="November 2025 - Present"
+                description={`Leading the development function at Mileage Design, defining technical processes, standards, and delivery workflows. I specialize in building fully custom WordPress themes with PHP and Advanced Custom Fields (ACF), focusing on clean architecture, scalability, performance, and long-term maintainability rather than page-builder-driven solutions.`}
+              />
+
+              <WorkDetails
+                index={1}
                 company="Contender Studio"
                 logo={logo.contender}
                 siteUrl="https://www.contenderstudio.com/"
@@ -125,7 +137,7 @@ const Experience = () => {
               />
 
               <WorkDetails
-                index={0}
+                index={2}
                 company="WYN Solutions"
                 logo={logo.wyn}
                 siteUrl="https://www.wynwithus.com/"
@@ -139,7 +151,7 @@ const Experience = () => {
               />
 
               <WorkDetails
-                index={1}
+                index={3}
                 company="FrontPorch Solutions"
                 logo={logo.fps}
                 siteUrl="https://www.frontporchsolutions.com/"
@@ -154,7 +166,7 @@ const Experience = () => {
               />
 
               <WorkDetails
-                index={2}
+                index={4}
                 company="ImageID"
                 logo={logo.imageID}
                 siteUrl="https://imageid.com.co/"
@@ -166,7 +178,7 @@ const Experience = () => {
               />
 
               <WorkDetails
-                index={3}
+                index={5}
                 company="Chattanooga Web Design"
                 logo={logo.cwd}
                 siteUrl="https://www.chattanoogawebdesign.com/"

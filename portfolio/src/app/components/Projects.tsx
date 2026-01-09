@@ -141,7 +141,7 @@ const projectsInitialData = [
     row: 2,
     col: 1,
   },
-  {
+  /* {
     id: uuidv4(),
     name: "Awsome Rides Gallery",
     thumbnail: picAwsomeGallery,
@@ -164,8 +164,8 @@ const projectsInitialData = [
     ],
     row: 2,
     col: 1,
-  },
-  {
+  }, */
+  /* {
     id: uuidv4(),
     name: "Simon Says",
     thumbnail: picSimon,
@@ -179,8 +179,8 @@ const projectsInitialData = [
     ],
     row: 1,
     col: 1,
-  },
-  {
+  }, */
+  /* {
     id: uuidv4(),
     name: "Zelda Memory",
     thumbnail: picZelda,
@@ -196,7 +196,7 @@ const projectsInitialData = [
     ],
     row: 1,
     col: 1,
-  },
+  }, */
 ];
 
 export default function Projects() {
