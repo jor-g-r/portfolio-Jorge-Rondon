@@ -1,26 +1,18 @@
 "use client";
-import { useEffect, useState, useRef } from "react";
+import { useState, useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 
 import IconArrowDown from "../icons/IconArrowDownn";
 import IconDownload from "../icons/IconDownload";
+import type { Content } from "@/content/types";
+import { social } from "@/content/shared";
 
-export default function Hero() {
+export default function Hero({ content }: { content: Content["hero"] }) {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start center", "end start"],
   });
-
-  useEffect(() => {
-    const resumeBtn = document.getElementById("resume");
-    if (resumeBtn) {
-      resumeBtn.addEventListener("click", function () {
-        console.log("click");
-        window.open("https://jumpshare.com/v/QZ7YqUtwDPE6QKLk67i6", "_blank");
-      });
-    }
-  }, []);
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -42,25 +34,21 @@ export default function Hero() {
                   duration: 3,
                   repeat: Infinity,
                   repeatType: "reverse",
-                  scale: [1, 1.5, 1],
                 }}
               >
-                Frontend Developer 
+                {content.name}
               </motion.h1>
-              <h3 className="text-3xl text-primary pt-2 pb-4">
-                Jorge Francisco de Jesús
-              </h3>
+              <p className="text-3xl text-primary pt-2 pb-4">{content.role}</p>
 
               <a
                 target="_blank"
-                href="https://jumpshare.com/v/QZ7YqUtwDPE6QKLk67i6"
-                download="Jorge Francisco de Jesús - CV"
+                href={social.resume}
                 rel="noopener noreferrer"
                 className="ui-btn mx-auto rounded-sm w-fit"
                 id="resumedownload"
               >
                 <span className="flex items-center gap-1 condensed font-light uppercase ">
-                  Resume
+                  {content.resume}
                   <IconDownload />
                 </span>
               </a>
@@ -75,23 +63,18 @@ export default function Hero() {
                 <IconArrowDown isHovered={isHovered} />
               </div>
               <div className="lg:text-xl tracking-tight leading-8 lg:leading-10 cursor-default pr-4 md:pr-2">
-                <p className="drop-shadow-lg">
-                  Experienced Web Developer with strong UI/UX skills.
-                </p>
-                <p className="drop-shadow-lg">
-                  Skilled in CMS and WordPress environments.
-                </p>
-                <p className="drop-shadow-lg">
-                  Passionate about new technologies, a React enthusiast, and a
-                  fan of hands-on learning.
-                </p>
+                {content.lines.map((line) => (
+                  <p key={line} className="drop-shadow-lg">
+                    {line}
+                  </p>
+                ))}
               </div>
             </div>
           </div>
         </div>
       </section>
       <div className="w-full min-h-[44px] border-b border-solid border-dark-500 overflow-y-hidden flex items-center">
-        <motion.h4
+        <motion.p
           ref={ref}
           className="m-auto flex flex-col sm:flex-row justify-center text-center leading-6 py-2
                      text-neutral-400 font-light lg:text-xl tracking-[10px] lg:tracking-[14px] uppercase"
@@ -100,8 +83,8 @@ export default function Hero() {
             transition: "opacity 0.35s ease-in-out",
           }}
         >
-          <span>Web Design &</span> &nbsp;Web Development
-        </motion.h4>
+          <span>{content.strip[0]}</span> &nbsp;{content.strip[1]}
+        </motion.p>
       </div>
     </>
   );

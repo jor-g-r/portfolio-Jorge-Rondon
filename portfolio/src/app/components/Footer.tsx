@@ -7,8 +7,10 @@ import IconLinkedIn from "../icons/social/IconLinkedIn";
 import IconWhatsApp from "../icons/social/IconWhatsApp";
 import IconX from "../icons/social/IconX";
 import BtnBackTop from "./BtnBackTop";
+import type { Content } from "@/content/types";
+import { social } from "@/content/shared";
 
-export default function Footer() {
+export default function Footer({ content }: { content: Content["contact"] }) {
   const { scrollYProgress } = useScroll();
   return (
     <>
@@ -23,14 +25,17 @@ export default function Footer() {
             <div className="flex flex-col gap-y-3 max-w-md lg:m-0 m-auto">
               <div className="">
                 <h3 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide text-center lg:text-left">
-                  Contact
+                  {content.title}
                 </h3>
+                <p className="text-white-100 leading-7 pt-3 text-center lg:text-left">{content.pitch}</p>
               </div>
               <div className="flex justify-between gap-3 lg:gap-2">
                 <a
                   target="_blank"
                   className="hover:scale-125 ease-in duration-300"
-                  href="https://github.com/jor-g-r"
+                  href={social.github}
+                  rel="noopener noreferrer"
+                  aria-label="GitHub"
                 >
                   <IconGitHub />
                 </a>
@@ -38,21 +43,27 @@ export default function Footer() {
                 <a
                   target="_blank"
                   className="hover:scale-125 ease-in duration-300"
-                  href="https://www.linkedin.com/in/jor-g-r/"
+                  href={social.linkedin}
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn"
                 >
                   <IconLinkedIn />
                 </a>
                 <a
                   target="_blank"
                   className="hover:scale-125 ease-in duration-300"
-                  href="mailto:jorg.pot.07@gmail.com"
+                  href={social.email}
+                  rel="noopener noreferrer"
+                  aria-label="Email"
                 >
                   <IconGmail />
                 </a>
                 <a
                   target="_blank"
                   className="hover:scale-125 ease-in duration-300"
-                  href="https://twitter.com/jfrrj19"
+                  href={social.x}
+                  rel="noopener noreferrer"
+                  aria-label="X"
                 >
                   <IconX />
                 </a>
@@ -66,14 +77,14 @@ export default function Footer() {
                     opacity: scrollYProgress,
                     transition: "opacity 0.125s ease-in-out",
                   }}
-                  className="text-dark-400 text-lg font-thin text-center lg:text-right my-3"
+                  className="text-dark-400 text-lg font-thin text-center lg:text-right my-3 uppercase"
                 >
-                  THANKS FOR STOPPING BY
+                  {content.thanks}
                 </motion.span>
               </div>
 
               <div className="m-auto lg:m-0">
-                <BtnBackTop />
+                <BtnBackTop words={content.backToTop} />
               </div>
             </div>
           </div>

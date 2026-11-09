@@ -3,17 +3,14 @@ import Image from "next/image";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 
-import cwdlogo from "../img/cwd-logo.jpg";
-import imageidlogo from "../img/imageID-logo.jpg";
-import fpslogo from "../img/fps-logo.jpg";
-import wynlogo from "../img/wyn-logo.jpg";
-import contenderlogo from "../img/contender-logo.jpg";
-import mileagelogo from "../img/mileage-logo.jpeg";
+import type { Content } from "@/content/types";
+import { jobs } from "@/content/shared";
 import IconCircle from "../icons/IconCircle";
 
 interface WorkDetailsProps {
   company: string;
   logo: string | any;
+  logoAlt: string;
   siteUrl: string;
   position: string;
   time: string;
@@ -24,6 +21,7 @@ interface WorkDetailsProps {
 const WorkDetails: React.FC<WorkDetailsProps> = ({
   company,
   logo,
+  logoAlt,
   siteUrl,
   position,
   time,
@@ -33,7 +31,7 @@ const WorkDetails: React.FC<WorkDetailsProps> = ({
   const ref = useRef(null);
   return (
     <>
-      <li key={index} className="w-full max-w-[642px]">
+      <li className="w-full max-w-[642px]">
         <IconCircle reference={ref} />
         <motion.div
           ref={ref}
@@ -47,19 +45,20 @@ const WorkDetails: React.FC<WorkDetailsProps> = ({
               className=""
               href={siteUrl}
               target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
             >
               <Image
                 className="rounded-md w-auto max-h-[67px] lg:max-h-[52px] hover:border-[.5px] border-solid border-white-300 border-opacity-60"
                 height={72}
                 src={logo}
-                alt="company logo"
+                alt={logoAlt}
               />
             </motion.a>
 
             <div className="text-2xl">
               <h3 className="font-bold text-base md:text-lg">{company}</h3>
-              <div className="flex flex-col lg:flex-row gap-x-2 text-xs md:text-md text-white-500 capitalize">
+              <div className="flex flex-col lg:flex-row gap-x-2 text-xs md:text-md text-white-500">
                 <h5 className="uppercase condensed text-white-300">
                   {position}
                 </h5>
@@ -77,15 +76,7 @@ const WorkDetails: React.FC<WorkDetailsProps> = ({
   );
 };
 
-const Experience = () => {
-  const logo = {
-    cwd: cwdlogo,
-    imageID: imageidlogo,
-    fps: fpslogo,
-    wyn: wynlogo,
-    contender: contenderlogo,
-    mileage: mileagelogo,
-  };
+const Experience = ({ content }: { content: Content["experience"] }) => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -103,7 +94,7 @@ const Experience = () => {
         <div className="container mx-auto pt-16 px-8 lg:px-[68px] z-30 relative">
           <div className="pb-6">
             <h2 className="condensed text-center text-4xl lg:text-5xl uppercase -tracking-wide pt-4">
-              Experience
+              {content.title}
             </h2>
           </div>
 
@@ -116,77 +107,17 @@ const Experience = () => {
             />
 
             <ul className=" flex flex-col gap-8 lg:gap-14 items-center pt-12 pl-[12%] lg:pl-[5%]">
-              <WorkDetails
-                index={0}
-                company="Mileage Design"
-                logo={logo.mileage}
-                siteUrl="https://www.mileagedesign.com/"
-                position="Head of Development"
-                time="November 2025 - Present"
-                description={`Leading the development function at Mileage Design, defining technical processes, standards, and delivery workflows. I specialize in building fully custom WordPress themes with PHP and Advanced Custom Fields (ACF), focusing on clean architecture, scalability, performance, and long-term maintainability rather than page-builder-driven solutions.`}
-              />
-
-              <WorkDetails
-                index={1}
-                company="Contender Studio"
-                logo={logo.contender}
-                siteUrl="https://www.contenderstudio.com/"
-                position="Web Developer"
-                time="March 2024 - July 2025"
-                description={`As the sole developer in the agency, I lead the creation and optimization of websites, managing all technical solutions. Additionally, I am expanding my expertise in event tracking with GTM and GA, as well as SEO. As the agency grows, my role is evolving toward leading the development department.`}
-              />
-
-              <WorkDetails
-                index={2}
-                company="WYN Solutions"
-                logo={logo.wyn}
-                siteUrl="https://www.wynwithus.com/"
-                position="Webmaster"
-                time="december 2022 - may 2023"
-                description={`As a Webmaster at a specialized marketing agency for car dealerships, 
-                                     I played a crucial role in managing and creating landing pages across 
-                                     multiple websites for various stores throughout the USA.
-                                     My responsibilities included overseeing the performance of these landing 
-                                     pages and ensuring smooth process executions.`}
-              />
-
-              <WorkDetails
-                index={3}
-                company="FrontPorch Solutions"
-                logo={logo.fps}
-                siteUrl="https://www.frontporchsolutions.com/"
-                position="QA Developer"
-                time="august 2021 - october 2022"
-                description={`Drawing from my experience in UI/UX design, I bring a unique perspective to my role as a 
-                                      functionality tester. With a keen eye for detail, I ensure high standards of visual accuracy 
-                                      in Figma projects. My background as a designer has played a pivotal role in honing this skill. 
-                                      In cases where older projects lacked visual references, my designer's sensibility allowed me 
-                                      to make consistent and meaningful suggestions for improvement. Additionally, I serve as a 
-                                      proficient backup front-end developer, well-versed in CSS, PHP, and Next.js.`}
-              />
-
-              <WorkDetails
-                index={4}
-                company="ImageID"
-                logo={logo.imageID}
-                siteUrl="https://imageid.com.co/"
-                position="Webmaster"
-                time="april 2021 - august 2021"
-                description={`As a webmaster at ImageID, one of the largest marketing agencies in Colombia, I was responsible 
-                                      for managing multiple websites using WordPress as the CMS, primarily through page builders such as Elementor, 
-                                      WPBakery, and Beaver Builder. I also had experience in managing e-commerce databases.`}
-              />
-
-              <WorkDetails
-                index={5}
-                company="Chattanooga Web Design"
-                logo={logo.cwd}
-                siteUrl="https://www.chattanoogawebdesign.com/"
-                position="Web Developer"
-                time="january 2021 - april 2021"
-                description={`As part of the development team, I worked as a Front-End developer at a marketing agency in Chattanooga, TN. 
-                                      I specialize in web development using the Elementor builder, with a focus on achieving high visual standards.`}
-              />
+              {jobs.map((job, index) => (
+                <WorkDetails
+                  key={job.id}
+                  index={index}
+                  company={job.company}
+                  logo={job.logo}
+                  logoAlt={`${job.company} ${content.logoAlt}`}
+                  siteUrl={job.siteUrl}
+                  {...content.items[job.id]}
+                />
+              ))}
             </ul>
           </div>
         </div>

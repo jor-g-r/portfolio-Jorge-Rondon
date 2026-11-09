@@ -45,7 +45,7 @@ const SkillSlider = () => {
   const logos: Logo[] = [
     { src: skillFigma, alt: "Figma" },
     { src: skillSass, alt: "Sass" },
-    { src: skillBootrap, alt: "Bootrsap" },
+    { src: skillBootrap, alt: "Bootstrap" },
     { src: skillTailwind, alt: "TailwindCSS" },
     { src: skillGithub, alt: "Github" },
     { src: skillJs, alt: "Javascript" },
@@ -59,7 +59,7 @@ const SkillSlider = () => {
     { src: skillWebflow, alt: "Webflow" },
     { src: skillWordpress, alt: "Wordpress" },
     { src: skillElementor, alt: "Elementor" },
-    { src: skillSCF, alt: "Secure Customs Field" },
+    { src: skillSCF, alt: "Secure Custom Fields" },
     { src: skillJet, alt: "Jet Elements" },
     { src: skillHubspot, alt: "Hubspot" },
   ];

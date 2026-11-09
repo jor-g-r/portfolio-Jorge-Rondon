@@ -1,258 +1,102 @@
 "use client";
-import { useState } from "react";
-import { v4 as uuidv4 } from "uuid";
-
 import Image from "next/image";
 import ParticlesComponent from "./ParticlesComponent";
 import IconExternalLink from "../icons/IconExternalLink";
+import type { Content } from "@/content/types";
+import { projects, type ProjectMedia } from "@/content/shared";
 
-import picAwsomeGallery from "../img/projects/project-AwsomeRides.jpg";
-import picKamaredine from "../img/projects/project-kamaredinex2.jpg";
-import picZelda from "../img/projects/project-ZeldaMemory.jpg";
-import picSimon from "../img/projects/project-simonsays.jpg";
-import picVanargand from "../img/projects/project-Vanargand.jpg";
-import picCartagenaFest from "../img/projects/project-Cartagena.jpg";
-import picAppleVisionPro from "../img/projects/project-Apple Vision Pro Demo.jpg";
-import picIndentura from "../img/projects/project-Indentura.jpg";
-import picCharta from "../img/projects/project-Charta.jpg";
+function ProjectCard({ item, copy, live, code }: {
+  item: ProjectMedia;
+  copy: { description: string; alt: string };
+  live: string;
+  code: string;
+}) {
+  return (
+    <li
+      className={`group w-full p-5 flex gap-6 bg-card-gradient shadow-lg border-stone-800 hover:border-neutral-700 border backdrop-blur-[2.15px] bg-blend bg-opacity-10 rounded-md
+        ${item.row === 2 ? "lg:row-span-2 md:col-span-2 lg:col-span-1" : ""}
+        ${item.col === 2 ? "lg:col-span-2 xl:flex-row md:gap-x-6 flex-col" : "flex-col"}`}
+    >
+      <a target="_blank" rel="noopener noreferrer" className="relative" href={item.url}>
+        <Image
+          src={item.thumbnail}
+          alt={copy.alt}
+          className="w-full xl:min-w-[312px] rounded-sm hover:border border-dark-400 duration-100 ease-in"
+        />
+        <div
+          className={`absolute right-[2%] ${item.col === 2 ? "2xl:bottom-[2%] xl:bottom-[8%] md:bottom-[4%] bottom-[2%]" : "bottom-[2%]"}`}
+        >
+          <IconExternalLink />
+        </div>
+      </a>
+      <div className="flex flex-col justify-between h-full">
+        <div className="text-white-100 w-full">
+          <h4 className="text-xl condensed capitalize pb-3 lg:text-[32px] font-bold">{item.name}</h4>
+          <p className="leading-6 font-normal">{copy.description}</p>
+        </div>
+        <div>
+          <ul className="flex gap-2 mt-3 flex-wrap">
+            {item.tags.map((tag) => (
+              <li
+                key={tag}
+                className="text-dark-950 bg-white-200 group-hover:bg-white-100 px-3 py-1 rounded-full text-xs xl:text-sm cursor-default hover:scale-105 ease-out duration-500"
+              >
+                {tag}
+              </li>
+            ))}
+          </ul>
+          <div className="flex gap-5 pt-4 condensed uppercase tracking-widest text-sm">
+            <a className="text-primary hover:underline" href={item.url} target="_blank" rel="noopener noreferrer">
+              {live} ↗
+            </a>
+            {item.repo && (
+              <a className="text-white-100 hover:underline" href={item.repo} target="_blank" rel="noopener noreferrer">
+                {code} ↗
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+    </li>
+  );
+}
 
-const projectsInitialData = [
-  {
-    id: uuidv4(),
-    name: "Indentura",
-    thumbnail: picIndentura,
-    alt: "Indentura Project Thumbnail",
-    url: "https://www.indentura.com/",
-    description: `This interface was developed by a Front-end developer according to financial design standards. 
-    Using the provided Figma designs, pixel-perfect standards were achieved across 20+ screens for functional user 
-    interfaces. All components were developed with Next.js and Shadcn UI in a structured monorepo, establishing 
-    a design system that ensures visual consistency across the screens. My work includes dynamic dashboards based on 
-    Recharts that display data and complex forms validated by design patterns, adapting seamlessly to different display types. 
-    This project transformed complex financial interfaces into user-friendly, visually appealing designs that enhance user 
-    engagement.`,
-    tags: [
-      { id: uuidv4(), text: "Typescript" },
-      { id: uuidv4(), text: "Next.js" },
-      { id: uuidv4(), text: "Shadcn UI" },
-      { id: uuidv4(), text: "Bun" },
-      { id: uuidv4(), text: "Monorepo" },
-      { id: uuidv4(), text: "Github" },
-    ],
-    row: 1,
-    col: 2,
-  },
-  {
-    id: uuidv4(),
-    name: "Get Charta",
-    thumbnail: picCharta,
-    alt: "Get Charta project Thumbnail",
-    url: "https://www.getcharta.com/",
-    description: `Contributing as a Frontend Developer to Charta, a smart contract negotiation platform, 
-                  I was tasked with implementing the user interface refresh using Figma designs. My primary 
-                  focus involved adapting existing application logic into a new design system based on Chakra UI. 
-                  I meticulously reconstructed crucial components like negotiation panels and complex forms, 
-                  ensuring pixel-perfect accuracy and visual consistency. Navigating the specific structural 
-                  demands of Chakra UI required careful attention, yet resulted in a polished, cohesive interface 
-                  optimized for managing smart contracts, significantly improving user experience and trust in 
-                  the platform.`,
-    tags: [
-      { id: uuidv4(), text: "Typescript" },
-      { id: uuidv4(), text: "Tailwind.css" },
-      { id: uuidv4(), text: "Next.js" },
-      { id: uuidv4(), text: "REACT" },
-      { id: uuidv4(), text: "Chakra UI" },
-      { id: uuidv4(), text: "Github" },
-    ],
-    row: 2,
-    col: 1,
-  },
-  {
-    id: uuidv4(),
-    name: "Vanargand Lodge",
-    thumbnail: picVanargand,
-    alt: "Vanagand Lodge project Thumbnail",
-    url: "https://www.vanargandlodge.com/",
-    description: `Crafted a serene web presence for Vanargand Lodge in Dagget, MI, during my tenure at FrontPorch Solutions. 
-                  Using Next.js, TypeScript, and Tailwind CSS. Simplistic and impactful, it embodies my web development prowess.`,
-    tags: [
-      { id: uuidv4(), text: "Typescript" },
-      { id: uuidv4(), text: "Tailwind.css" },
-      { id: uuidv4(), text: "Next.js" },
-      { id: uuidv4(), text: "Swiper.js" },
-      { id: uuidv4(), text: "Yarn" },
-    ],
-    row: 1,
-    col: 1,
-  },
-  {
-    id: uuidv4(),
-    name: "Cartagena MusicFest 2021",
-    thumbnail: picCartagenaFest,
-    alt: "Festival de Cartagena 2021 project thumbnail",
-    url: "https://www.cartagenamusicfestival.com/",
-    description: `While collaborating with ImageID in 2021, I revitalized the online presence of the prestigious 
-                  Cartagena Music Festival. I designed and developed the website's schedule, performer information, 
-                  and essential elements for this renowned musical event, celebrating global culture and classical music.`,
-    tags: [
-      { id: uuidv4(), text: "Javascript" },
-      { id: uuidv4(), text: "Wordpress" },
-      { id: uuidv4(), text: "WPBakery" },
-      { id: uuidv4(), text: "CSS" },
-    ],
-    row: 1,
-    col: 1,
-  },
-  {
-    id: uuidv4(),
-    name: "Kamaredine Properties",
-    thumbnail: picKamaredine,
-    alt: "Kamaredine Properties thumbnail",
-    url: "https://kamaredine.com/",
-    description: `Revamped the online presence for Kamaredine Properties, a hotel located in Burgas, Bulgaria. Given its prime location and diverse tourism, the website is multilingual, featuring English as the primary language, along with Bulgarian and Russian. Built using WordPress and Elementor, the design process did not rely on traditional design software. Instead, the designer created a stylescape that captured the desired colors, fonts, and overall essence. I adapted this vision into a template, iteratively crafting the layout in an intuitive manner, ensuring a polished and responsive design across all devices.`,
-    tags: [
-      { id: uuidv4(), text: "Iterative Development" },
-      { id: uuidv4(), text: "Wordpress" },
-      { id: uuidv4(), text: "Elementor" },
-      { id: uuidv4(), text: "CSS" },
-      { id: uuidv4(), text: "SEO" },
-    ],
-    row: 1,
-    col: 2,
-  },
-  {
-    id: uuidv4(),
-    name: "3D AppleVision Pro Demo",
-    thumbnail: picAppleVisionPro,
-    alt: "Apple Vision Pro Project Showcase",
-    url: "https://applevision-pro-3d-animation.vercel.app/",
-    description: `In my journey to enhance my frontend developer skills, I embarked on exploring 3D animations for web development. Embracing the Apple Vision Pro trend, I showcased its capabilities in this project.
-
-    Following a freecodecamp guide, I constructed the environment in vite with react.js. To manipulate 3D objects and create animations, I utilized WebGi (powered by Three.js) and GSAP.
-    
-    The outcome features Apple Vision Pro glasses moving in three dimensions as you scroll, and allows interactive manipulation of the 3D object in the final section with the "try me" button.`,
-    tags: [
-      { id: uuidv4(), text: "Javascript" },
-      { id: uuidv4(), text: "Tailwind.css" },
-      { id: uuidv4(), text: "REACT" },
-      { id: uuidv4(), text: "Webgi - Three.js" },
-      { id: uuidv4(), text: "GSAP" },
-      { id: uuidv4(), text: "Vite" },
-    ],
-    row: 2,
-    col: 1,
-  },
-  /* {
-    id: uuidv4(),
-    name: "Awsome Rides Gallery",
-    thumbnail: picAwsomeGallery,
-    alt: "Awsome Rides Project Thumbnail",
-    url: "https://galleryunsplash-7e644a86-rho.vercel.app/",
-    description: `As a dedicated web developer and classic car enthusiast, I tackled the creation of a dynamic car 
-                  gallery project. Building on its visually simple design, I confidently crafted it without relying 
-                  on tools like Figma. While I had previously created a static version using HTML and Bootstrap, 
-                  this upgraded iteration utilizes advanced technologies like Next.js, Tailwind CSS, and Swiper. 
-                  The result is a sleek interface showcasing diverse categories such as muscle cars, bikes, trucks, 
-                  and electric vehicles. To enhance user experience, I incorporated a customizable dark mode feature.`,
-    tags: [
-      { id: uuidv4(), text: "Iterative Development" },
-      { id: uuidv4(), text: "Typescript" },
-      { id: uuidv4(), text: "Tailwind.css" },
-      { id: uuidv4(), text: "REACT" },
-      { id: uuidv4(), text: "Next.js" },
-      { id: uuidv4(), text: "Swiper.js" },
-      { id: uuidv4(), text: "Yarn" },
-    ],
-    row: 2,
-    col: 1,
-  }, */
-  /* {
-    id: uuidv4(),
-    name: "Simon Says",
-    thumbnail: picSimon,
-    alt: "Simon says thumbnail",
-    url: "https://jor-g-r.github.io/SimonSays/",
-    description: `Utilizing my enhanced JavaScript skills from an intensive course, I recreated the classic 'Simon Says' game. Beyond the course's scope, I refined the project, introducing additional interactions and personal touches for an engaging user experience.`,
-    tags: [
-      { id: uuidv4(), text: "Javascript" },
-      { id: uuidv4(), text: "Bootstrap" },
-      { id: uuidv4(), text: "Vanilla.js" },
-    ],
-    row: 1,
-    col: 1,
-  }, */
-  /* {
-    id: uuidv4(),
-    name: "Zelda Memory",
-    thumbnail: picZelda,
-    alt: "zelda memory thumbnail",
-    url: "https://jor-g-r.github.io/MemoryZelda/",
-    description: `Strengthened skills through a JavaScript memory game, bridging the gap between fundamental understanding 
-                  and advanced frameworks. Inspired by 'The Legend of Zelda,' I revamped a tutorial project, ironing out bugs 
-                  and adding personalized touches.`,
-    tags: [
-      { id: uuidv4(), text: "Javascript" },
-      { id: uuidv4(), text: "Bootstrap" },
-      { id: uuidv4(), text: "Vanilla.js" },
-    ],
-    row: 1,
-    col: 1,
-  }, */
-];
-
-export default function Projects() {
-  const [projectItems] = useState(projectsInitialData);
+export default function Projects({ content }: { content: Content["projects"] }) {
+  const groups = [
+    { title: content.ownTitle, items: projects.filter((p) => p.own) },
+    { title: content.clientTitle, items: projects.filter((p) => !p.own) },
+  ];
 
   return (
-    <>
-      <section className="min-h-screen pb-28 relative border-b border-dark-500" id="projects">
-        <div className="absolute w-full h-full top-0 left-0 ">
-          <ParticlesComponent />
-        </div>
+    <section className="min-h-screen pb-28 relative border-b border-dark-500" id="projects">
+      <div className="absolute w-full h-full top-0 left-0 ">
+        <ParticlesComponent />
+      </div>
 
-        <div className="container mx-auto px-8 xl:px-[68px] pt-20">
-          <div className="mx-auto">
-            <h2 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide text-center">Projects</h2>
-          </div>
+      <div className="container mx-auto px-8 xl:px-[68px] pt-20 relative">
+        <h2 className="condensed text-4xl lg:text-5xl uppercase -tracking-wide text-center">
+          {content.title}
+        </h2>
 
-          <div className="w-full pt-16">
+        {groups.map((group) => (
+          <div key={group.title} className="w-full pt-16">
+            <h3 className="condensed text-2xl lg:text-3xl uppercase tracking-wide text-neutral-300 pb-8">
+              {group.title}
+            </h3>
             <ul className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {projectItems.map((item) => {
-                return (
-                  <li key={item.id} className={`group w-full p-5 flex gap-6 bg-card-gradient shadow-lg border-stone-800 hover:border-neutral-700 border backdrop-blur-[2.15px] bg-blend bg-opacity-10 rounded-md 
-                    ${item.row === 2 ? "lg:row-span-2 md:col-span-2 lg:col-span-1" : ""} 
-                    ${item.col === 2 ? "lg:col-span-2 xl:flex-row md:gap-x-6 flex-col" : "flex-col"}`}>
-                    <a target="_blank" className="relative" href={item.url}>
-                      <Image
-                        src={item.thumbnail}
-                        alt={item.alt}
-                        className={`w-full xl:min-w-[312px] rounded-sm hover:border border-dark-400 duration-100 ease-in`}
-                      />
-                      <div className={`absolute right-[2%] ${item.col === 2 ? "2xl:bottom-[2%] xl:bottom-[8%] md:bottom-[4%] bottom-[2%]" : "bottom-[2%]"}`}>
-                        <IconExternalLink />
-                      </div>
-                    </a>
-                    <div className="flex flex-col justify-between h-full">
-                      <div className="text-white-100 w-full">
-                        <h3 className="text-xl condensed capitalize pb-3 lg:text-[32px] font-bold">{item.name}</h3>
-                        <p className="leading-6 font-normal">{item.description}</p>
-                      </div>
-                      <ul className="flex gap-2 mt-3 flex-wrap">
-                        {item.tags.map((tag) => {
-                          return (
-                            <li key={tag.id} className="text-dark-950 bg-white-200 group-hover:bg-white-100 px-3 py-1 rounded-full text-xs xl:text-sm cursor-default hover:scale-105 ease-out duration-500">
-                              {tag.text}
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    </div>
-                  </li>
-                );
-              })}
+              {group.items.map((item) => (
+                <ProjectCard
+                  key={item.id}
+                  item={item}
+                  copy={content.items[item.id]}
+                  live={content.live}
+                  code={content.code}
+                />
+              ))}
             </ul>
           </div>
-        </div>
-      </section>
-    </>
+        ))}
+      </div>
+    </section>
   );
 }

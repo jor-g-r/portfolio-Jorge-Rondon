@@ -1,6 +1,9 @@
-import "./globals.css";
+// The <html> shell shared by the English and Spanish root layouts.
+// Each language is its own root layout (route groups), so <html lang> is static and correct.
+import "../globals.css";
 import { Roboto, Roboto_Condensed } from "next/font/google";
 import { GoogleTagManager } from "@next/third-parties/google";
+import type { Lang } from "@/content/types";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -15,24 +18,20 @@ const roboto_condensed = Roboto_Condensed({
   weight: ["400", "700"],
 });
 
-export default function RootLayout({
+export default function RootShell({
+  lang,
   children,
 }: {
+  lang: Lang;
   children: React.ReactNode;
 }) {
   return (
     <html
-      lang="en"
+      lang={lang}
       className={`${roboto.variable} ${roboto_condensed.variable} bg-[#101010]`}
       suppressHydrationWarning
     >
       <head>
-        <title>Frontend Developer Jorge Rondón</title>
-        <meta
-          name="description"
-          content="Frontend Developer with a portfolio filled with exciting web projects. My portfolio showcases my expertise in modern technologies like Next.js, Tailwind CSS, and the powerful Framer Motion."
-        ></meta>
-
         <GoogleTagManager gtmId="GTM-K7VKR3M6" />
       </head>
       <body className={`${roboto.className}`} suppressHydrationWarning>

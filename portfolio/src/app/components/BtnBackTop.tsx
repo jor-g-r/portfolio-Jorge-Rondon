@@ -1,41 +1,26 @@
-import React from 'react'
+import React from "react";
 
-
-export default function BtnBackTop (){ 
+export default function BtnBackTop({ words }: { words: string[] }) {
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const label = words.join(" ");
   return (
-    <>
-
-    <button onClick={scrollToTop}
-            className="button-footer condensed uppercase">
-        <div className="text">
-            <span>Back</span>
-            <span>to</span>
-            <span>top</span>
-        </div>
-        <div className="clone">
-            <span>Back</span>
-            <span>to</span>
-            <span>top</span>
-        </div>
-        <svg width="20px" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 backtop" fill="none" 
-             viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-
-            <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-        </svg>
+    <button onClick={scrollToTop} aria-label={label} className="button-footer condensed uppercase">
+      <div className="text" aria-hidden="true">
+        {words.map((w) => (
+          <span key={w}>{w}</span>
+        ))}
+      </div>
+      <div className="clone" aria-hidden="true">
+        {words.map((w) => (
+          <span key={w}>{w}</span>
+        ))}
+      </div>
+      <svg width="20px" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 backtop" fill="none"
+           viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+      </svg>
     </button>
-
-
-      
-
-
-
-    </>
-  )
+  );
 }
-
