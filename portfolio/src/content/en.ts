@@ -5,7 +5,7 @@ const en: Content = {
   meta: {
     title: "Jorge Rondón · Self-taught designer & developer building with AI agents",
     description:
-      "Head of Development at Mileage Design. I build web products with AI agents, one task at a time, and ship my own: PairCraft, Void Runner and StateCraft.",
+      "Self-taught designer and developer. I build web products with AI agents, one task at a time, and ship my own: PairCraft, Void Runner and StateCraft.",
   },
   nav: {
     about: "About",
@@ -33,8 +33,8 @@ const en: Content = {
     title: "About",
     imageAlt: "Jorge Rondón at work",
     paragraphs: [
-      "I'm Jorge Rondón, a self-taught designer and developer from Venezuela, based in Medellín. No CS degree: I started in web design in 2016, have been writing code since 2021, and learned everything by building.",
-      "I'm Head of Development at Mileage Design. I work through several Claude Code sessions at once: one coordinates, the others work in their own lanes, one task at a time. Nothing closes on an agent's word, only on evidence. When a mistake repeats, I don't write another rule; I turn it into a check that runs on its own.",
+      "I'm Jorge Rondón, a self-taught designer and developer from Venezuela, based in Medellín. No CS degree: I started in web design in 2016, have been writing code since 2021, and learned everything by building. Today I'm Head of Development at Mileage Design.",
+      "My own way of working: several Claude Code sessions at once, one coordinating and the others each in their own lane, one task at a time. Nothing closes on an agent's word, only on evidence. When a mistake repeats, I don't write another rule; I turn it into a check that runs on its own.",
       "On my own time I ship products: PairCraft, a bilingual pocket guide to wine and food pairings; Void Runner, a synthwave rail shooter with a live leaderboard; and StateCraft, a vision board you can install and use offline.",
     ],
   },
@@ -226,7 +226,7 @@ const en: Content = {
       {
         year: "2026",
         title: "Building with agents, one task at a time",
-        text: "I moved my work to several Claude Code sessions with clear rules, and shipped PairCraft and Void Runner.",
+        text: "Several Claude Code sessions with clear rules became my way of working, and I shipped PairCraft and Void Runner.",
       },
     ],
   },

@@ -5,7 +5,7 @@ const es: Content = {
   meta: {
     title: "Jorge Rondón · Diseñador y desarrollador autodidacta que construye con agentes de IA",
     description:
-      "Head of Development en Mileage Design. Construyo productos web con agentes de IA, una tarea a la vez, y lanzo los míos: PairCraft, Void Runner y StateCraft.",
+      "Diseñador y desarrollador autodidacta. Construyo productos web con agentes de IA, una tarea a la vez, y lanzo los míos: PairCraft, Void Runner y StateCraft.",
   },
   nav: {
     about: "Sobre mí",
@@ -33,8 +33,8 @@ const es: Content = {
     title: "Sobre mí",
     imageAlt: "Jorge Rondón trabajando",
     paragraphs: [
-      "Soy Jorge Rondón, diseñador y desarrollador autodidacta venezolano, con base en Medellín. Sin título universitario: empecé en diseño web en 2016, escribo código desde 2021 y todo lo he aprendido construyendo.",
-      "Soy Head of Development en Mileage Design. Trabajo con varias sesiones de Claude Code a la vez: una coordina y las demás trabajan cada una en su carril, una tarea a la vez. Nada se cierra porque un agente diga que está listo, solo con evidencia. Cuando un error se repite, no escribo otra regla: la convierto en un chequeo que corre solo.",
+      "Soy Jorge Rondón, diseñador y desarrollador autodidacta venezolano, con base en Medellín. Sin título universitario: empecé en diseño web en 2016, escribo código desde 2021 y todo lo he aprendido construyendo. Hoy soy Head of Development en Mileage Design.",
+      "Mi forma de trabajar: varias sesiones de Claude Code a la vez, una coordina y las demás trabajan cada una en su carril, una tarea a la vez. Nada se cierra porque un agente diga que está listo, solo con evidencia. Cuando un error se repite, no escribo otra regla: la convierto en un chequeo que corre solo.",
       "En mi tiempo propio lanzo productos: PairCraft, una guía de bolsillo bilingüe para maridar vino y comida; Void Runner, un shooter synthwave sobre rieles con leaderboard en vivo; y StateCraft, un vision board que puedes instalar y usar sin conexión.",
     ],
   },
@@ -226,7 +226,7 @@ const es: Content = {
       {
         year: "2026",
         title: "Construir con agentes, una tarea a la vez",
-        text: "Pasé mi trabajo a varias sesiones de Claude Code con reglas claras, y lancé PairCraft y Void Runner.",
+        text: "Varias sesiones de Claude Code con reglas claras se volvieron mi forma de trabajar, y lancé PairCraft y Void Runner.",
       },
     ],
   },
