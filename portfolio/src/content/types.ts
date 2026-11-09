@@ -41,10 +41,8 @@ export interface Content {
     experience: string;
     path: string;
     contact: string;
-    /** Link to the other language version. */
-    switchHref: string;
-    switchText: string;
-    switchLabel: string;
+    /** Accessible name of the EN | ES toggle. */
+    language: string;
   };
   hero: {
     name: string;

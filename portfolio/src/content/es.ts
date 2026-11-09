@@ -14,9 +14,7 @@ const es: Content = {
     experience: "Experiencia",
     path: "Mi camino",
     contact: "Contacto",
-    switchHref: "/",
-    switchText: "EN",
-    switchLabel: "Read in English",
+    language: "Idioma",
   },
   hero: {
     name: "Jorge Rondón",

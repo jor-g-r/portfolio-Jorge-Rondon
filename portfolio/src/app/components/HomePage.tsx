@@ -13,7 +13,7 @@ import Footer from "./Footer";
 export default function HomePage({ content }: { content: Content }) {
   return (
     <main>
-      <Navbar content={content.nav} />
+      <Navbar content={content.nav} lang={content.lang} />
       <Hero content={content.hero} />
       <SkillSlider />
       <About content={content.about} />

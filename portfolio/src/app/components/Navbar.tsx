@@ -2,7 +2,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import type { Content } from "@/content/types";
+import type { Content, Lang } from "@/content/types";
+import LangToggle from "./LangToggle";
 
 interface NavbarBtnProps {
   href: string;
@@ -18,7 +19,7 @@ const NavbarBtn: React.FC<NavbarBtnProps> = ({ href, title }) => {
     }
   };
   return (
-    <Link href={href} onClick={scrollToSection} className="group relative tracking-widest">
+    <Link href={href} onClick={scrollToSection} className="group relative tracking-widest whitespace-nowrap">
       {title}
       <span
         className="h-[1px] w-0 bg-white-100 absolute left-0 -bottom-0.5
@@ -58,23 +59,11 @@ function NavItems({ content }: { content: Content["nav"] }) {
           {content.contact}
         </Link>
       </li>
-      <li className="mt-2 lg:mt-0">
-        {/* Plain <a>: each language is its own root layout, so this is a full page load. */}
-        <a
-          href={content.switchHref}
-          hrefLang={content.switchText.toLowerCase()}
-          aria-label={content.switchLabel}
-          title={content.switchLabel}
-          className="border border-dark-400 px-2 py-1 rounded-sm tracking-widest hover:border-white-100 duration-300 ease-in"
-        >
-          {content.switchText}
-        </a>
-      </li>
     </>
   );
 }
 
-const Navbar = ({ content }: { content: Content["nav"] }) => {
+const Navbar = ({ content, lang }: { content: Content["nav"]; lang: Lang }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
@@ -91,7 +80,8 @@ const Navbar = ({ content }: { content: Content["nav"] }) => {
               JR
             </a>
 
-            <div className="lg:hidden">
+            <div className="lg:hidden flex items-center gap-3">
+              <LangToggle current={lang} label={content.language} />
               <button
                 type="button"
                 aria-expanded={menuOpen}
@@ -114,11 +104,14 @@ const Navbar = ({ content }: { content: Content["nav"] }) => {
             </div>
           </div>
 
-          <div className="lg:w-3/4 w-4/5 max-w-3xl">
+          <div className="lg:w-auto w-4/5">
             <div className="hidden lg:flex justify-end">
-              <ul className="flex flex-row items-center justify-between lg:gap-4 xl:gap-6">
+              <ul className="flex flex-row items-center justify-between lg:gap-3 xl:gap-6 lg:text-sm xl:text-base">
                 <NavItems content={content} />
               </ul>
+              <div className="pl-4 xl:pl-6 flex items-center">
+                <LangToggle current={lang} label={content.language} />
+              </div>
             </div>
 
             <motion.div
