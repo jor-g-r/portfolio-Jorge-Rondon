@@ -3,7 +3,7 @@ import type { Content } from "./types";
 const es: Content = {
   lang: "es",
   meta: {
-    title: "Jorge Rondón · Diseñador y desarrollador autodidacta que construye con agentes de IA",
+    title: "Jorge Rondón · Head of Development, creando mis propios productos con agentes de IA",
     description:
       "Diseñador y desarrollador autodidacta. Construyo productos web con agentes de IA, una tarea a la vez, y lanzo los míos: PairCraft, Void Runner y StateCraft.",
   },
@@ -18,12 +18,12 @@ const es: Content = {
   },
   hero: {
     name: "Jorge Rondón",
-    role: "Diseñador y desarrollador autodidacta",
+    role: "Head of Development · Creando mis propios productos",
     resume: "Currículum",
     lines: [
       "Construyo productos web con agentes de IA.",
       "Una tarea a la vez, y nada se cierra sin evidencia.",
-      "Head of Development en Mileage Design. En paralelo, lanzo mis propios productos.",
+      "Autodidacta: del diseño web en 2016 a dirigir el desarrollo en Mileage Design.",
     ],
     strip: ["Diseño y desarrollo", "con agentes de IA"],
   },

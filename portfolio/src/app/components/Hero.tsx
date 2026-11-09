@@ -38,7 +38,15 @@ export default function Hero({ content }: { content: Content["hero"] }) {
               >
                 {content.name}
               </motion.h1>
-              <p className="text-3xl text-primary pt-2 pb-4">{content.role}</p>
+              {/* On phones the role breaks at the "·" instead of mid-phrase. */}
+              <p className="text-2xl sm:text-3xl text-primary pt-2 pb-4 px-4">
+                {content.role.split(" · ").map((part, i) => (
+                  <span key={part} className={i > 0 ? "block sm:inline" : undefined}>
+                    {i > 0 && <span className="hidden sm:inline"> · </span>}
+                    {part}
+                  </span>
+                ))}
+              </p>
 
               <a
                 target="_blank"

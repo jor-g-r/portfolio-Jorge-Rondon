@@ -3,7 +3,7 @@ import type { Content } from "./types";
 const en: Content = {
   lang: "en",
   meta: {
-    title: "Jorge Rondón · Self-taught designer & developer building with AI agents",
+    title: "Jorge Rondón · Head of Development, building my own products with AI agents",
     description:
       "Self-taught designer and developer. I build web products with AI agents, one task at a time, and ship my own: PairCraft, Void Runner and StateCraft.",
   },
@@ -18,12 +18,12 @@ const en: Content = {
   },
   hero: {
     name: "Jorge Rondón",
-    role: "Self-taught designer & developer",
+    role: "Head of Development · Building my own products",
     resume: "Resume",
     lines: [
       "I build web products with AI agents.",
       "One task at a time, nothing closed without evidence.",
-      "Head of Development at Mileage Design. Shipping my own products on the side.",
+      "Self-taught: from web design in 2016 to leading development at Mileage Design.",
     ],
     strip: ["Design & Development", "with AI agents"],
   },
